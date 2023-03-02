@@ -1,0 +1,18 @@
+include:
+  - path: common/shared_settings.yml
+    relativePaths: false
+
+settingGroups:
+  Application:
+    base:
+      ENABLE_BITCODE: false
+      OTHER_CODE_SIGN_FLAGS: $(inherited) --generate-entitlement-der
+      OTHER_LDFLAGS: $(inherited) -ObjC -all_load
+      LD_RUNPATH_SEARCH_PATHS: $(inherited) @executable_path/Frameworks @loader_path/Frameworks @executable_path/../../Frameworks
+    configs:
+      Debug:
+        CODE_SIGN_IDENTITY: iPhone Developer
+      Release:
+        CODE_SIGN_IDENTITY: iPhone Distribution
+    groups:
+      - Shared

@@ -1,0 +1,52 @@
+---
+# Шаблон Xcodegen для SDK.
+# Шаблон принимает:
+# - Source файлы из выбранной директории с названием таргета, но не включает
+#   файлы, которые находятся в подпапках **_Tests**, **_SnapshotTests_**,
+#   **_TestKit_**
+# Пример:
+# Target: SDFramework. Исходные файлы будут браться из Sources/SDFramework
+# без исключений.
+include:
+  - path: build-settings/sdk_settings.yml
+    relativePaths: false
+
+targetTemplates:
+  SDK:
+    type: framework
+    platform: iOS
+
+    settings:
+      groups:
+        - SDK
+
+    scheme:
+      testTargets:
+        - ${target_name}Tests
+      gatherCoverageData: true
+      coverageTargets:
+        - ${target_name}
+
+    info:
+      path: Sources/${target_name}/Info.plist
+      properties:
+        CFBundleShortVersionString: $(MARKETING_VERSION)
+        CFBundleVersion: $(CURRENT_PROJECT_VERSION)
+        CFBundlePackageType: $(PRODUCT_BUNDLE_PACKAGE_TYPE)
+
+    sources:
+      - path: Sources/${target_name}
+        includes:
+          - "**/*.swift"
+          - "**/*.[mhc]"
+          - "**/*.cpp"
+          - "**/*.mm"
+          - "**/*.pbobjc.m"
+        compilerFlags: "-fno-objc-arc"
+        excludes:
+          - "**/_AcceptanceTests_"
+          - "**/_SnapshotTests_"
+          - "**/_TestKit_"
+          - "**/_Tests_"
+
+    buildImplicitDependencies: false

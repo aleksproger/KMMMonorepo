@@ -1,0 +1,38 @@
+---
+# Шаблон Xcodegen для таргета Snapshot Tests приложения.
+# Примечание: В отличие от Snapshot Tests фреймворка, не добавляет таргет приложение в link фазу.
+# - Source файлы из выбранной директории с названием таргета в подпапке _SnapshotTests_.
+# Пример:
+# Target: SDFramework. Исходные файлы будут браться из
+# Sources/SDFramework/Foo/_SnapshotTests_/FooSnapshotTests.swift.
+# Также для таргета автоматически проставляется зависимость на основной таргет.
+# Пример: FooFrameworkSnapshotTests -> FooFramework.
+include:
+  - path: build-settings/snapshot_tests_settings.yml
+    relativePaths: false
+
+targetTemplates:
+  AppSnapshotTests:
+    type: bundle.unit-test
+    platform: iOS
+
+    settings:
+      groups:
+        - SnapshotTests
+
+    sources:
+      - path: Sources/${testingTarget}
+        buildPhase: none
+        includes:
+          - "**/_Snapshots_/*.png"
+
+      - path: Sources/${testingTarget}
+        includes:
+          - "**/_SnapshotTests_"
+
+    dependencies:
+      - target: ${testingTarget}
+        embed: false
+        link: false
+
+    buildImplicitDependencies: false

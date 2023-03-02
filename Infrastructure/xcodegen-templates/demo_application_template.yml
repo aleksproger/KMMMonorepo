@@ -1,0 +1,58 @@
+---
+# Шаблон Xcodegen для демонстрационного приложения.
+#
+# Шаблон принимает:
+# - Source файлы из выбранной директории с названием таргета, но не включает
+#   файлы, которые находятся в подпапках _Tests_, _SnapshotTests_, _TestKit_
+#   Пример: Salute. Исходные файлы будут браться из Sources/Salute без исключений.
+# - Ресурсы из вложенной папки Resources таргета.
+#   Пример: Sources/Salute/Resources
+#
+# Пример:
+include:
+  - path: build-settings/demo_application_settings.yml
+    relativePaths: false
+
+targetTemplates:
+  DemoApplication:
+    type: application
+    platform: iOS
+
+    settings:
+      groups:
+        - DemoApplication
+
+    scheme:
+      testTargets: {}
+
+    info:
+      path: Sources/${target_name}/Info.plist
+      properties:
+        CFBundleDevelopmentRegion: ru
+        CFBundleShortVersionString: $(MARKETING_VERSION)
+        CFBundleVersion: $(CURRENT_PROJECT_VERSION)
+        LSRequiresIPhoneOS: true
+        NSAppTransportSecurity:
+          NSAllowsArbitraryLoads: true
+        SDMarketingVersion: $(MARKETING_VERSION)
+        UILaunchStoryboardName: LaunchScreen
+        UIRequiredDeviceCapabilities:
+          - arm64
+        UISupportedInterfaceOrientations:
+          - UIInterfaceOrientationPortrait
+
+    sources:
+      - path: Sources/${target_name}/Info.plist
+        optional: true
+
+      - path: Sources/${target_name}
+        includes:
+          - "**/*.swift"
+          - "**/*.[mhc]"
+        excludes:
+          - "**/_Tests_"
+          - "**/_SnapshotTests_"
+          - "**/_TestKit_"
+      - path: Sources/${target_name}/Resources
+
+    buildImplicitDependencies: false

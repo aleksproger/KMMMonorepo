@@ -1,0 +1,76 @@
+{
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug linter (Infrastructure/core)",
+            "program": "${workspaceFolder:imtheapp}/Infrastructure/core/.build/debug/linter",
+            "args": [],
+            "cwd": "${workspaceFolder:imtheapp}/Infrastructure/core",
+            "preLaunchTask": "swift: Build Debug linter (Infrastructure/core)"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Release linter (Infrastructure/core)",
+            "program": "${workspaceFolder:imtheapp}/Infrastructure/core/.build/release/linter",
+            "args": [],
+            "cwd": "${workspaceFolder:imtheapp}/Infrastructure/core",
+            "preLaunchTask": "swift: Build Release linter (Infrastructure/core)"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug formatter (Infrastructure/core)",
+            "program": "${workspaceFolder:imtheapp}/Infrastructure/core/.build/debug/formatter",
+            "args": [],
+            "cwd": "${workspaceFolder:imtheapp}/Infrastructure/core",
+            "preLaunchTask": "swift: Build Debug formatter (Infrastructure/core)"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Release formatter (Infrastructure/core)",
+            "program": "${workspaceFolder:imtheapp}/Infrastructure/core/.build/release/formatter",
+            "args": [],
+            "cwd": "${workspaceFolder:imtheapp}/Infrastructure/core",
+            "preLaunchTask": "swift: Build Release formatter (Infrastructure/core)"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug githooks (Infrastructure/core)",
+            "program": "${workspaceFolder:imtheapp}/Infrastructure/core/.build/debug/githooks",
+            "args": [],
+            "cwd": "${workspaceFolder:imtheapp}/Infrastructure/core",
+            "preLaunchTask": "swift: Build Debug githooks (Infrastructure/core)"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Release githooks (Infrastructure/core)",
+            "program": "${workspaceFolder:imtheapp}/Infrastructure/core/.build/release/githooks",
+            "args": [],
+            "cwd": "${workspaceFolder:imtheapp}/Infrastructure/core",
+            "preLaunchTask": "swift: Build Release githooks (Infrastructure/core)"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug generate_project (Infrastructure/core)",
+            "program": "${workspaceFolder:imtheapp}/Infrastructure/core/.build/debug/generate_project",
+            "args": [],
+            "cwd": "${workspaceFolder:imtheapp}/Infrastructure/core",
+            "preLaunchTask": "swift: Build Debug generate_project (Infrastructure/core)"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Release generate_project (Infrastructure/core)",
+            "program": "${workspaceFolder:imtheapp}/Infrastructure/core/.build/release/generate_project",
+            "args": [],
+            "cwd": "${workspaceFolder:imtheapp}/Infrastructure/core",
+            "preLaunchTask": "swift: Build Release generate_project (Infrastructure/core)"
+        }
+    ]
+}

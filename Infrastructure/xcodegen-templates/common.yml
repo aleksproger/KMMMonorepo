@@ -1,0 +1,24 @@
+---
+# Общие настройки проектов.
+options:
+  settingPresets: none
+  usesTabs: true
+  indentWidth: 4
+  tabWidth: 4
+  xcodeVersion: 14.1
+  deploymentTarget:
+    iOS: "14.0"
+  groupSortPosition: bottom
+  transitivelyLinkDependencies: false
+  createIntermediateGroups: true
+  developmentLanguage: ru
+attributes:
+  ORGANIZATIONNAME: Sberbank
+
+configs:
+  Debug: debug
+  Release: release
+
+fileGroups:
+  - project.yml
+  - README.md

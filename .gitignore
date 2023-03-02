@@ -1,0 +1,15 @@
+# Ignore Gradle project-specific cache directory
+.gradle
+
+# Ignore Gradle build output directory
+build
+
+.hprof
+
+.DS_Store
+
+androidSDK
+
+Infrastructure/.cache
+Infrastructure/.build
+Infrastructure/core/.build

@@ -1,0 +1,22 @@
+include:
+  - path: common/shared_settings.yml
+    relativePaths: false
+
+settingGroups:
+  UnitTests:
+    base:
+      ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES: true
+      BUNDLE_LOADER: $(TEST_HOST)
+      CODE_SIGNING_ALLOWED: false
+      CODE_SIGNING_REQUIRED: false
+      ENABLE_BITCODE: false
+      ENABLE_TESTING_SEARCH_PATHS: true
+      GENERATE_INFOPLIST_FILE: true
+      INFOPLIST_FILE:
+
+      LD_RUNPATH_SEARCH_PATHS: $(inherited) $(NEXUS_DEPENDENCIES_PATH)
+      MACH_O_TYPE: mh_bundle
+      OTHER_LDFLAGS: $(inherited) -ObjC -all_load -fstack-protector-all
+      PRODUCT_ID_SUFFIX: .$(TARGET_NAME:lower:c99extidentifier).tests.unit
+    groups:
+      - Shared

@@ -1,0 +1,16 @@
+name: ExampleProject1
+
+targets:
+  ExampleApp:
+    type: application
+    platform: iOS
+    sources:
+      - ExampleAppSource.swift
+    dependencies:
+      - target: ExampleFramework
+
+  ExampleFramework:
+    type: framework
+    platform: iOS
+    sources:
+      - ExampleFrameworkSource.swift

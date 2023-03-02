@@ -1,0 +1,10 @@
+include:
+  - path: unit_tests_settings.yml
+    relativePaths: false
+
+settingGroups:
+  SnapshotTests:
+    base:
+      PRODUCT_ID_SUFFIX: .$(TARGET_NAME:lower:c99extidentifier).tests.acceptance
+    groups:
+      - UnitTests

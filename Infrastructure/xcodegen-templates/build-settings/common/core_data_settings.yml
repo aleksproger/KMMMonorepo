@@ -1,0 +1,8 @@
+settingGroups:
+  CoreData:
+    base:
+      MOMC_NO_DELETE_RULE_WARNINGS: false
+      MOMC_NO_INVERSE_RELATIONSHIP_WARNINGS: false
+      MOMC_NO_MAX_PROPERTY_COUNT_WARNINGS: false
+      MOMC_NO_WARNINGS: false
+      MOMC_SUPPRESS_INVERSE_TRANSIENT_ERROR: false

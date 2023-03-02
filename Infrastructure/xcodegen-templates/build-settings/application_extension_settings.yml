@@ -1,0 +1,8 @@
+include:
+  - path: application_settings.yml
+    relativePaths: false
+
+settingGroups:
+  ApplicationExtension:
+    groups:
+      - Application

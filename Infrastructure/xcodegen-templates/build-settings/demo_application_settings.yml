@@ -1,0 +1,11 @@
+include:
+  - path: application_settings.yml
+    relativePaths: false
+
+settingGroups:
+  DemoApplication:
+    base:
+      PRODUCT_ID_SUFFIX: .$(TARGET_NAME:lower:c99extidentifier).testshost
+      DEVELOPMENT_TEAM: $(SBERDEVICES_DEVELOPMENT_TEAM)
+    groups:
+      - Application

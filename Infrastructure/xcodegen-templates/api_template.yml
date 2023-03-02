@@ -1,0 +1,47 @@
+---
+# Шаблон Xcodegen для фреймворка API.
+# Шаблон принимает:
+# - Source файлы из выбранной директории с названием таргета, но не включает
+#   файлы, которые находятся в подпапках **_Tests**, **_SnapshotTests_**,
+#   **_TestKit_**
+# Пример:
+# Target: SDFramework. Исходные файлы будут браться из Sources/SDFramework
+# без исключений.
+include:
+  - path: build-settings/api_settings.yml
+    relativePaths: false
+
+targetTemplates:
+  API:
+    type: framework
+    platform: iOS
+    settings:
+      groups:
+        - API
+
+    scheme: {}
+
+    info:
+      path: Sources/${target_name}/Info.plist
+      properties:
+        CFBundleShortVersionString: $(MARKETING_VERSION)
+        CFBundleVersion: $(CURRENT_PROJECT_VERSION)
+        CFBundlePackageType: $(PRODUCT_BUNDLE_PACKAGE_TYPE)
+
+    sources:
+      - path: Sources/${target_name}/Info.plist
+        optional: true
+
+      - path: Sources/${target_name}
+        includes:
+          - "**/*.swift"
+          - "**/*.[mhc]"
+          - "**/*.pbobjc.m"
+        compilerFlags: "-fno-objc-arc"
+        excludes:
+          - "**/_AcceptanceTests_"
+          - "**/_SnapshotTests_"
+          - "**/_TestKit_"
+          - "**/_Tests_"
+
+    buildImplicitDependencies: false
