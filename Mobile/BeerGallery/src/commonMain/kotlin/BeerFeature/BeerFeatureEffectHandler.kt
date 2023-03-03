@@ -8,7 +8,7 @@ import SharedNetwork.DefaultRequestBuilder
 import SharedNetwork.DefaultRequestPerformer
 import SharedNetwork.DefaultRequestHeadersFactory
 
-class BeerFeatureEffectHandler(
+internal class BeerFeatureEffectHandler(
     private val beerFetcher: NetworkFetcher<Unit, List<Beer>> = LoggingNetworkFetcher(
         DefaultNetworkFetcher<Unit, List<Beer>>(
             DefaultRequestPerformer<Unit, List<Beer>>(

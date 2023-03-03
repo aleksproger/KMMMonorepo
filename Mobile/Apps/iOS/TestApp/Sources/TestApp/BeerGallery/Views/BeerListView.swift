@@ -19,7 +19,7 @@ struct BeerListView: View {
 				BeerRowView(beer: beer)
 			}
 		}
-		.listStyle(GroupedListStyle())
+		// .listStyle(GroupedListStyle())
 		.background(Color.white)
 		.cornerRadius(10)
 		.font(.headline)

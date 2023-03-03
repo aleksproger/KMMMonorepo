@@ -1,3 +1,5 @@
+import org.jetbrains.kotlin.gradle.plugin.mpp.apple.XCFramework
+
 plugins {
     kotlin("multiplatform")
     kotlin("plugin.serialization") version "1.4.32"
@@ -9,6 +11,8 @@ val ktor_version = "2.2.3"
 kotlin {
     android()
 
+    val xcf = XCFramework()
+
     listOf(
         iosX64(),
         iosArm64(),
@@ -16,6 +20,7 @@ kotlin {
     ).forEach {
         it.binaries.framework {
             baseName = "SharedNetwork"
+            xcf.add(this)
         }
     }
 
@@ -24,8 +29,6 @@ kotlin {
             dependencies {
                 implementation(project(":Multiplatform:Serialization"))
                 implementation("io.ktor:ktor-client-core:$ktor_version")
-                // implementation("io.ktor:ktor-client-json:$ktor_version")
-                // implementation("io.ktor:ktor-client-serialization:$ktor_version")
                 implementation("io.ktor:ktor-serialization-kotlinx-json:$ktor_version")
                 implementation("io.ktor:ktor-client-content-negotiation:$ktor_version")
 
@@ -45,10 +48,6 @@ kotlin {
             dependencies {
                 implementation(project(":Multiplatform:Serialization"))
                 implementation("io.ktor:ktor-client-ios:$ktor_version")
-
-
-                // implementation("io.ktor:ktor-client-json-native:$ktor_version")
-                // implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:$serialization_version")
             }
             dependsOn(commonMain)
             iosX64Main.dependsOn(this)

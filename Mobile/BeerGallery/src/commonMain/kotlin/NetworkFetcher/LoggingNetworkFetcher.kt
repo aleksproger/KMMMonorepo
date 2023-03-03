@@ -2,7 +2,7 @@ package Mobile.BeerGallery
 
 import SharedNetwork.*
 
-class LoggingNetworkFetcher<Payload, Response>(
+internal class LoggingNetworkFetcher<Payload, Response>(
     private val subject: NetworkFetcher<Payload, Response>
 ) : NetworkFetcher<Payload, Response> {
     override fun fetch(

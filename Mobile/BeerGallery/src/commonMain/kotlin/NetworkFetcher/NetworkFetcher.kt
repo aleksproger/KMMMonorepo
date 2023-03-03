@@ -1,6 +1,6 @@
 package Mobile.BeerGallery
 
-interface NetworkFetcher<Payload, Response> {
+internal interface NetworkFetcher<Payload, Response> {
     fun fetch(
         payload: Payload,
         onSuccess: (Response) -> Unit,

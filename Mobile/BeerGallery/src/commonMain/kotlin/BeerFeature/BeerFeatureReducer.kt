@@ -3,7 +3,7 @@ package Mobile.BeerGallery
 import Multiplatform.Architecture.Reducer
 import Multiplatform.DTO.Beer
 
-class BeerFeatureReducer : Reducer<BeerFeatureState, BeerFeatureAction, BeerFeatureEffect> {
+internal class BeerFeatureReducer : Reducer<BeerFeatureState, BeerFeatureAction, BeerFeatureEffect> {
     override fun reduce(state: BeerFeatureState, action: BeerFeatureAction): Pair<BeerFeatureState, BeerFeatureEffect> {
         return when (action) {
             is BeerFeatureAction.LocalAction.LoadBeers -> {

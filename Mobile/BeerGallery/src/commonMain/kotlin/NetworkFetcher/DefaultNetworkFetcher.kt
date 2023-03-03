@@ -2,7 +2,7 @@ package Mobile.BeerGallery
 
 import SharedNetwork.*
 
-class DefaultNetworkFetcher<Payload, Response>(
+internal  class DefaultNetworkFetcher<Payload, Response>(
     private val requestPerformer: NonSuspendRequestPerformer<Payload, Response>
 ) : NetworkFetcher<Payload, Response> {
     constructor(suspendingRequestPerformer: RequestPerformer<Payload, Response>) : this(NonSuspendRequestPerformerImpl(suspendingRequestPerformer))
