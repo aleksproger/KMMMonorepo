@@ -2,13 +2,19 @@
 .gradle
 
 # Ignore Gradle build output directory
-build
+.gradle_build
+*.hprof
 
-.hprof
+
 
 .DS_Store
-
 androidSDK
+
+# Bazel workspace symlinks
+bazel-bin
+bazel-imtheapp
+bazel-out
+bazel-testlogs
 
 Infrastructure/.cache
 Infrastructure/.build

@@ -1,0 +1,3 @@
+run --ios_sdk_version=15.4
+run --ios_simulator_device="iPhone 13"
+

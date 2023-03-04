@@ -62,6 +62,7 @@
 #
 ##############################################################################
 
+
 # Attempt to set APP_HOME
 
 # Resolve links: $0 may be a link
@@ -116,6 +117,7 @@ esac
 
 CLASSPATH=$APP_HOME/gradle/wrapper/gradle-wrapper.jar
 
+JAVA_HOME=/Users/alex/.sdkman/candidates/java/current 
 
 # Determine the Java command to use to start the JVM.
 if [ -n "$JAVA_HOME" ] ; then
