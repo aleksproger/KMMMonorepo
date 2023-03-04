@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -26,7 +26,7 @@
 		17EA437B29C412047A7E122F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		1AA7B8D4840B1423EF84A84D /* BeerRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerRowView.swift; sourceTree = "<group>"; };
 		1D5828B150B4AE07FD950AB9 /* DTOBeer+Identifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DTOBeer+Identifiable.swift"; sourceTree = "<group>"; };
-		246DC4CD3FA60DFDA45B7132 /* TestApp.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = TestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		246DC4CD3FA60DFDA45B7132 /* TestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		301923DA16A6945141B23D71 /* BeerGalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerGalleryView.swift; sourceTree = "<group>"; };
 		395B7251F0B5E17205E12461 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		449C60D47612185E3E430296 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
@@ -292,7 +292,10 @@
 				GCC_DYNAMIC_NO_PIC = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = s;
-				GCC_PREPROCESSOR_DEFINITIONS = "$(GCC_PREPROCESSOR_DEFINITIONS_COMMON) RELEASE=1";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(GCC_PREPROCESSOR_DEFINITIONS_COMMON)",
+					"RELEASE=1",
+				);
 				GCC_PREPROCESSOR_DEFINITIONS_COMMON = "$(inherited) $(GPB_SETTINGS) GLES_SILENCE_DEPRECATION";
 				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -303,14 +306,26 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				GPB_SETTINGS = "GPB_USE_PROTOBUF_FRAMEWORK_IMPORTS=1 GPB_GRPC_FORWARD_DECLARE_MESSAGE_PROTO=1";
 				INFOPLIST_FILE = Sources/TestApp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks @executable_path/../../Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
 				MARKETING_VERSION = 22.12.1001;
 				ONLY_ACTIVE_ARCH = NO;
-				OTHER_CFLAGS = "-Xclang -fno-autolink";
+				OTHER_CFLAGS = (
+					"-Xclang",
+					"-fno-autolink",
+				);
 				OTHER_CODE_SIGN_FLAGS = "$(inherited) --generate-entitlement-der";
 				OTHER_CPLUSPLUSFLAGS = "-std=c++11";
-				OTHER_LDFLAGS = "$(inherited) -ObjC -all_load";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-all_load",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "ru.sberbank.sberdevices.$(PROJECT_NAME:lower:c99extidentifier)$(PRODUCT_ID_SUFFIX)";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
@@ -324,7 +339,91 @@
 				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
-				WARNING_CFLAGS = "-Werror=arc-performSelector-leaks -Werror=arc-retain-cycles -Werror=array-bounds -Werror=auto-var-id -Werror=bool-conversion -Werror=comma -Werror=conditional-type-mismatch -Werror=dealloc-in-category -Werror=documentation -Werror=duplicate-decl-specifier -Werror=duplicate-enum -Werror=duplicate-method-arg -Werror=duplicate-method-match -Werror=duplicate-protocol -Werror=empty-body -Werror=empty-translation-unit -Werror=enum-too-large -Werror=explicit-initialize-call -Werror=explicit-ownership-type -Werror=format -Werror=implicit-exception-spec-mismatch -Werror=implicit-fallthrough -Werror=implicit-retain-self -Werror=incompatible-function-pointer-types -Werror=incompatible-pointer-types -Werror=incompatible-property-type -Werror=incomplete-implementation -Werror=incomplete-umbrella -Werror=infinite-recursion -Werror=int-conversion -Werror=integer-overflow -Werror=invalid-ios-deployment-target -Werror=missing-selector-name -Werror=newline-eof -Werror=nonnull -Werror=nullability -Werror=nullability-completeness -Werror=nullability-declspec -Werror=objc-autosynthesis-property-ivar-name-match -Werror=objc-designated-initializers -Werror=objc-forward-class-redefinition -Werror=objc-literal-conversion -Werror=objc-macro-redefinition -Werror=objc-method-access -Werror=objc-missing-super-calls -Werror=objc-multiple-method-names -Werror=objc-property-implementation -Werror=objc-property-implicit-mismatch -Werror=objc-property-matches-cocoa-ownership-rule -Werror=objc-property-no-attribute -Werror=objc-property-synthesis -Werror=objc-protocol-property-synthesis -Werror=objc-protocol-qualifiers -Werror=objc-readonly-with-setter-property -Werror=objc-redundant-literal-use -Werror=objc-root-class -Werror=objc-string-concatenation -Werror=objc-unsafe-perform-selector -Werror=pointer-sign -Werror=pointer-type-mismatch -Werror=property-access-dot-syntax -Werror=property-attribute-mismatch -Werror=protocol -Werror=semicolon-before-method-body -Werror=strict-prototypes -Werror=switch -Werror=tautological-compare -Werror=type-safety -Werror=typedef-redefinition -Werror=typename-missing -Werror=unavailable-declarations -Werror=undeclared-selector -Werror=undeclared-selector -Werror=unreachable-code -Werror=unused-comparison -Werror=unused-const-variable -Werror=unused-const-variable -Werror=unused-function -Werror=unused-getter-return-value -Werror=unused-local-typedefs -Werror=unused-macros -Werror=unused-result -Werror=unused-variable\n";
+				WARNING_CFLAGS = (
+					"-Werror=arc-performSelector-leaks",
+					"-Werror=arc-retain-cycles",
+					"-Werror=array-bounds",
+					"-Werror=auto-var-id",
+					"-Werror=bool-conversion",
+					"-Werror=comma",
+					"-Werror=conditional-type-mismatch",
+					"-Werror=dealloc-in-category",
+					"-Werror=documentation",
+					"-Werror=duplicate-decl-specifier",
+					"-Werror=duplicate-enum",
+					"-Werror=duplicate-method-arg",
+					"-Werror=duplicate-method-match",
+					"-Werror=duplicate-protocol",
+					"-Werror=empty-body",
+					"-Werror=empty-translation-unit",
+					"-Werror=enum-too-large",
+					"-Werror=explicit-initialize-call",
+					"-Werror=explicit-ownership-type",
+					"-Werror=format",
+					"-Werror=implicit-exception-spec-mismatch",
+					"-Werror=implicit-fallthrough",
+					"-Werror=implicit-retain-self",
+					"-Werror=incompatible-function-pointer-types",
+					"-Werror=incompatible-pointer-types",
+					"-Werror=incompatible-property-type",
+					"-Werror=incomplete-implementation",
+					"-Werror=incomplete-umbrella",
+					"-Werror=infinite-recursion",
+					"-Werror=int-conversion",
+					"-Werror=integer-overflow",
+					"-Werror=invalid-ios-deployment-target",
+					"-Werror=missing-selector-name",
+					"-Werror=newline-eof",
+					"-Werror=nonnull",
+					"-Werror=nullability",
+					"-Werror=nullability-completeness",
+					"-Werror=nullability-declspec",
+					"-Werror=objc-autosynthesis-property-ivar-name-match",
+					"-Werror=objc-designated-initializers",
+					"-Werror=objc-forward-class-redefinition",
+					"-Werror=objc-literal-conversion",
+					"-Werror=objc-macro-redefinition",
+					"-Werror=objc-method-access",
+					"-Werror=objc-missing-super-calls",
+					"-Werror=objc-multiple-method-names",
+					"-Werror=objc-property-implementation",
+					"-Werror=objc-property-implicit-mismatch",
+					"-Werror=objc-property-matches-cocoa-ownership-rule",
+					"-Werror=objc-property-no-attribute",
+					"-Werror=objc-property-synthesis",
+					"-Werror=objc-protocol-property-synthesis",
+					"-Werror=objc-protocol-qualifiers",
+					"-Werror=objc-readonly-with-setter-property",
+					"-Werror=objc-redundant-literal-use",
+					"-Werror=objc-root-class",
+					"-Werror=objc-string-concatenation",
+					"-Werror=objc-unsafe-perform-selector",
+					"-Werror=pointer-sign",
+					"-Werror=pointer-type-mismatch",
+					"-Werror=property-access-dot-syntax",
+					"-Werror=property-attribute-mismatch",
+					"-Werror=protocol",
+					"-Werror=semicolon-before-method-body",
+					"-Werror=strict-prototypes",
+					"-Werror=switch",
+					"-Werror=tautological-compare",
+					"-Werror=type-safety",
+					"-Werror=typedef-redefinition",
+					"-Werror=typename-missing",
+					"-Werror=unavailable-declarations",
+					"-Werror=undeclared-selector",
+					"-Werror=undeclared-selector",
+					"-Werror=unreachable-code",
+					"-Werror=unused-comparison",
+					"-Werror=unused-const-variable",
+					"-Werror=unused-const-variable",
+					"-Werror=unused-function",
+					"-Werror=unused-getter-return-value",
+					"-Werror=unused-local-typedefs",
+					"-Werror=unused-macros",
+					"-Werror=unused-result",
+					"-Werror=unused-variable\n",
+				);
 			};
 			name = Release;
 		};
@@ -372,12 +471,18 @@
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = NO;
-				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/../../../../Multiplatform/Architecture/.gradle_build/xcode-frameworks/$(CONFIGURATION)/$(SDK_NAME) $(SRCROOT)/../../../BeerGallery/.gradle_build/xcode-frameworks/$(CONFIGURATION)/$(SDK_NAME)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SRCROOT)/../../../../Multiplatform/Architecture/.gradle_build/xcode-frameworks/$(CONFIGURATION)/$(SDK_NAME)",
+					"$(SRCROOT)/../../../BeerGallery/.gradle_build/xcode-frameworks/$(CONFIGURATION)/$(SDK_NAME)",
+				);
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = s;
-				GCC_PREPROCESSOR_DEFINITIONS = "$(GCC_PREPROCESSOR_DEFINITIONS_COMMON) RELEASE=1";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(GCC_PREPROCESSOR_DEFINITIONS_COMMON)",
+					"RELEASE=1",
+				);
 				GCC_PREPROCESSOR_DEFINITIONS_COMMON = "$(inherited) $(GPB_SETTINGS) GLES_SILENCE_DEPRECATION";
 				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -387,14 +492,27 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				GPB_SETTINGS = "GPB_USE_PROTOBUF_FRAMEWORK_IMPORTS=1 GPB_GRPC_FORWARD_DECLARE_MESSAGE_PROTO=1";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
 				JAVA_HOME = /Users/alex/.sdkman/candidates/java/current;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MARKETING_VERSION = 22.12.1001;
 				ONLY_ACTIVE_ARCH = NO;
-				OTHER_CFLAGS = "-Xclang -fno-autolink";
+				OTHER_CFLAGS = (
+					"-Xclang",
+					"-fno-autolink",
+				);
 				OTHER_CPLUSPLUSFLAGS = "-std=c++11";
-				OTHER_LDFLAGS = "$(inherited) -framework BeerGallery -framework Architecture";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					BeerGallery,
+					"-framework",
+					Architecture,
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "ru.sberbank.sberdevices.$(PROJECT_NAME:lower:c99extidentifier)$(PRODUCT_ID_SUFFIX)";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
@@ -408,7 +526,91 @@
 				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
-				WARNING_CFLAGS = "-Werror=arc-performSelector-leaks -Werror=arc-retain-cycles -Werror=array-bounds -Werror=auto-var-id -Werror=bool-conversion -Werror=comma -Werror=conditional-type-mismatch -Werror=dealloc-in-category -Werror=documentation -Werror=duplicate-decl-specifier -Werror=duplicate-enum -Werror=duplicate-method-arg -Werror=duplicate-method-match -Werror=duplicate-protocol -Werror=empty-body -Werror=empty-translation-unit -Werror=enum-too-large -Werror=explicit-initialize-call -Werror=explicit-ownership-type -Werror=format -Werror=implicit-exception-spec-mismatch -Werror=implicit-fallthrough -Werror=implicit-retain-self -Werror=incompatible-function-pointer-types -Werror=incompatible-pointer-types -Werror=incompatible-property-type -Werror=incomplete-implementation -Werror=incomplete-umbrella -Werror=infinite-recursion -Werror=int-conversion -Werror=integer-overflow -Werror=invalid-ios-deployment-target -Werror=missing-selector-name -Werror=newline-eof -Werror=nonnull -Werror=nullability -Werror=nullability-completeness -Werror=nullability-declspec -Werror=objc-autosynthesis-property-ivar-name-match -Werror=objc-designated-initializers -Werror=objc-forward-class-redefinition -Werror=objc-literal-conversion -Werror=objc-macro-redefinition -Werror=objc-method-access -Werror=objc-missing-super-calls -Werror=objc-multiple-method-names -Werror=objc-property-implementation -Werror=objc-property-implicit-mismatch -Werror=objc-property-matches-cocoa-ownership-rule -Werror=objc-property-no-attribute -Werror=objc-property-synthesis -Werror=objc-protocol-property-synthesis -Werror=objc-protocol-qualifiers -Werror=objc-readonly-with-setter-property -Werror=objc-redundant-literal-use -Werror=objc-root-class -Werror=objc-string-concatenation -Werror=objc-unsafe-perform-selector -Werror=pointer-sign -Werror=pointer-type-mismatch -Werror=property-access-dot-syntax -Werror=property-attribute-mismatch -Werror=protocol -Werror=semicolon-before-method-body -Werror=strict-prototypes -Werror=switch -Werror=tautological-compare -Werror=type-safety -Werror=typedef-redefinition -Werror=typename-missing -Werror=unavailable-declarations -Werror=undeclared-selector -Werror=undeclared-selector -Werror=unreachable-code -Werror=unused-comparison -Werror=unused-const-variable -Werror=unused-const-variable -Werror=unused-function -Werror=unused-getter-return-value -Werror=unused-local-typedefs -Werror=unused-macros -Werror=unused-result -Werror=unused-variable\n";
+				WARNING_CFLAGS = (
+					"-Werror=arc-performSelector-leaks",
+					"-Werror=arc-retain-cycles",
+					"-Werror=array-bounds",
+					"-Werror=auto-var-id",
+					"-Werror=bool-conversion",
+					"-Werror=comma",
+					"-Werror=conditional-type-mismatch",
+					"-Werror=dealloc-in-category",
+					"-Werror=documentation",
+					"-Werror=duplicate-decl-specifier",
+					"-Werror=duplicate-enum",
+					"-Werror=duplicate-method-arg",
+					"-Werror=duplicate-method-match",
+					"-Werror=duplicate-protocol",
+					"-Werror=empty-body",
+					"-Werror=empty-translation-unit",
+					"-Werror=enum-too-large",
+					"-Werror=explicit-initialize-call",
+					"-Werror=explicit-ownership-type",
+					"-Werror=format",
+					"-Werror=implicit-exception-spec-mismatch",
+					"-Werror=implicit-fallthrough",
+					"-Werror=implicit-retain-self",
+					"-Werror=incompatible-function-pointer-types",
+					"-Werror=incompatible-pointer-types",
+					"-Werror=incompatible-property-type",
+					"-Werror=incomplete-implementation",
+					"-Werror=incomplete-umbrella",
+					"-Werror=infinite-recursion",
+					"-Werror=int-conversion",
+					"-Werror=integer-overflow",
+					"-Werror=invalid-ios-deployment-target",
+					"-Werror=missing-selector-name",
+					"-Werror=newline-eof",
+					"-Werror=nonnull",
+					"-Werror=nullability",
+					"-Werror=nullability-completeness",
+					"-Werror=nullability-declspec",
+					"-Werror=objc-autosynthesis-property-ivar-name-match",
+					"-Werror=objc-designated-initializers",
+					"-Werror=objc-forward-class-redefinition",
+					"-Werror=objc-literal-conversion",
+					"-Werror=objc-macro-redefinition",
+					"-Werror=objc-method-access",
+					"-Werror=objc-missing-super-calls",
+					"-Werror=objc-multiple-method-names",
+					"-Werror=objc-property-implementation",
+					"-Werror=objc-property-implicit-mismatch",
+					"-Werror=objc-property-matches-cocoa-ownership-rule",
+					"-Werror=objc-property-no-attribute",
+					"-Werror=objc-property-synthesis",
+					"-Werror=objc-protocol-property-synthesis",
+					"-Werror=objc-protocol-qualifiers",
+					"-Werror=objc-readonly-with-setter-property",
+					"-Werror=objc-redundant-literal-use",
+					"-Werror=objc-root-class",
+					"-Werror=objc-string-concatenation",
+					"-Werror=objc-unsafe-perform-selector",
+					"-Werror=pointer-sign",
+					"-Werror=pointer-type-mismatch",
+					"-Werror=property-access-dot-syntax",
+					"-Werror=property-attribute-mismatch",
+					"-Werror=protocol",
+					"-Werror=semicolon-before-method-body",
+					"-Werror=strict-prototypes",
+					"-Werror=switch",
+					"-Werror=tautological-compare",
+					"-Werror=type-safety",
+					"-Werror=typedef-redefinition",
+					"-Werror=typename-missing",
+					"-Werror=unavailable-declarations",
+					"-Werror=undeclared-selector",
+					"-Werror=undeclared-selector",
+					"-Werror=unreachable-code",
+					"-Werror=unused-comparison",
+					"-Werror=unused-const-variable",
+					"-Werror=unused-const-variable",
+					"-Werror=unused-function",
+					"-Werror=unused-getter-return-value",
+					"-Werror=unused-local-typedefs",
+					"-Werror=unused-macros",
+					"-Werror=unused-result",
+					"-Werror=unused-variable\n",
+				);
 			};
 			name = Release;
 		};
@@ -460,7 +662,10 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = "$(GCC_PREPROCESSOR_DEFINITIONS_COMMON) DEBUG=1";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(GCC_PREPROCESSOR_DEFINITIONS_COMMON)",
+					"DEBUG=1",
+				);
 				GCC_PREPROCESSOR_DEFINITIONS_COMMON = "$(inherited) $(GPB_SETTINGS) GLES_SILENCE_DEPRECATION";
 				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -471,14 +676,26 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				GPB_SETTINGS = "GPB_USE_PROTOBUF_FRAMEWORK_IMPORTS=1 GPB_GRPC_FORWARD_DECLARE_MESSAGE_PROTO=1";
 				INFOPLIST_FILE = Sources/TestApp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks @executable_path/../../Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
 				MARKETING_VERSION = 22.12.1001;
 				ONLY_ACTIVE_ARCH = YES;
-				OTHER_CFLAGS = "-Xclang -fno-autolink";
+				OTHER_CFLAGS = (
+					"-Xclang",
+					"-fno-autolink",
+				);
 				OTHER_CODE_SIGN_FLAGS = "$(inherited) --generate-entitlement-der";
 				OTHER_CPLUSPLUSFLAGS = "-std=c++11";
-				OTHER_LDFLAGS = "$(inherited) -ObjC -all_load";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-all_load",
+				);
 				OTHER_SWIFT_FLAGS = "-Xfrontend -warn-long-function-bodies=150  -Xfrontend -warn-long-expression-type-checking=150\n";
 				PRODUCT_BUNDLE_IDENTIFIER = "ru.sberbank.sberdevices.$(PROJECT_NAME:lower:c99extidentifier)$(PRODUCT_ID_SUFFIX)";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -493,7 +710,91 @@
 				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = NO;
 				VERSIONING_SYSTEM = "apple-generic";
-				WARNING_CFLAGS = "-Werror=arc-performSelector-leaks -Werror=arc-retain-cycles -Werror=array-bounds -Werror=auto-var-id -Werror=bool-conversion -Werror=comma -Werror=conditional-type-mismatch -Werror=dealloc-in-category -Werror=documentation -Werror=duplicate-decl-specifier -Werror=duplicate-enum -Werror=duplicate-method-arg -Werror=duplicate-method-match -Werror=duplicate-protocol -Werror=empty-body -Werror=empty-translation-unit -Werror=enum-too-large -Werror=explicit-initialize-call -Werror=explicit-ownership-type -Werror=format -Werror=implicit-exception-spec-mismatch -Werror=implicit-fallthrough -Werror=implicit-retain-self -Werror=incompatible-function-pointer-types -Werror=incompatible-pointer-types -Werror=incompatible-property-type -Werror=incomplete-implementation -Werror=incomplete-umbrella -Werror=infinite-recursion -Werror=int-conversion -Werror=integer-overflow -Werror=invalid-ios-deployment-target -Werror=missing-selector-name -Werror=newline-eof -Werror=nonnull -Werror=nullability -Werror=nullability-completeness -Werror=nullability-declspec -Werror=objc-autosynthesis-property-ivar-name-match -Werror=objc-designated-initializers -Werror=objc-forward-class-redefinition -Werror=objc-literal-conversion -Werror=objc-macro-redefinition -Werror=objc-method-access -Werror=objc-missing-super-calls -Werror=objc-multiple-method-names -Werror=objc-property-implementation -Werror=objc-property-implicit-mismatch -Werror=objc-property-matches-cocoa-ownership-rule -Werror=objc-property-no-attribute -Werror=objc-property-synthesis -Werror=objc-protocol-property-synthesis -Werror=objc-protocol-qualifiers -Werror=objc-readonly-with-setter-property -Werror=objc-redundant-literal-use -Werror=objc-root-class -Werror=objc-string-concatenation -Werror=objc-unsafe-perform-selector -Werror=pointer-sign -Werror=pointer-type-mismatch -Werror=property-access-dot-syntax -Werror=property-attribute-mismatch -Werror=protocol -Werror=semicolon-before-method-body -Werror=strict-prototypes -Werror=switch -Werror=tautological-compare -Werror=type-safety -Werror=typedef-redefinition -Werror=typename-missing -Werror=unavailable-declarations -Werror=undeclared-selector -Werror=undeclared-selector -Werror=unreachable-code -Werror=unused-comparison -Werror=unused-const-variable -Werror=unused-const-variable -Werror=unused-function -Werror=unused-getter-return-value -Werror=unused-local-typedefs -Werror=unused-macros -Werror=unused-result -Werror=unused-variable\n";
+				WARNING_CFLAGS = (
+					"-Werror=arc-performSelector-leaks",
+					"-Werror=arc-retain-cycles",
+					"-Werror=array-bounds",
+					"-Werror=auto-var-id",
+					"-Werror=bool-conversion",
+					"-Werror=comma",
+					"-Werror=conditional-type-mismatch",
+					"-Werror=dealloc-in-category",
+					"-Werror=documentation",
+					"-Werror=duplicate-decl-specifier",
+					"-Werror=duplicate-enum",
+					"-Werror=duplicate-method-arg",
+					"-Werror=duplicate-method-match",
+					"-Werror=duplicate-protocol",
+					"-Werror=empty-body",
+					"-Werror=empty-translation-unit",
+					"-Werror=enum-too-large",
+					"-Werror=explicit-initialize-call",
+					"-Werror=explicit-ownership-type",
+					"-Werror=format",
+					"-Werror=implicit-exception-spec-mismatch",
+					"-Werror=implicit-fallthrough",
+					"-Werror=implicit-retain-self",
+					"-Werror=incompatible-function-pointer-types",
+					"-Werror=incompatible-pointer-types",
+					"-Werror=incompatible-property-type",
+					"-Werror=incomplete-implementation",
+					"-Werror=incomplete-umbrella",
+					"-Werror=infinite-recursion",
+					"-Werror=int-conversion",
+					"-Werror=integer-overflow",
+					"-Werror=invalid-ios-deployment-target",
+					"-Werror=missing-selector-name",
+					"-Werror=newline-eof",
+					"-Werror=nonnull",
+					"-Werror=nullability",
+					"-Werror=nullability-completeness",
+					"-Werror=nullability-declspec",
+					"-Werror=objc-autosynthesis-property-ivar-name-match",
+					"-Werror=objc-designated-initializers",
+					"-Werror=objc-forward-class-redefinition",
+					"-Werror=objc-literal-conversion",
+					"-Werror=objc-macro-redefinition",
+					"-Werror=objc-method-access",
+					"-Werror=objc-missing-super-calls",
+					"-Werror=objc-multiple-method-names",
+					"-Werror=objc-property-implementation",
+					"-Werror=objc-property-implicit-mismatch",
+					"-Werror=objc-property-matches-cocoa-ownership-rule",
+					"-Werror=objc-property-no-attribute",
+					"-Werror=objc-property-synthesis",
+					"-Werror=objc-protocol-property-synthesis",
+					"-Werror=objc-protocol-qualifiers",
+					"-Werror=objc-readonly-with-setter-property",
+					"-Werror=objc-redundant-literal-use",
+					"-Werror=objc-root-class",
+					"-Werror=objc-string-concatenation",
+					"-Werror=objc-unsafe-perform-selector",
+					"-Werror=pointer-sign",
+					"-Werror=pointer-type-mismatch",
+					"-Werror=property-access-dot-syntax",
+					"-Werror=property-attribute-mismatch",
+					"-Werror=protocol",
+					"-Werror=semicolon-before-method-body",
+					"-Werror=strict-prototypes",
+					"-Werror=switch",
+					"-Werror=tautological-compare",
+					"-Werror=type-safety",
+					"-Werror=typedef-redefinition",
+					"-Werror=typename-missing",
+					"-Werror=unavailable-declarations",
+					"-Werror=undeclared-selector",
+					"-Werror=undeclared-selector",
+					"-Werror=unreachable-code",
+					"-Werror=unused-comparison",
+					"-Werror=unused-const-variable",
+					"-Werror=unused-const-variable",
+					"-Werror=unused-function",
+					"-Werror=unused-getter-return-value",
+					"-Werror=unused-local-typedefs",
+					"-Werror=unused-macros",
+					"-Werror=unused-result",
+					"-Werror=unused-variable\n",
+				);
 			};
 			name = Debug;
 		};
@@ -541,12 +842,18 @@
 				ENABLE_NS_ASSERTIONS = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/../../../../Multiplatform/Architecture/.gradle_build/xcode-frameworks/$(CONFIGURATION)/$(SDK_NAME) $(SRCROOT)/../../../BeerGallery/.gradle_build/xcode-frameworks/$(CONFIGURATION)/$(SDK_NAME)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SRCROOT)/../../../../Multiplatform/Architecture/.gradle_build/xcode-frameworks/$(CONFIGURATION)/$(SDK_NAME)",
+					"$(SRCROOT)/../../../BeerGallery/.gradle_build/xcode-frameworks/$(CONFIGURATION)/$(SDK_NAME)",
+				);
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = "$(GCC_PREPROCESSOR_DEFINITIONS_COMMON) DEBUG=1";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(GCC_PREPROCESSOR_DEFINITIONS_COMMON)",
+					"DEBUG=1",
+				);
 				GCC_PREPROCESSOR_DEFINITIONS_COMMON = "$(inherited) $(GPB_SETTINGS) GLES_SILENCE_DEPRECATION";
 				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -556,14 +863,27 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				GPB_SETTINGS = "GPB_USE_PROTOBUF_FRAMEWORK_IMPORTS=1 GPB_GRPC_FORWARD_DECLARE_MESSAGE_PROTO=1";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
 				JAVA_HOME = /Users/alex/.sdkman/candidates/java/current;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MARKETING_VERSION = 22.12.1001;
 				ONLY_ACTIVE_ARCH = YES;
-				OTHER_CFLAGS = "-Xclang -fno-autolink";
+				OTHER_CFLAGS = (
+					"-Xclang",
+					"-fno-autolink",
+				);
 				OTHER_CPLUSPLUSFLAGS = "-std=c++11";
-				OTHER_LDFLAGS = "$(inherited) -framework BeerGallery -framework Architecture";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					BeerGallery,
+					"-framework",
+					Architecture,
+				);
 				OTHER_SWIFT_FLAGS = "-Xfrontend -warn-long-function-bodies=150  -Xfrontend -warn-long-expression-type-checking=150\n";
 				PRODUCT_BUNDLE_IDENTIFIER = "ru.sberbank.sberdevices.$(PROJECT_NAME:lower:c99extidentifier)$(PRODUCT_ID_SUFFIX)";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -578,7 +898,91 @@
 				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = NO;
 				VERSIONING_SYSTEM = "apple-generic";
-				WARNING_CFLAGS = "-Werror=arc-performSelector-leaks -Werror=arc-retain-cycles -Werror=array-bounds -Werror=auto-var-id -Werror=bool-conversion -Werror=comma -Werror=conditional-type-mismatch -Werror=dealloc-in-category -Werror=documentation -Werror=duplicate-decl-specifier -Werror=duplicate-enum -Werror=duplicate-method-arg -Werror=duplicate-method-match -Werror=duplicate-protocol -Werror=empty-body -Werror=empty-translation-unit -Werror=enum-too-large -Werror=explicit-initialize-call -Werror=explicit-ownership-type -Werror=format -Werror=implicit-exception-spec-mismatch -Werror=implicit-fallthrough -Werror=implicit-retain-self -Werror=incompatible-function-pointer-types -Werror=incompatible-pointer-types -Werror=incompatible-property-type -Werror=incomplete-implementation -Werror=incomplete-umbrella -Werror=infinite-recursion -Werror=int-conversion -Werror=integer-overflow -Werror=invalid-ios-deployment-target -Werror=missing-selector-name -Werror=newline-eof -Werror=nonnull -Werror=nullability -Werror=nullability-completeness -Werror=nullability-declspec -Werror=objc-autosynthesis-property-ivar-name-match -Werror=objc-designated-initializers -Werror=objc-forward-class-redefinition -Werror=objc-literal-conversion -Werror=objc-macro-redefinition -Werror=objc-method-access -Werror=objc-missing-super-calls -Werror=objc-multiple-method-names -Werror=objc-property-implementation -Werror=objc-property-implicit-mismatch -Werror=objc-property-matches-cocoa-ownership-rule -Werror=objc-property-no-attribute -Werror=objc-property-synthesis -Werror=objc-protocol-property-synthesis -Werror=objc-protocol-qualifiers -Werror=objc-readonly-with-setter-property -Werror=objc-redundant-literal-use -Werror=objc-root-class -Werror=objc-string-concatenation -Werror=objc-unsafe-perform-selector -Werror=pointer-sign -Werror=pointer-type-mismatch -Werror=property-access-dot-syntax -Werror=property-attribute-mismatch -Werror=protocol -Werror=semicolon-before-method-body -Werror=strict-prototypes -Werror=switch -Werror=tautological-compare -Werror=type-safety -Werror=typedef-redefinition -Werror=typename-missing -Werror=unavailable-declarations -Werror=undeclared-selector -Werror=undeclared-selector -Werror=unreachable-code -Werror=unused-comparison -Werror=unused-const-variable -Werror=unused-const-variable -Werror=unused-function -Werror=unused-getter-return-value -Werror=unused-local-typedefs -Werror=unused-macros -Werror=unused-result -Werror=unused-variable\n";
+				WARNING_CFLAGS = (
+					"-Werror=arc-performSelector-leaks",
+					"-Werror=arc-retain-cycles",
+					"-Werror=array-bounds",
+					"-Werror=auto-var-id",
+					"-Werror=bool-conversion",
+					"-Werror=comma",
+					"-Werror=conditional-type-mismatch",
+					"-Werror=dealloc-in-category",
+					"-Werror=documentation",
+					"-Werror=duplicate-decl-specifier",
+					"-Werror=duplicate-enum",
+					"-Werror=duplicate-method-arg",
+					"-Werror=duplicate-method-match",
+					"-Werror=duplicate-protocol",
+					"-Werror=empty-body",
+					"-Werror=empty-translation-unit",
+					"-Werror=enum-too-large",
+					"-Werror=explicit-initialize-call",
+					"-Werror=explicit-ownership-type",
+					"-Werror=format",
+					"-Werror=implicit-exception-spec-mismatch",
+					"-Werror=implicit-fallthrough",
+					"-Werror=implicit-retain-self",
+					"-Werror=incompatible-function-pointer-types",
+					"-Werror=incompatible-pointer-types",
+					"-Werror=incompatible-property-type",
+					"-Werror=incomplete-implementation",
+					"-Werror=incomplete-umbrella",
+					"-Werror=infinite-recursion",
+					"-Werror=int-conversion",
+					"-Werror=integer-overflow",
+					"-Werror=invalid-ios-deployment-target",
+					"-Werror=missing-selector-name",
+					"-Werror=newline-eof",
+					"-Werror=nonnull",
+					"-Werror=nullability",
+					"-Werror=nullability-completeness",
+					"-Werror=nullability-declspec",
+					"-Werror=objc-autosynthesis-property-ivar-name-match",
+					"-Werror=objc-designated-initializers",
+					"-Werror=objc-forward-class-redefinition",
+					"-Werror=objc-literal-conversion",
+					"-Werror=objc-macro-redefinition",
+					"-Werror=objc-method-access",
+					"-Werror=objc-missing-super-calls",
+					"-Werror=objc-multiple-method-names",
+					"-Werror=objc-property-implementation",
+					"-Werror=objc-property-implicit-mismatch",
+					"-Werror=objc-property-matches-cocoa-ownership-rule",
+					"-Werror=objc-property-no-attribute",
+					"-Werror=objc-property-synthesis",
+					"-Werror=objc-protocol-property-synthesis",
+					"-Werror=objc-protocol-qualifiers",
+					"-Werror=objc-readonly-with-setter-property",
+					"-Werror=objc-redundant-literal-use",
+					"-Werror=objc-root-class",
+					"-Werror=objc-string-concatenation",
+					"-Werror=objc-unsafe-perform-selector",
+					"-Werror=pointer-sign",
+					"-Werror=pointer-type-mismatch",
+					"-Werror=property-access-dot-syntax",
+					"-Werror=property-attribute-mismatch",
+					"-Werror=protocol",
+					"-Werror=semicolon-before-method-body",
+					"-Werror=strict-prototypes",
+					"-Werror=switch",
+					"-Werror=tautological-compare",
+					"-Werror=type-safety",
+					"-Werror=typedef-redefinition",
+					"-Werror=typename-missing",
+					"-Werror=unavailable-declarations",
+					"-Werror=undeclared-selector",
+					"-Werror=undeclared-selector",
+					"-Werror=unreachable-code",
+					"-Werror=unused-comparison",
+					"-Werror=unused-const-variable",
+					"-Werror=unused-const-variable",
+					"-Werror=unused-function",
+					"-Werror=unused-getter-return-value",
+					"-Werror=unused-local-typedefs",
+					"-Werror=unused-macros",
+					"-Werror=unused-result",
+					"-Werror=unused-variable\n",
+				);
 			};
 			name = Debug;
 		};

@@ -48,9 +48,3 @@ load(
 )
 
 apple_support_dependencies()
-
-# new_local_repository(
-#     name = "kmm_bazel_rules",
-#     path = "./.kmm_bazel_rules",
-#     build_file = "./.kmm_bazel_rules/BUILD",
-# )

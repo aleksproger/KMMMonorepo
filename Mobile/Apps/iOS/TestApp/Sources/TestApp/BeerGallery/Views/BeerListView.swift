@@ -14,15 +14,38 @@ struct BeerListView: View {
 	var beers: [DTOBeer]
 
 	var body: some View {
-		List {
-			ForEach(beers) { beer in
-				BeerRowView(beer: beer)
+		ScrollView {
+			LazyVGrid(columns: [GridItem(.flexible())], spacing: 20) {
+				ForEach(beers) { beer in
+					Widget(BeerRowView(beer: beer))
+				}
 			}
 		}
-		// .listStyle(GroupedListStyle())
-		.background(Color.white)
-		.cornerRadius(10)
-		.font(.headline)
+//		List {
+//			ForEach(beers) { beer in
+//				BeerRowView(beer: beer)
+//			}
+//		}
+//		// .listStyle(GroupedListStyle())
+//		.background(Color.white)
+//		.cornerRadius(10)
+//		.font(.headline)
 
+	}
+}
+
+struct Widget<V: View>: View {
+	private let subject: V
+	
+	init(_ subject: V) {
+		self.subject = subject
+	}
+	
+	var body: some View {
+		ZStack {
+			subject
+		}
+		.cornerRadius(10)
+		.background(Color.mint)
 	}
 }
