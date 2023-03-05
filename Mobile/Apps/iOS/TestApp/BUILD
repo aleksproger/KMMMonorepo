@@ -4,12 +4,12 @@ load("@build_bazel_rules_apple//apple:apple.bzl", "apple_dynamic_xcframework_imp
 load("@com_github_buildbuddy_io_rules_xcodeproj//xcodeproj:defs.bzl","top_level_target","xcodeproj")
 
 swift_library(
-    name = "Sources",
-    srcs = glob(["Sources/**/*.swift"]),
-    module_name = "Sources",
+    name = "Application",
+    srcs = glob(["Application/**/*.swift"]),
+    module_name = "Application",
     visibility = ["//visibility:public"],
     deps = [
-        "//Mobile/BeerGallery:BeerGalleryiOS",
+        "//Mobile/Libraries/Common/BeerGallery:BeerGalleryiOS",
         "//Mobile/Libraries/iOS/iOSArchitecture",
     ],
 )
@@ -18,13 +18,13 @@ ios_application(
     name = "TestApp",
     bundle_id = "com.example.TestApp",
     families = ["iphone"],
-    infoplists = [":Sources/TestApp/Info.plist"],
+    infoplists = [":Application/Info.plist"],
     minimum_os_version = "15.0",
     deps = [
-        ":Sources"
+        ":Application"
     ],
     frameworks = [
-        "//Mobile/BeerGallery:BeerGalleryiOS"
+        "//Mobile/Libraries/Common/BeerGallery:BeerGalleryiOS"
     ],
 )
 

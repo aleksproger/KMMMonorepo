@@ -25,5 +25,5 @@ include(":Multiplatform:Architecture")
 
 
 include(":Mobile")
-include(":Mobile:SharedNetwork")
-include(":Mobile:BeerGallery")
+include(":Mobile:Libraries:Common:SharedNetwork")
+include(":Mobile:Libraries:Common:BeerGallery")
