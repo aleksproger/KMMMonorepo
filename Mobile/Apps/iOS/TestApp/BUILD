@@ -9,7 +9,8 @@ swift_library(
     module_name = "Sources",
     visibility = ["//visibility:public"],
     deps = [
-        "//Mobile/BeerGallery:BeerGalleryiOS"
+        "//Mobile/BeerGallery:BeerGalleryiOS",
+        "//Mobile/Libraries/iOS/iOSArchitecture",
     ],
 )
 

@@ -1,6 +1,6 @@
 import Foundation
 
-protocol Store {
+public protocol Store {
 	associatedtype Action
 	associatedtype State
 		

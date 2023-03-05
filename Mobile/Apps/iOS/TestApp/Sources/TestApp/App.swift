@@ -1,5 +1,6 @@
 import SwiftUI
 import BeerGallery
+import iOSArchitecture
 
 @main
 struct ImTheApp: App {

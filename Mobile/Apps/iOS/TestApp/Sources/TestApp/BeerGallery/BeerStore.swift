@@ -1,4 +1,5 @@
 import BeerGallery
+import iOSArchitecture
 
 class BeerStore: Store {
 	typealias Action = BeerFeatureAction.ViewAction

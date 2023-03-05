@@ -4,3 +4,11 @@ package_group(
         "//Mobile/Apps/iOS/TestApp",
     ],
 )
+
+package_group(
+    name = "libs",
+    packages = [
+        "//Mobile/Libraries/iOS/iOSArchitecture",
+        "//Mobile/Libraries/iOS/iOSUtilities",
+    ],
+)
