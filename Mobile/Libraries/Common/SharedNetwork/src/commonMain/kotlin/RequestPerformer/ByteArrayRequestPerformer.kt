@@ -9,22 +9,23 @@ import io.ktor.client.statement.*
 import io.ktor.http.*
 
 import io.ktor.client.call.body
+import io.ktor.client.call.receive
 import io.ktor.client.plugins.cache.*
 import io.ktor.client.plugins.logging.*
 import io.ktor.serialization.kotlinx.json.*
 import io.ktor.serialization.*
 
-class DefaultRequestPerformer<Payload, Response> (
-    private val responseMapper: (String) -> Response,
+class ByteArrayRequestPerformer<Payload, Response> (
+    private val responseMapper: (ByteArray) -> Response,
     private val requestBuilder: RequestBuilder<Payload, DefaultRequest>
 ) : RequestPerformer<Payload, Response> {
     override suspend fun perform(request: Payload): Response {
         val client = HttpClient() {
             install(HttpCache)
-            // install(Logging) {
-            //     logger = Logger.SIMPLE
-            //     level = LogLevel.ALL
-            // }
+            install(Logging) {
+                logger = Logger.SIMPLE
+                level = LogLevel.ALL
+            }
         }
         var defaultRequest = requestBuilder.build(request)
 
@@ -39,7 +40,7 @@ class DefaultRequestPerformer<Payload, Response> (
                     }
                 }
             })
-            return responseMapper(httpResponse.body())
+            return responseMapper(httpResponse.body<ByteArray>())
         } catch (e: Exception) {
             println("Get request failed: $e")
             throw e

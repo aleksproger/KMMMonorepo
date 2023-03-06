@@ -3,19 +3,18 @@ package Mobile.BeerGallery
 import Multiplatform.Architecture.Store
 import Multiplatform.Architecture.DefaultStore
 
-class BeerFeatureViewStoreImpl(
+class BeerViewStoreImpl(
     private val subject: Store<BeerFeatureState, BeerFeatureAction>
-) : Store<BeerFeatureState, BeerFeatureAction.ViewAction>, BeerFeatureViewStore {
-    constructor(initialState: BeerFeatureState, onStateChange: (BeerFeatureState) -> Unit): this(
+) : Store<BeerFeatureState, BeerFeatureAction.ViewAction>, BeerViewStore {
+    constructor(initialState: BeerFeatureState): this(
         DefaultStore(
             state = initialState,
-            onStateChange = onStateChange,
             reducer = BeerFeatureReducer(),
             effectHandler = BeerFeatureEffectHandler()
         )
     )
 
-    override fun dispatch(action: BeerFeatureAction.ViewAction) {
-        subject.dispatch(action)
+    override suspend fun dispatch(action: BeerFeatureAction.ViewAction): BeerFeatureState {
+        return subject.dispatch(action)
     }
 }

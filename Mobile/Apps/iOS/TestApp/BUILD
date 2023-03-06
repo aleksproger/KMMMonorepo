@@ -11,6 +11,7 @@ swift_library(
     deps = [
         "//Mobile/Libraries/Common/BeerGallery:BeerGalleryiOS",
         "//Mobile/Libraries/iOS/iOSArchitecture",
+        "//Mobile/Libraries/iOS/iOSUI",
     ],
 )
 
@@ -24,7 +25,7 @@ ios_application(
         ":Application"
     ],
     frameworks = [
-        "//Mobile/Libraries/Common/BeerGallery:BeerGalleryiOS"
+        "//Mobile/Libraries/Common/BeerGallery:BeerGalleryiOS",
     ],
 )
 

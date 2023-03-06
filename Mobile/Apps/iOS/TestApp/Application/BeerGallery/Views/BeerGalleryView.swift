@@ -12,7 +12,7 @@ import SwiftUI
 
 struct BeerGalleryView: View {
 	@ObservedObject
-	var viewStore: ObservableObjectStore<BeerStore>
+	var viewStore: ObservableObjectStore<BeerViewStoreAdapter>
 
 	var body: some View {
 		if viewStore.state.loading {

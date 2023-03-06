@@ -1,26 +1,28 @@
 import Foundation
 import iOSUtilities
 
-public final class ObservableObjectStore<S: Store>: ObservableObject {
+public actor ObservableObjectStore<S: Store>: ObservableObject {
+	@MainActor
 	@Published
 	public var state: S.State
-	
-	private lazy var subject: S = makeStateContainer(state, { newState in
-		onMainThread { self.state = newState }
-	})
-	
-	private let makeStateContainer: (S.State, @escaping (S.State) -> Void) -> S
 
+	private let subject: S
+
+	@MainActor
 	public init(
-		_ makeInitialState: @autoclosure () -> S.State,
-		_ makeStateContainer: @escaping (S.State, @escaping (S.State) -> Void) -> S,
-		_ mainThreadRunner: MainThreadRunner = onMainThread
+		_ initialState: S.State,
+		_ subject: @escaping (S.State) -> S
 	) {
-		self.state = makeInitialState()
-		self.makeStateContainer = makeStateContainer
+		self.state = initialState
+		self.subject = subject(initialState)
 	}
 	
-	public func dispatch(action: S.Action) {
-		subject.dispatch(action)
+	public func dispatch(action: S.Action) async {
+		Task {
+			let newState = await self.subject.dispatch(action) 
+			await MainActor.run {
+				self.state = newState
+			}
+		}
 	}
 }

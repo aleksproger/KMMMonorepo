@@ -4,7 +4,7 @@ import Multiplatform.Architecture.Reducer
 import Multiplatform.DTO.Beer
 
 internal class BeerFeatureReducer : Reducer<BeerFeatureState, BeerFeatureAction, BeerFeatureEffect> {
-    override fun reduce(state: BeerFeatureState, action: BeerFeatureAction): Pair<BeerFeatureState, BeerFeatureEffect> {
+    override suspend fun reduce(state: BeerFeatureState, action: BeerFeatureAction): Pair<BeerFeatureState, BeerFeatureEffect> {
         return when (action) {
             is BeerFeatureAction.LocalAction.LoadBeers -> {
                 Pair(state.copy(loading = true), BeerFeatureEffect.LoadBeersFromAPI())

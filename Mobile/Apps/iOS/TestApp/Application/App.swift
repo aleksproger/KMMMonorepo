@@ -3,16 +3,17 @@ import BeerGallery
 import iOSArchitecture
 
 @main
+@MainActor
 struct ImTheApp: App {
 	@ObservedObject
-	var viewStore = ObservableObjectStore<BeerStore>(.initial, BeerStore.init(initialState:onStateChange:))
+	var viewStore = ObservableObjectStore<BeerViewStoreAdapter>(.initial, BeerViewStoreAdapter.init)
 	
     var body: some Scene {
 		WindowGroup {
 			ZStack {
 				BeerGalleryView(viewStore: viewStore)
-			}.onAppear {
-				viewStore.dispatch(action: BeerFeatureAction.ViewActionBeerViewDidAppear())
+			}.task {
+				await viewStore.dispatch(action: BeerFeatureAction.ViewActionBeerViewDidAppear())
 			}
 		}
 	}
