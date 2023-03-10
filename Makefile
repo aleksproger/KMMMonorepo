@@ -12,7 +12,13 @@ build_kmm:
 
 .PHONY: rta # Run Test App
 rta: build_kmm
+	@$(BAZEL) build //Mobile/Apps/iOS/TestApp
 	@$(BAZEL) run //Mobile/Apps/iOS/TestApp
+
+.PHONY: xcp # Run Test App
+xcp:
+	@$(BAZEL) run //Mobile/Apps/iOS/TestApp:GenerateTestAppXcodeProject
+	xed .
 
 GRADLE=./gradlew
 BAZEL=bazelisk

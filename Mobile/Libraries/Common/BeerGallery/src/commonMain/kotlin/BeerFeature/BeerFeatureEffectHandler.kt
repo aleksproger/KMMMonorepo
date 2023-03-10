@@ -26,7 +26,7 @@ internal class BeerFeatureEffectHandler(
         )
     )
 ) : EffectHandler<BeerFeatureState, BeerFeatureAction, BeerFeatureEffect> {
-    override suspend fun handle(effect: BeerFeatureEffect, store: Store<BeerFeatureState, BeerFeatureAction>) {
+    override suspend fun handle(effect: BeerFeatureEffect, store: Store<BeerFeatureState, BeerFeatureAction, BeerFeatureEffect>) {
         when (effect) {
             is BeerFeatureEffect.LoadBeersFromAPI -> {
                 beerFetcher.fetch(Unit).fold(

@@ -1,0 +1,2607 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		91CB1D303438986D84326039 /* BazelDependencies */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 43614A89523A9E1639971F61 /* Build configuration list for PBXAggregateTarget "BazelDependencies" */;
+			buildPhases = (
+				B108A4017029622C60F2CE23 /* Bazel Build */,
+				08D93B21059E96FE6A41063E /* Create swift_debug_settings.py */,
+			);
+			dependencies = (
+			);
+			name = BazelDependencies;
+			productName = BazelDependencies;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		024FA7C2075704DC6467D10F /* BeerRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B77F1051280AAFFC79916C0A /* BeerRowView.swift */; };
+		05522621A9273A122E0B14E9 /* ObservableObjectStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F80481938F22BCB15E56CDE /* ObservableObjectStore.swift */; };
+		08370632D9789359C637CCBB /* ExternalImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FA6DCD6B5CDCC263CB0FABE /* ExternalImage.swift */; };
+		0B0C6BEED5CC7FA517CAAB82 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97081F5C69D2B3D70632D433 /* App.swift */; };
+		0C4CA5EE211E47457E7995FC /* AnyStorePlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852ADE22E45127BF33D0A7EB /* AnyStorePlugin.swift */; };
+		289F0D8A17301C5573BD3759 /* IndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25DF1F7FC1A8DBDF6D8AC1D1 /* IndicatorView.swift */; };
+		29ED2FA6712460B6B66DC9B7 /* MainThreadRunner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FD6970AE164D7B851CC00E /* MainThreadRunner.swift */; };
+		35574C64BED692C615E8FAA1 /* _CompileStub_.m in Sources */ = {isa = PBXBuildFile; fileRef = B5FFD94A9908FB1374D72673 /* _CompileStub_.m */; };
+		3814F67EEEF65BA64396F12F /* ComposableStorePlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E78139B861BBCCE3F12B3AA /* ComposableStorePlugin.swift */; };
+		5975C08E4CBBFE8F0D9B9109 /* DTOBeer+Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36DB9DCE6CA95803C0C71826 /* DTOBeer+Identifiable.swift */; };
+		619C1E7820E07984FFF92E28 /* InMemoryImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9828A52A62FD0B7DE4EFEE79 /* InMemoryImageCache.swift */; };
+		7043D89DDC092C10D2C7BDF1 /* LoggingStorePlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887E8BB05D7A84BD453475A6 /* LoggingStorePlugin.swift */; };
+		70BF2B78999DA33DEA1518A0 /* _CompileStub_.m in Sources */ = {isa = PBXBuildFile; fileRef = B5FFD94A9908FB1374D72673 /* _CompileStub_.m */; };
+		77B076B4723B22F719A08EF8 /* BeerGalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667E155D0FAF267406F4E340 /* BeerGalleryView.swift */; };
+		7CA4EEBFFCF064BDA35B6CA6 /* _CompileStub_.m in Sources */ = {isa = PBXBuildFile; fileRef = B5FFD94A9908FB1374D72673 /* _CompileStub_.m */; };
+		8A19E71FE5295633C8877382 /* URLImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C6189ACC7468B231DD3966 /* URLImage.swift */; };
+		B9C660EA33B0E339983FAF0F /* _CompileStub_.m in Sources */ = {isa = PBXBuildFile; fileRef = B5FFD94A9908FB1374D72673 /* _CompileStub_.m */; };
+		BA7C1CD5FD45BE3980E9ED28 /* _CompileStub_.m in Sources */ = {isa = PBXBuildFile; fileRef = B5FFD94A9908FB1374D72673 /* _CompileStub_.m */; };
+		BC2EF9AB7A9D1B6B851598B3 /* BeerViewStoreAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5EC2478A98B4349D33CCA5 /* BeerViewStoreAdapter.swift */; };
+		C26E3655D42ABB0A1710E06F /* _CompileStub_.m in Sources */ = {isa = PBXBuildFile; fileRef = B5FFD94A9908FB1374D72673 /* _CompileStub_.m */; };
+		D52CA786B6982ABE934CC7A8 /* StorePlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD3D4E471560743335987F9 /* StorePlugin.swift */; };
+		E4CACDBFAF313EBE34934419 /* BeerListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD911E3A8C817DB073E8A47A /* BeerListView.swift */; };
+		E90B5F88D2BE0DE209CF9F48 /* NSCacheAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C552AEFA88B0AC021048F24E /* NSCacheAdapter.swift */; };
+		F13B133A3A154BB71B6ADA01 /* OSSignpostPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = D155DCBF9E23199E02B91D76 /* OSSignpostPlugin.swift */; };
+		FD27BD2D8EBC8BD03E0728C8 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5B2B8D37A6D2FCBDCD39C0 /* Store.swift */; };
+		FE1F4BD39175B73FB47BB404 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5971871A64B0301A92330A5C /* Storage.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1310DB99F7CE11A3D8652DF9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8C2AB4C5602EB14A95FDECDC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 91CB1D303438986D84326039;
+			remoteInfo = BazelDependencies;
+		};
+		33F6B2E7F94186D2913CF94C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8C2AB4C5602EB14A95FDECDC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 91CB1D303438986D84326039;
+			remoteInfo = BazelDependencies;
+		};
+		3AAA7FD4A606A64BB02D280F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8C2AB4C5602EB14A95FDECDC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 91CB1D303438986D84326039;
+			remoteInfo = BazelDependencies;
+		};
+		4359B2CD0283E1078FBB8DB4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8C2AB4C5602EB14A95FDECDC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 91CB1D303438986D84326039;
+			remoteInfo = BazelDependencies;
+		};
+		520CAE9254000FB6527D8D0F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8C2AB4C5602EB14A95FDECDC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 91CB1D303438986D84326039;
+			remoteInfo = BazelDependencies;
+		};
+		704796F0120944A5F3B716C0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8C2AB4C5602EB14A95FDECDC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 91CB1D303438986D84326039;
+			remoteInfo = BazelDependencies;
+		};
+		88A91721E36069B9F8FDE8DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8C2AB4C5602EB14A95FDECDC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 91CB1D303438986D84326039;
+			remoteInfo = BazelDependencies;
+		};
+		9DADDB069F44C1638957E5E4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8C2AB4C5602EB14A95FDECDC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 91CB1D303438986D84326039;
+			remoteInfo = BazelDependencies;
+		};
+		A22D0220F4B47555B8828C4C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8C2AB4C5602EB14A95FDECDC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 91CB1D303438986D84326039;
+			remoteInfo = BazelDependencies;
+		};
+		A8D9EFAA29F93515885C528C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8C2AB4C5602EB14A95FDECDC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 91CB1D303438986D84326039;
+			remoteInfo = BazelDependencies;
+		};
+		BD6020184536C8A20ED2A1D1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8C2AB4C5602EB14A95FDECDC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 91CB1D303438986D84326039;
+			remoteInfo = BazelDependencies;
+		};
+		C6969E9F4C52F11D913335C6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8C2AB4C5602EB14A95FDECDC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 91CB1D303438986D84326039;
+			remoteInfo = BazelDependencies;
+		};
+		D68D46742BDAACA72A234FB5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8C2AB4C5602EB14A95FDECDC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 91CB1D303438986D84326039;
+			remoteInfo = BazelDependencies;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		07FD6970AE164D7B851CC00E /* MainThreadRunner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainThreadRunner.swift; sourceTree = "<group>"; };
+		1810F6E9EB127C803D776160 /* Storage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Storage.framework; sourceTree = "<group>"; };
+		1C612315E90907D557D2FAA3 /* BUILD */ = {isa = PBXFileReference; explicitFileType = text.script.python; path = BUILD; sourceTree = "<group>"; };
+		1E7D22DF12C19550AC2F1434 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		1F9262100FE90EE692B30E9F /* MultiplatformArchitectureiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MultiplatformArchitectureiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		25DF1F7FC1A8DBDF6D8AC1D1 /* IndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndicatorView.swift; sourceTree = "<group>"; };
+		2A5B2B8D37A6D2FCBDCD39C0 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		2C3375FAD7674364E2C90F93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		2F80481938F22BCB15E56CDE /* ObservableObjectStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableObjectStore.swift; sourceTree = "<group>"; };
+		2FACBE014EC34E5B1BBBE731 /* libiOSUI.a */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; name = libiOSUI.a; path = "bazel-out/ios-sim_arm64-min15.0-applebin_ios-ios_sim_arm64-dbg-ST-d98dbd8343b5/bin/Mobile/Libraries/iOS/iOSUI/libiOSUI.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		344795DF457115B3CD95DB7F /* iOS-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "iOS-Info.plist"; sourceTree = "<group>"; };
+		36D5A877DD56A0DA36FEA6F1 /* BUILD */ = {isa = PBXFileReference; explicitFileType = text.script.python; path = BUILD; sourceTree = "<group>"; };
+		36DB9DCE6CA95803C0C71826 /* DTOBeer+Identifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DTOBeer+Identifiable.swift"; sourceTree = "<group>"; };
+		3AD3D4E471560743335987F9 /* StorePlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorePlugin.swift; sourceTree = "<group>"; };
+		3F27F6B1FFD8106AFC70AA06 /* BeerGalleryiOS.9.link.params */ = {isa = PBXFileReference; path = BeerGalleryiOS.9.link.params; sourceTree = "<group>"; };
+		54E63D246623822852426382 /* MultiplatformStorageiOS.4.link.params */ = {isa = PBXFileReference; path = MultiplatformStorageiOS.4.link.params; sourceTree = "<group>"; };
+		56330535D2FB9911AB61E3D5 /* libiOSAppUtilities.a */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; name = libiOSAppUtilities.a; path = "bazel-out/ios-sim_arm64-min15.0-applebin_ios-ios_sim_arm64-dbg-ST-d98dbd8343b5/bin/Mobile/Libraries/iOS/iOSAppUtilities/libiOSAppUtilities.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5971871A64B0301A92330A5C /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
+		5F6EB5E99E36E23B0AB36F97 /* MultiplatformStorageiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MultiplatformStorageiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		612865FBAD267E34A3257667 /* BeerGalleryiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BeerGalleryiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6402F0395E720B80BD57F276 /* MultiplatformStorageiOS.10.link.params */ = {isa = PBXFileReference; path = MultiplatformStorageiOS.10.link.params; sourceTree = "<group>"; };
+		646497EE196A9A748A88FFBD /* Architecture.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Architecture.framework; sourceTree = "<group>"; };
+		667E155D0FAF267406F4E340 /* BeerGalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerGalleryView.swift; sourceTree = "<group>"; };
+		6E52C5C276E36E0E60D81190 /* TestApp.12.link.params */ = {isa = PBXFileReference; path = TestApp.12.link.params; sourceTree = "<group>"; };
+		6FA6DCD6B5CDCC263CB0FABE /* ExternalImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExternalImage.swift; sourceTree = "<group>"; };
+		708CAD73A9C63F1F2BC61B32 /* BUILD */ = {isa = PBXFileReference; explicitFileType = text.script.python; path = BUILD; sourceTree = "<group>"; };
+		7B03840A0453F9A6D62A8AD7 /* libiOSStorage.a */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; name = libiOSStorage.a; path = "bazel-out/ios-sim_arm64-min15.0-applebin_ios-ios_sim_arm64-dbg-ST-d98dbd8343b5/bin/Mobile/Libraries/iOS/iOSStorage/libiOSStorage.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C5EC2478A98B4349D33CCA5 /* BeerViewStoreAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerViewStoreAdapter.swift; sourceTree = "<group>"; };
+		7F284F3CB1E6805F8DA9D8CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		852ADE22E45127BF33D0A7EB /* AnyStorePlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyStorePlugin.swift; sourceTree = "<group>"; };
+		864A0BBCC06492B6A716AB1A /* BeerGalleryiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BeerGalleryiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		87E1C4A8D297AA7D1F391557 /* BUILD */ = {isa = PBXFileReference; explicitFileType = text.script.python; path = BUILD; sourceTree = "<group>"; };
+		887E8BB05D7A84BD453475A6 /* LoggingStorePlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggingStorePlugin.swift; sourceTree = "<group>"; };
+		9288A79AD60CDB785C477F8F /* BUILD */ = {isa = PBXFileReference; explicitFileType = text.script.python; path = BUILD; sourceTree = "<group>"; };
+		92C26C60797CFBB252FCF2BE /* libAPI.a */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; name = libAPI.a; path = "bazel-out/ios-sim_arm64-min15.0-applebin_ios-ios_sim_arm64-dbg-ST-d98dbd8343b5/bin/Mobile/Libraries/iOS/iOSArchitecture/libAPI.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		94BC291D94966E5B2A7A21FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		97081F5C69D2B3D70632D433 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
+		9828A52A62FD0B7DE4EFEE79 /* InMemoryImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InMemoryImageCache.swift; sourceTree = "<group>"; };
+		9E78139B861BBCCE3F12B3AA /* ComposableStorePlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposableStorePlugin.swift; sourceTree = "<group>"; };
+		A20918EBA9F8A057FA2B82E2 /* BUILD */ = {isa = PBXFileReference; explicitFileType = text.script.python; path = BUILD; sourceTree = "<group>"; };
+		A2FA04CAAE66592A216867BF /* iOS-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "iOS-Info.plist"; sourceTree = "<group>"; };
+		A38C5F9547F65DB46CC03BC2 /* MultiplatformArchitectureiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MultiplatformArchitectureiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4244598B649A3E42CCF8EB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		A512A5FE8A20B1C651C6CABB /* MultiplatformArchitectureiOS.8.link.params */ = {isa = PBXFileReference; path = MultiplatformArchitectureiOS.8.link.params; sourceTree = "<group>"; };
+		AF9FA4E85F9B5C2BA5E1EB00 /* MultiplatformStorageiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MultiplatformStorageiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5C0E21A4E1FCAA6CA88CF0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		B5FFD94A9908FB1374D72673 /* _CompileStub_.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _CompileStub_.m; sourceTree = DERIVED_FILE_DIR; };
+		B674784D8FE4CE9592677E7B /* BUILD */ = {isa = PBXFileReference; explicitFileType = text.script.python; path = BUILD; sourceTree = "<group>"; };
+		B77F1051280AAFFC79916C0A /* BeerRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerRowView.swift; sourceTree = "<group>"; };
+		B78E8B12837B73E2BF39ADB5 /* BeerGallery.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BeerGallery.framework; sourceTree = "<group>"; };
+		BD66FB7763B8D3B875429368 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		C023343FE982629BA01FBC24 /* MultiplatformArchitectureiOS.11.link.params */ = {isa = PBXFileReference; path = MultiplatformArchitectureiOS.11.link.params; sourceTree = "<group>"; };
+		C186BCA55DABB9F9D90B04F0 /* BeerGallery.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BeerGallery.framework; sourceTree = "<group>"; };
+		C1C6189ACC7468B231DD3966 /* URLImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLImage.swift; sourceTree = "<group>"; };
+		C552AEFA88B0AC021048F24E /* NSCacheAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSCacheAdapter.swift; sourceTree = "<group>"; };
+		D07D20DD0F45AFB50691AE87 /* BUILD */ = {isa = PBXFileReference; explicitFileType = text.script.python; path = BUILD; sourceTree = "<group>"; };
+		D155DCBF9E23199E02B91D76 /* OSSignpostPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OSSignpostPlugin.swift; sourceTree = "<group>"; };
+		D27590DBAD5C54F34316103C /* libiOSUtilities.a */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; name = libiOSUtilities.a; path = "bazel-out/ios-sim_arm64-min15.0-applebin_ios-ios_sim_arm64-dbg-ST-d98dbd8343b5/bin/Mobile/Libraries/iOS/iOSUtilities/libiOSUtilities.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA44ECE4E719D1AF86B34E64 /* TestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAB0DFFD607EB068128AE481 /* BUILD */ = {isa = PBXFileReference; explicitFileType = text.script.python; path = BUILD; sourceTree = "<group>"; };
+		ECC08B9B3DEE012D465E51A1 /* iOS-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "iOS-Info.plist"; sourceTree = "<group>"; };
+		ED7742D0440DE723BEF2E1E2 /* Storage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Storage.framework; sourceTree = "<group>"; };
+		F1038243B39B150DF4ED935E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		F18442946C70957FBD57F91B /* Architecture.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Architecture.framework; sourceTree = "<group>"; };
+		FAE029D21E843D69086CE830 /* libImpl.a */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; name = libImpl.a; path = "bazel-out/ios-sim_arm64-min15.0-applebin_ios-ios_sim_arm64-dbg-ST-d98dbd8343b5/bin/Mobile/Libraries/iOS/iOSArchitecture/libImpl.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB2EF4F1F7E25667E1187E12 /* BeerGalleryiOS.0.link.params */ = {isa = PBXFileReference; path = BeerGalleryiOS.0.link.params; sourceTree = "<group>"; };
+		FD911E3A8C817DB073E8A47A /* BeerListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerListView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		008ACE40022B995E1B63CB32 /* MultiplatformArchitectureiOS */ = {
+			isa = PBXGroup;
+			children = (
+				2C3375FAD7674364E2C90F93 /* Info.plist */,
+			);
+			path = MultiplatformArchitectureiOS;
+			sourceTree = "<group>";
+		};
+		01C20293B46AFE012ED5E0C5 /* .gradle_build */ = {
+			isa = PBXGroup;
+			children = (
+				935F4006469C84190705CEE1 /* XCFrameworks */,
+			);
+			path = .gradle_build;
+			sourceTree = "<group>";
+		};
+		0278C4AAA62C6CC04DB1DDE4 /* iOSUI */ = {
+			isa = PBXGroup;
+			children = (
+				1679831DF1F7B92D217B0452 /* API */,
+				A20918EBA9F8A057FA2B82E2 /* BUILD */,
+			);
+			path = iOSUI;
+			sourceTree = "<group>";
+		};
+		055DFE56C3BE3AE0C39C0D10 /* darwin_arm64-dbg */ = {
+			isa = PBXGroup;
+			children = (
+				CA9C76458FFE9881FCE9F594 /* bin */,
+			);
+			path = "darwin_arm64-dbg";
+			sourceTree = "<group>";
+		};
+		0B35879EB7C65A93A3CC9705 /* Storage.xcframework */ = {
+			isa = PBXGroup;
+			children = (
+				F08DB0B32400920436039F79 /* ios-arm64_x86_64-simulator */,
+			);
+			path = Storage.xcframework;
+			sourceTree = "<group>";
+		};
+		1062D6A9C94E82F09131B2E5 /* Architecture.xcframework */ = {
+			isa = PBXGroup;
+			children = (
+				F7202EE11D71FC392400BB56 /* ios-arm64_x86_64-simulator */,
+			);
+			path = Architecture.xcframework;
+			sourceTree = "<group>";
+		};
+		1148754EE0F227DF41533626 /* ios-arm64_x86_64-simulator */ = {
+			isa = PBXGroup;
+			children = (
+				B78E8B12837B73E2BF39ADB5 /* BeerGallery.framework */,
+			);
+			path = "ios-arm64_x86_64-simulator";
+			sourceTree = "<group>";
+		};
+		131BF12C1CCE9B796965E31C /* /Users/alex/Developer/imtheapp */ = {
+			isa = PBXGroup;
+			children = (
+				7F246ED425456B3C6E07CA97 /* Mobile */,
+				986CCD434283EA3347B2442B /* Multiplatform */,
+				77D5EC03567F23E46E4548B5 /* Bazel Generated Files */,
+				3A942EC6661822C8E3388950 /* rules_xcodeproj */,
+				66298D95E328565E3B66A980 /* Products */,
+				3EE524A208A25EF78808E7A2 /* Frameworks */,
+			);
+			path = /Users/alex/Developer/imtheapp;
+			sourceTree = "<absolute>";
+		};
+		1475875582B0883242C20455 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				07FD6970AE164D7B851CC00E /* MainThreadRunner.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		1679831DF1F7B92D217B0452 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				6FA6DCD6B5CDCC263CB0FABE /* ExternalImage.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		18532FB63A30A5FFB9907D16 /* TestApp */ = {
+			isa = PBXGroup;
+			children = (
+				AD7918B44A0C4E307A36A5E3 /* GenerateTestAppXcodeProject.generator-params */,
+			);
+			path = TestApp;
+			sourceTree = "<group>";
+		};
+		191A4AC31FC8BC04D555A46C /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				01C20293B46AFE012ED5E0C5 /* .gradle_build */,
+				CBDC3F4E17F04DC95E8562FB /* Utility */,
+				EAB0DFFD607EB068128AE481 /* BUILD */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		1A41448EC8BD8D6B14964881 /* iOSAppUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				AEDA45146FA5CAED28BBD0B8 /* API */,
+				36D5A877DD56A0DA36FEA6F1 /* BUILD */,
+			);
+			path = iOSAppUtilities;
+			sourceTree = "<group>";
+		};
+		251DF8BF7206E5E31D94CD23 /* BeerGalleryiOS */ = {
+			isa = PBXGroup;
+			children = (
+				1E7D22DF12C19550AC2F1434 /* Info.plist */,
+			);
+			path = BeerGalleryiOS;
+			sourceTree = "<group>";
+		};
+		2595A208454E396A126D943F /* TestApp */ = {
+			isa = PBXGroup;
+			children = (
+				91E2CEF1D752FA90F7466DAD /* rules_xcodeproj */,
+			);
+			path = TestApp;
+			sourceTree = "<group>";
+		};
+		25E5CE531362769CC21C8340 /* release */ = {
+			isa = PBXGroup;
+			children = (
+				949BAFBFFB6CA0B3D36F94A9 /* Storage.xcframework */,
+			);
+			path = release;
+			sourceTree = "<group>";
+		};
+		2E70A46B3DB33382109F3FF8 /* BeerGallery */ = {
+			isa = PBXGroup;
+			children = (
+				69360DD9DC8F07F53DB0B651 /* rules_xcodeproj */,
+			);
+			path = BeerGallery;
+			sourceTree = "<group>";
+		};
+		2F7FBA4BF8F7D479DDE0B349 /* iOSUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				1475875582B0883242C20455 /* API */,
+				87E1C4A8D297AA7D1F391557 /* BUILD */,
+			);
+			path = iOSUtilities;
+			sourceTree = "<group>";
+		};
+		35219E87E7D146C5810AE7E3 /* rules_xcodeproj */ = {
+			isa = PBXGroup;
+			children = (
+				9D1BA277BEAD5284894F5C0E /* MultiplatformStorageiOS */,
+			);
+			path = rules_xcodeproj;
+			sourceTree = "<group>";
+		};
+		3A942EC6661822C8E3388950 /* rules_xcodeproj */ = {
+			isa = PBXGroup;
+			children = (
+				B5FFD94A9908FB1374D72673 /* _CompileStub_.m */,
+			);
+			name = rules_xcodeproj;
+			path = "Mobile/Apps/iOS/TestApp/TestApp-Bazel.xcodeproj/rules_xcodeproj";
+			sourceTree = "<group>";
+		};
+		3BB0EF4DAA4901E063816760 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				FA6277CC97BA282E5CD909B7 /* BeerGallery */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		3CBEDC2F60D08CF01767EA3A /* debug */ = {
+			isa = PBXGroup;
+			children = (
+				0B35879EB7C65A93A3CC9705 /* Storage.xcframework */,
+			);
+			path = debug;
+			sourceTree = "<group>";
+		};
+		3D8201B990E083B849F8FD86 /* ios-arm64_x86_64-simulator */ = {
+			isa = PBXGroup;
+			children = (
+				C186BCA55DABB9F9D90B04F0 /* BeerGallery.framework */,
+			);
+			path = "ios-arm64_x86_64-simulator";
+			sourceTree = "<group>";
+		};
+		3EE524A208A25EF78808E7A2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3F2289F31671C9EF9FD8BB4C /* Multiplatform */ = {
+			isa = PBXGroup;
+			children = (
+				4C458D8892DA956AAD84119A /* Architecture */,
+				F6F9E65B89BBFD9B54C11B8D /* Storage */,
+			);
+			path = Multiplatform;
+			sourceTree = "<group>";
+		};
+		3F6101ECAB63ED3B59B12363 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				1A41448EC8BD8D6B14964881 /* iOSAppUtilities */,
+				F2BA7ED800ADC1AE741CA0ED /* iOSArchitecture */,
+				D499A508E2B1795EC2DA191A /* iOSStorage */,
+				0278C4AAA62C6CC04DB1DDE4 /* iOSUI */,
+				2F7FBA4BF8F7D479DDE0B349 /* iOSUtilities */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		41A965E811AF674247681207 /* Architecture */ = {
+			isa = PBXGroup;
+			children = (
+				D705252AF44FFA8C54577B4A /* rules_xcodeproj */,
+			);
+			path = Architecture;
+			sourceTree = "<group>";
+		};
+		47CBD201ADFD4AFA154EF3FA /* Plugins */ = {
+			isa = PBXGroup;
+			children = (
+				9E78139B861BBCCE3F12B3AA /* ComposableStorePlugin.swift */,
+			);
+			path = Plugins;
+			sourceTree = "<group>";
+		};
+		4BD9A3A7DBF229B2335CE6CC /* debug */ = {
+			isa = PBXGroup;
+			children = (
+				5355FC38032A0AEB46665A31 /* Architecture.xcframework */,
+			);
+			path = debug;
+			sourceTree = "<group>";
+		};
+		4C458D8892DA956AAD84119A /* Architecture */ = {
+			isa = PBXGroup;
+			children = (
+				F9A411A95321F65CDE098013 /* rules_xcodeproj */,
+			);
+			path = Architecture;
+			sourceTree = "<group>";
+		};
+		524C97902793E0E6F93AEED8 /* Apps */ = {
+			isa = PBXGroup;
+			children = (
+				B0585FFE6D8E89CF03BFD0BC /* iOS */,
+			);
+			path = Apps;
+			sourceTree = "<group>";
+		};
+		5355FC38032A0AEB46665A31 /* Architecture.xcframework */ = {
+			isa = PBXGroup;
+			children = (
+				BA514A6E442996BD1461338A /* ios-arm64_x86_64-simulator */,
+			);
+			path = Architecture.xcframework;
+			sourceTree = "<group>";
+		};
+		5787F7DF8A2F5BE35E5C56EA /* release */ = {
+			isa = PBXGroup;
+			children = (
+				1062D6A9C94E82F09131B2E5 /* Architecture.xcframework */,
+			);
+			path = release;
+			sourceTree = "<group>";
+		};
+		59CE308A56B3CB9730C5E03F /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				E7E198402B129745A0BF13B5 /* BeerGallery */,
+				97081F5C69D2B3D70632D433 /* App.swift */,
+				BD66FB7763B8D3B875429368 /* Info.plist */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		5A6B6C1932BEB916A7528ED5 /* XCFrameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4BD9A3A7DBF229B2335CE6CC /* debug */,
+				5787F7DF8A2F5BE35E5C56EA /* release */,
+			);
+			path = XCFrameworks;
+			sourceTree = "<group>";
+		};
+		5A866B688115648471E322E3 /* Apps */ = {
+			isa = PBXGroup;
+			children = (
+				B436ECB6A848B5AEA2ED8C25 /* iOS */,
+			);
+			path = Apps;
+			sourceTree = "<group>";
+		};
+		5D79F02A5A4FF93E94F86310 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				9828A52A62FD0B7DE4EFEE79 /* InMemoryImageCache.swift */,
+				C1C6189ACC7468B231DD3966 /* URLImage.swift */,
+			);
+			path = Image;
+			sourceTree = "<group>";
+		};
+		61271411A956A6B172E1F298 /* bin */ = {
+			isa = PBXGroup;
+			children = (
+				EF79FE4842FFE816B75FE760 /* Mobile */,
+				3F2289F31671C9EF9FD8BB4C /* Multiplatform */,
+			);
+			path = bin;
+			sourceTree = "<group>";
+		};
+		6259D2EB39E8C9DFEA857E24 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				F03DB49F3547A94A455E80E1 /* BeerGallery */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		66298D95E328565E3B66A980 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				612865FBAD267E34A3257667 /* BeerGalleryiOS.framework */,
+				864A0BBCC06492B6A716AB1A /* BeerGalleryiOS.framework */,
+				92C26C60797CFBB252FCF2BE /* libAPI.a */,
+				FAE029D21E843D69086CE830 /* libImpl.a */,
+				56330535D2FB9911AB61E3D5 /* libiOSAppUtilities.a */,
+				7B03840A0453F9A6D62A8AD7 /* libiOSStorage.a */,
+				2FACBE014EC34E5B1BBBE731 /* libiOSUI.a */,
+				D27590DBAD5C54F34316103C /* libiOSUtilities.a */,
+				A38C5F9547F65DB46CC03BC2 /* MultiplatformArchitectureiOS.framework */,
+				1F9262100FE90EE692B30E9F /* MultiplatformArchitectureiOS.framework */,
+				5F6EB5E99E36E23B0AB36F97 /* MultiplatformStorageiOS.framework */,
+				AF9FA4E85F9B5C2BA5E1EB00 /* MultiplatformStorageiOS.framework */,
+				DA44ECE4E719D1AF86B34E64 /* TestApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		69360DD9DC8F07F53DB0B651 /* rules_xcodeproj */ = {
+			isa = PBXGroup;
+			children = (
+				B5F5D96483A88503621BE1C4 /* BeerGalleryiOS */,
+			);
+			path = rules_xcodeproj;
+			sourceTree = "<group>";
+		};
+		69B6C0B25BD1329B5D714248 /* Mobile */ = {
+			isa = PBXGroup;
+			children = (
+				5A866B688115648471E322E3 /* Apps */,
+			);
+			path = Mobile;
+			sourceTree = "<group>";
+		};
+		73181C347A1415B701F83F23 /* .gradle_build */ = {
+			isa = PBXGroup;
+			children = (
+				5A6B6C1932BEB916A7528ED5 /* XCFrameworks */,
+			);
+			path = .gradle_build;
+			sourceTree = "<group>";
+		};
+		77A2F5D9C18A1AE5952ADDE5 /* MultiplatformArchitectureiOS */ = {
+			isa = PBXGroup;
+			children = (
+				94BC291D94966E5B2A7A21FA /* Info.plist */,
+			);
+			path = MultiplatformArchitectureiOS;
+			sourceTree = "<group>";
+		};
+		77D5EC03567F23E46E4548B5 /* Bazel Generated Files */ = {
+			isa = PBXGroup;
+			children = (
+				F9E1E061C3896FE1F307189B /* applebin_ios-ios_sim_arm64-dbg-ST-164313ba16aa */,
+				D8E12EEF648EE8B2B2F7EA1D /* applebin_ios-ios_sim_arm64-dbg-ST-d98dbd8343b5 */,
+				055DFE56C3BE3AE0C39C0D10 /* darwin_arm64-dbg */,
+			);
+			name = "Bazel Generated Files";
+			path = "bazel-out";
+			sourceTree = SOURCE_ROOT;
+		};
+		7D4B1C57CCF50D0EBE4A16A7 /* .gradle_build */ = {
+			isa = PBXGroup;
+			children = (
+				A086E932B6507C06B3AF7896 /* XCFrameworks */,
+			);
+			path = .gradle_build;
+			sourceTree = "<group>";
+		};
+		7F246ED425456B3C6E07CA97 /* Mobile */ = {
+			isa = PBXGroup;
+			children = (
+				9815F23AD37FBF3A2516890C /* Apps */,
+				A20472A1BB9964C8287E8FFA /* Libraries */,
+			);
+			path = Mobile;
+			sourceTree = "<group>";
+		};
+		81D49B64257D0B73A5A62243 /* TestApp */ = {
+			isa = PBXGroup;
+			children = (
+				59CE308A56B3CB9730C5E03F /* Application */,
+				708CAD73A9C63F1F2BC61B32 /* BUILD */,
+			);
+			path = TestApp;
+			sourceTree = "<group>";
+		};
+		844867FA1A68064FEBC80E0A /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				EEE0DDD79892B65DFBF2D429 /* Common */,
+			);
+			path = Libraries;
+			sourceTree = "<group>";
+		};
+		91E2CEF1D752FA90F7466DAD /* rules_xcodeproj */ = {
+			isa = PBXGroup;
+			children = (
+				CBC035CF49312DB7FDBAFEE5 /* TestApp */,
+			);
+			path = rules_xcodeproj;
+			sourceTree = "<group>";
+		};
+		935F4006469C84190705CEE1 /* XCFrameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3CBEDC2F60D08CF01767EA3A /* debug */,
+				25E5CE531362769CC21C8340 /* release */,
+			);
+			path = XCFrameworks;
+			sourceTree = "<group>";
+		};
+		949BAFBFFB6CA0B3D36F94A9 /* Storage.xcframework */ = {
+			isa = PBXGroup;
+			children = (
+				E17E32D0FFD743C6C306EBC4 /* ios-arm64_x86_64-simulator */,
+			);
+			path = Storage.xcframework;
+			sourceTree = "<group>";
+		};
+		97948C7C2CD7B64A725B3323 /* BeerGallery.xcframework */ = {
+			isa = PBXGroup;
+			children = (
+				1148754EE0F227DF41533626 /* ios-arm64_x86_64-simulator */,
+			);
+			path = BeerGallery.xcframework;
+			sourceTree = "<group>";
+		};
+		9815F23AD37FBF3A2516890C /* Apps */ = {
+			isa = PBXGroup;
+			children = (
+				9E1F3D9277BC71D9AADD5BE8 /* iOS */,
+			);
+			path = Apps;
+			sourceTree = "<group>";
+		};
+		986CCD434283EA3347B2442B /* Multiplatform */ = {
+			isa = PBXGroup;
+			children = (
+				F445F0D5B1AB9FACBE9FC66E /* Architecture */,
+				191A4AC31FC8BC04D555A46C /* Storage */,
+			);
+			path = Multiplatform;
+			sourceTree = "<group>";
+		};
+		9AAD347A6A3B651D824897DA /* rules_xcodeproj */ = {
+			isa = PBXGroup;
+			children = (
+				251DF8BF7206E5E31D94CD23 /* BeerGalleryiOS */,
+			);
+			path = rules_xcodeproj;
+			sourceTree = "<group>";
+		};
+		9D1BA277BEAD5284894F5C0E /* MultiplatformStorageiOS */ = {
+			isa = PBXGroup;
+			children = (
+				7F284F3CB1E6805F8DA9D8CD /* Info.plist */,
+			);
+			path = MultiplatformStorageiOS;
+			sourceTree = "<group>";
+		};
+		9E1F3D9277BC71D9AADD5BE8 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				81D49B64257D0B73A5A62243 /* TestApp */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		A086E932B6507C06B3AF7896 /* XCFrameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B99CAFE9D730B8AFCA9C19A8 /* debug */,
+				E9367CE77F12FD6CE24700F1 /* release */,
+			);
+			path = XCFrameworks;
+			sourceTree = "<group>";
+		};
+		A20472A1BB9964C8287E8FFA /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				3BB0EF4DAA4901E063816760 /* Common */,
+				3F6101ECAB63ED3B59B12363 /* iOS */,
+			);
+			path = Libraries;
+			sourceTree = "<group>";
+		};
+		A49AFBE384D8E384C0EE11E4 /* Impl */ = {
+			isa = PBXGroup;
+			children = (
+				47CBD201ADFD4AFA154EF3FA /* Plugins */,
+			);
+			path = Impl;
+			sourceTree = "<group>";
+		};
+		A81F45DD719A3465497CC9B0 /* Multiplatform */ = {
+			isa = PBXGroup;
+			children = (
+				41A965E811AF674247681207 /* Architecture */,
+				D9BF5479210C0FD514544069 /* Storage */,
+			);
+			path = Multiplatform;
+			sourceTree = "<group>";
+		};
+		AA53963BB3690881D278A642 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				667E155D0FAF267406F4E340 /* BeerGalleryView.swift */,
+				FD911E3A8C817DB073E8A47A /* BeerListView.swift */,
+				B77F1051280AAFFC79916C0A /* BeerRowView.swift */,
+				25DF1F7FC1A8DBDF6D8AC1D1 /* IndicatorView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AD7918B44A0C4E307A36A5E3 /* GenerateTestAppXcodeProject.generator-params */ = {
+			isa = PBXGroup;
+			children = (
+				FB2EF4F1F7E25667E1187E12 /* BeerGalleryiOS.0.link.params */,
+				3F27F6B1FFD8106AFC70AA06 /* BeerGalleryiOS.9.link.params */,
+				A512A5FE8A20B1C651C6CABB /* MultiplatformArchitectureiOS.8.link.params */,
+				C023343FE982629BA01FBC24 /* MultiplatformArchitectureiOS.11.link.params */,
+				54E63D246623822852426382 /* MultiplatformStorageiOS.4.link.params */,
+				6402F0395E720B80BD57F276 /* MultiplatformStorageiOS.10.link.params */,
+				6E52C5C276E36E0E60D81190 /* TestApp.12.link.params */,
+			);
+			path = "GenerateTestAppXcodeProject.generator-params";
+			sourceTree = "<group>";
+		};
+		AEDA45146FA5CAED28BBD0B8 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				5D79F02A5A4FF93E94F86310 /* Image */,
+				C53753E5ACF752BF41383D1F /* StorePlugins */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		B0585FFE6D8E89CF03BFD0BC /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				2595A208454E396A126D943F /* TestApp */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		B436ECB6A848B5AEA2ED8C25 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				18532FB63A30A5FFB9907D16 /* TestApp */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		B5F5D96483A88503621BE1C4 /* BeerGalleryiOS */ = {
+			isa = PBXGroup;
+			children = (
+				B5C0E21A4E1FCAA6CA88CF0E /* Info.plist */,
+			);
+			path = BeerGalleryiOS;
+			sourceTree = "<group>";
+		};
+		B893D7F41375DD925A2DDA0A /* rules_xcodeproj */ = {
+			isa = PBXGroup;
+			children = (
+				D638C237294AB40B21191B05 /* MultiplatformStorageiOS */,
+			);
+			path = rules_xcodeproj;
+			sourceTree = "<group>";
+		};
+		B99CAFE9D730B8AFCA9C19A8 /* debug */ = {
+			isa = PBXGroup;
+			children = (
+				CA46768E706273EAD100D3F4 /* BeerGallery.xcframework */,
+			);
+			path = debug;
+			sourceTree = "<group>";
+		};
+		BA514A6E442996BD1461338A /* ios-arm64_x86_64-simulator */ = {
+			isa = PBXGroup;
+			children = (
+				F18442946C70957FBD57F91B /* Architecture.framework */,
+			);
+			path = "ios-arm64_x86_64-simulator";
+			sourceTree = "<group>";
+		};
+		BD5564AACEC855AB8685136F /* API */ = {
+			isa = PBXGroup;
+			children = (
+				852ADE22E45127BF33D0A7EB /* AnyStorePlugin.swift */,
+				2F80481938F22BCB15E56CDE /* ObservableObjectStore.swift */,
+				2A5B2B8D37A6D2FCBDCD39C0 /* Store.swift */,
+				3AD3D4E471560743335987F9 /* StorePlugin.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		C53753E5ACF752BF41383D1F /* StorePlugins */ = {
+			isa = PBXGroup;
+			children = (
+				887E8BB05D7A84BD453475A6 /* LoggingStorePlugin.swift */,
+				D155DCBF9E23199E02B91D76 /* OSSignpostPlugin.swift */,
+			);
+			path = StorePlugins;
+			sourceTree = "<group>";
+		};
+		C970D15B11249D5842E358E1 /* bin */ = {
+			isa = PBXGroup;
+			children = (
+				E1D9842890F37CB39717C3CB /* Mobile */,
+				A81F45DD719A3465497CC9B0 /* Multiplatform */,
+			);
+			path = bin;
+			sourceTree = "<group>";
+		};
+		CA46768E706273EAD100D3F4 /* BeerGallery.xcframework */ = {
+			isa = PBXGroup;
+			children = (
+				3D8201B990E083B849F8FD86 /* ios-arm64_x86_64-simulator */,
+			);
+			path = BeerGallery.xcframework;
+			sourceTree = "<group>";
+		};
+		CA5D8C2E2056DD25735940BD /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				A2FA04CAAE66592A216867BF /* iOS-Info.plist */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		CA9C76458FFE9881FCE9F594 /* bin */ = {
+			isa = PBXGroup;
+			children = (
+				69B6C0B25BD1329B5D714248 /* Mobile */,
+			);
+			path = bin;
+			sourceTree = "<group>";
+		};
+		CBC035CF49312DB7FDBAFEE5 /* TestApp */ = {
+			isa = PBXGroup;
+			children = (
+				A4244598B649A3E42CCF8EB0 /* Info.plist */,
+			);
+			path = TestApp;
+			sourceTree = "<group>";
+		};
+		CBDC3F4E17F04DC95E8562FB /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				344795DF457115B3CD95DB7F /* iOS-Info.plist */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		D499A508E2B1795EC2DA191A /* iOSStorage */ = {
+			isa = PBXGroup;
+			children = (
+				E16E0C36ED7F9C49B01D496B /* API */,
+				B674784D8FE4CE9592677E7B /* BUILD */,
+			);
+			path = iOSStorage;
+			sourceTree = "<group>";
+		};
+		D638C237294AB40B21191B05 /* MultiplatformStorageiOS */ = {
+			isa = PBXGroup;
+			children = (
+				F1038243B39B150DF4ED935E /* Info.plist */,
+			);
+			path = MultiplatformStorageiOS;
+			sourceTree = "<group>";
+		};
+		D705252AF44FFA8C54577B4A /* rules_xcodeproj */ = {
+			isa = PBXGroup;
+			children = (
+				77A2F5D9C18A1AE5952ADDE5 /* MultiplatformArchitectureiOS */,
+			);
+			path = rules_xcodeproj;
+			sourceTree = "<group>";
+		};
+		D8E12EEF648EE8B2B2F7EA1D /* applebin_ios-ios_sim_arm64-dbg-ST-d98dbd8343b5 */ = {
+			isa = PBXGroup;
+			children = (
+				61271411A956A6B172E1F298 /* bin */,
+			);
+			path = "applebin_ios-ios_sim_arm64-dbg-ST-d98dbd8343b5";
+			sourceTree = "<group>";
+		};
+		D9BF5479210C0FD514544069 /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				B893D7F41375DD925A2DDA0A /* rules_xcodeproj */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		DDE7EDE80E8D18515B7BA1CA /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				36DB9DCE6CA95803C0C71826 /* DTOBeer+Identifiable.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		E16E0C36ED7F9C49B01D496B /* API */ = {
+			isa = PBXGroup;
+			children = (
+				C552AEFA88B0AC021048F24E /* NSCacheAdapter.swift */,
+				5971871A64B0301A92330A5C /* Storage.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		E17E32D0FFD743C6C306EBC4 /* ios-arm64_x86_64-simulator */ = {
+			isa = PBXGroup;
+			children = (
+				ED7742D0440DE723BEF2E1E2 /* Storage.framework */,
+			);
+			path = "ios-arm64_x86_64-simulator";
+			sourceTree = "<group>";
+		};
+		E1D9842890F37CB39717C3CB /* Mobile */ = {
+			isa = PBXGroup;
+			children = (
+				844867FA1A68064FEBC80E0A /* Libraries */,
+			);
+			path = Mobile;
+			sourceTree = "<group>";
+		};
+		E4DD932AB29E93932D6FECB7 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				6259D2EB39E8C9DFEA857E24 /* Common */,
+			);
+			path = Libraries;
+			sourceTree = "<group>";
+		};
+		E7E198402B129745A0BF13B5 /* BeerGallery */ = {
+			isa = PBXGroup;
+			children = (
+				DDE7EDE80E8D18515B7BA1CA /* Data */,
+				AA53963BB3690881D278A642 /* Views */,
+				7C5EC2478A98B4349D33CCA5 /* BeerViewStoreAdapter.swift */,
+			);
+			path = BeerGallery;
+			sourceTree = "<group>";
+		};
+		E9367CE77F12FD6CE24700F1 /* release */ = {
+			isa = PBXGroup;
+			children = (
+				97948C7C2CD7B64A725B3323 /* BeerGallery.xcframework */,
+			);
+			path = release;
+			sourceTree = "<group>";
+		};
+		EEE0DDD79892B65DFBF2D429 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				2E70A46B3DB33382109F3FF8 /* BeerGallery */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		EF79FE4842FFE816B75FE760 /* Mobile */ = {
+			isa = PBXGroup;
+			children = (
+				524C97902793E0E6F93AEED8 /* Apps */,
+				E4DD932AB29E93932D6FECB7 /* Libraries */,
+			);
+			path = Mobile;
+			sourceTree = "<group>";
+		};
+		F03DB49F3547A94A455E80E1 /* BeerGallery */ = {
+			isa = PBXGroup;
+			children = (
+				9AAD347A6A3B651D824897DA /* rules_xcodeproj */,
+			);
+			path = BeerGallery;
+			sourceTree = "<group>";
+		};
+		F08DB0B32400920436039F79 /* ios-arm64_x86_64-simulator */ = {
+			isa = PBXGroup;
+			children = (
+				1810F6E9EB127C803D776160 /* Storage.framework */,
+			);
+			path = "ios-arm64_x86_64-simulator";
+			sourceTree = "<group>";
+		};
+		F2BA7ED800ADC1AE741CA0ED /* iOSArchitecture */ = {
+			isa = PBXGroup;
+			children = (
+				BD5564AACEC855AB8685136F /* API */,
+				A49AFBE384D8E384C0EE11E4 /* Impl */,
+				D07D20DD0F45AFB50691AE87 /* BUILD */,
+			);
+			path = iOSArchitecture;
+			sourceTree = "<group>";
+		};
+		F445F0D5B1AB9FACBE9FC66E /* Architecture */ = {
+			isa = PBXGroup;
+			children = (
+				73181C347A1415B701F83F23 /* .gradle_build */,
+				CA5D8C2E2056DD25735940BD /* Utility */,
+				1C612315E90907D557D2FAA3 /* BUILD */,
+			);
+			path = Architecture;
+			sourceTree = "<group>";
+		};
+		F6F9E65B89BBFD9B54C11B8D /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				35219E87E7D146C5810AE7E3 /* rules_xcodeproj */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		F7202EE11D71FC392400BB56 /* ios-arm64_x86_64-simulator */ = {
+			isa = PBXGroup;
+			children = (
+				646497EE196A9A748A88FFBD /* Architecture.framework */,
+			);
+			path = "ios-arm64_x86_64-simulator";
+			sourceTree = "<group>";
+		};
+		F9A411A95321F65CDE098013 /* rules_xcodeproj */ = {
+			isa = PBXGroup;
+			children = (
+				008ACE40022B995E1B63CB32 /* MultiplatformArchitectureiOS */,
+			);
+			path = rules_xcodeproj;
+			sourceTree = "<group>";
+		};
+		F9E1E061C3896FE1F307189B /* applebin_ios-ios_sim_arm64-dbg-ST-164313ba16aa */ = {
+			isa = PBXGroup;
+			children = (
+				C970D15B11249D5842E358E1 /* bin */,
+			);
+			path = "applebin_ios-ios_sim_arm64-dbg-ST-164313ba16aa";
+			sourceTree = "<group>";
+		};
+		FA6277CC97BA282E5CD909B7 /* BeerGallery */ = {
+			isa = PBXGroup;
+			children = (
+				7D4B1C57CCF50D0EBE4A16A7 /* .gradle_build */,
+				FB4191E78BFCF90792CCE418 /* Utility */,
+				9288A79AD60CDB785C477F8F /* BUILD */,
+			);
+			path = BeerGallery;
+			sourceTree = "<group>";
+		};
+		FB4191E78BFCF90792CCE418 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				ECC08B9B3DEE012D465E51A1 /* iOS-Info.plist */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0CEECC10903B8591EF4F651A /* iOSStorage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB2D6EDF658FD80421EBFF09 /* Build configuration list for PBXNativeTarget "iOSStorage" */;
+			buildPhases = (
+				D849410DF2D111D933B61494 /* Copy Bazel Outputs / Generate Bazel Dependencies (Index Build) */,
+				C13E91DEBB781E0FBA4183F2 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EF98CE9537B21B9B4416861D /* PBXTargetDependency */,
+			);
+			name = iOSStorage;
+			productName = iOSStorage;
+			productType = "com.apple.product-type.library.static";
+		};
+		58E5A0BA6AAFCC3EBCB18F92 /* BeerGalleryiOS (bc20b) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 89FF8064FF8652220446CA46 /* Build configuration list for PBXNativeTarget "BeerGalleryiOS (bc20b)" */;
+			buildPhases = (
+				589127D4FCD09E1C8861A3C1 /* Copy Bazel Outputs / Generate Bazel Dependencies (Index Build) */,
+				0CE8D4E2FC105D32DDBA0434 /* Create linking dependencies */,
+				0FDE354A3708F0C38B7EA7C3 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8FB44C65DA43E5428FBA3EF0 /* PBXTargetDependency */,
+			);
+			name = "BeerGalleryiOS (bc20b)";
+			productName = BeerGalleryiOS;
+			productReference = 612865FBAD267E34A3257667 /* BeerGalleryiOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		666DF06D67DE641BB4C7CF12 /* Impl */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BFB0C7D1619F451CC9D1E91C /* Build configuration list for PBXNativeTarget "Impl" */;
+			buildPhases = (
+				ACEC5FC35BF7313D16EC3806 /* Copy Bazel Outputs / Generate Bazel Dependencies (Index Build) */,
+				658467117E978BACDC11D19C /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3B5BE25EE6F53276E9B2464F /* PBXTargetDependency */,
+			);
+			name = Impl;
+			productName = Impl;
+			productType = "com.apple.product-type.library.static";
+		};
+		71627312A8C11B7A6477ECFE /* MultiplatformArchitectureiOS (bc20b) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8F41B54D2F8CC728CF71CA23 /* Build configuration list for PBXNativeTarget "MultiplatformArchitectureiOS (bc20b)" */;
+			buildPhases = (
+				08E60FB01164D804FD257C2A /* Copy Bazel Outputs / Generate Bazel Dependencies (Index Build) */,
+				CD9F4CD59865B0399EDC4C8F /* Create linking dependencies */,
+				6BAD6248A7CADBC1C99B0CB0 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3157126FF6FB0E44EC6B4192 /* PBXTargetDependency */,
+			);
+			name = "MultiplatformArchitectureiOS (bc20b)";
+			productName = MultiplatformArchitectureiOS;
+			productReference = A38C5F9547F65DB46CC03BC2 /* MultiplatformArchitectureiOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9237E05AD7A27F0930D3439D /* iOSAppUtilities */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 45E31B24F9AC8D85BAE4AC6F /* Build configuration list for PBXNativeTarget "iOSAppUtilities" */;
+			buildPhases = (
+				1615F514F85C356B236868E9 /* Copy Bazel Outputs / Generate Bazel Dependencies (Index Build) */,
+				97ADCC1E5934B5CCC49AF0F3 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				42626A61D4A042C0C7AC234F /* PBXTargetDependency */,
+			);
+			name = iOSAppUtilities;
+			productName = iOSAppUtilities;
+			productType = "com.apple.product-type.library.static";
+		};
+		A122AE31EE6D76F15E3291EC /* API */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3BDD51C6B9FAD6EEA9A84205 /* Build configuration list for PBXNativeTarget "API" */;
+			buildPhases = (
+				37B4407C9D10ABF25F1A3ABA /* Copy Bazel Outputs / Generate Bazel Dependencies (Index Build) */,
+				52FFDFEC52A08E3B61F1B976 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F2655579ED5C92CFEFDECAE5 /* PBXTargetDependency */,
+			);
+			name = API;
+			productName = API;
+			productType = "com.apple.product-type.library.static";
+		};
+		B29BB99F9E379BE2A3C91AA6 /* MultiplatformStorageiOS (bc20b) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 90C6A25D0C3D9A880D77181F /* Build configuration list for PBXNativeTarget "MultiplatformStorageiOS (bc20b)" */;
+			buildPhases = (
+				FF2AAB55E43DEECE68A89759 /* Copy Bazel Outputs / Generate Bazel Dependencies (Index Build) */,
+				FC8C1EF718FB43798A9C4E48 /* Create linking dependencies */,
+				3D2EC4BBD95B561053C463FC /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B188C0AB18CD0F897C0E9810 /* PBXTargetDependency */,
+			);
+			name = "MultiplatformStorageiOS (bc20b)";
+			productName = MultiplatformStorageiOS;
+			productReference = 5F6EB5E99E36E23B0AB36F97 /* MultiplatformStorageiOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B6A38F289D67717D3D3ACD7A /* iOSUtilities */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E46E8CC4461E8DC2990EBCFC /* Build configuration list for PBXNativeTarget "iOSUtilities" */;
+			buildPhases = (
+				1299C4A432A263141DA44D36 /* Copy Bazel Outputs / Generate Bazel Dependencies (Index Build) */,
+				2EB82191725FE617207D3EE7 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DD25103E1AFA108DC4E3AAD0 /* PBXTargetDependency */,
+			);
+			name = iOSUtilities;
+			productName = iOSUtilities;
+			productType = "com.apple.product-type.library.static";
+		};
+		CF7998E47D2156B606A31DAB /* BeerGalleryiOS (f7462) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9202B73AD4FFF458FB4DE786 /* Build configuration list for PBXNativeTarget "BeerGalleryiOS (f7462)" */;
+			buildPhases = (
+				9742A4402EA56FC3248FA3C4 /* Copy Bazel Outputs / Generate Bazel Dependencies (Index Build) */,
+				38F35204691B0D057A7DEB8F /* Create linking dependencies */,
+				D6B1B75F4F9D5D046B6C8ACA /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FED5635E34149B40AF4234A4 /* PBXTargetDependency */,
+			);
+			name = "BeerGalleryiOS (f7462)";
+			productName = BeerGalleryiOS;
+			productReference = 864A0BBCC06492B6A716AB1A /* BeerGalleryiOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D84A76C6413991082544B214 /* TestApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3CBA3E4A376CFA16917F3847 /* Build configuration list for PBXNativeTarget "TestApp" */;
+			buildPhases = (
+				28C7472609D1923808BC9983 /* Copy Bazel Outputs / Generate Bazel Dependencies (Index Build) */,
+				CAF47D9E733C78A5D027B16E /* Create linking dependencies */,
+				DC85D81F2162D0F6E52F2A09 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5D5D052CC54894038B748DD9 /* PBXTargetDependency */,
+			);
+			name = TestApp;
+			productName = TestApp;
+			productReference = DA44ECE4E719D1AF86B34E64 /* TestApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E21E0C76D218ECD609E240D4 /* MultiplatformStorageiOS (f7462) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 40FBF2B1FBC08FA93631EDE1 /* Build configuration list for PBXNativeTarget "MultiplatformStorageiOS (f7462)" */;
+			buildPhases = (
+				A7C317381123C8E8A99D6D9A /* Copy Bazel Outputs / Generate Bazel Dependencies (Index Build) */,
+				23167515A17E02D97DADF585 /* Create linking dependencies */,
+				6E0CEB9AD19055AFAC9085CE /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5BBA5A6BF828E4EBAF2C518C /* PBXTargetDependency */,
+			);
+			name = "MultiplatformStorageiOS (f7462)";
+			productName = MultiplatformStorageiOS;
+			productReference = AF9FA4E85F9B5C2BA5E1EB00 /* MultiplatformStorageiOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		EAA01F1AF1B82DCDD8B6904D /* iOSUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B7FF73366DB04DE3D2F6C8E9 /* Build configuration list for PBXNativeTarget "iOSUI" */;
+			buildPhases = (
+				75C2C41075F706C5B5BDFA7E /* Copy Bazel Outputs / Generate Bazel Dependencies (Index Build) */,
+				135CD626E6F89DC94C78D35E /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				970D60BDB90F2F97014ACFA5 /* PBXTargetDependency */,
+			);
+			name = iOSUI;
+			productName = iOSUI;
+			productType = "com.apple.product-type.library.static";
+		};
+		F3AA3313E5D9BA65FEF8B9BD /* MultiplatformArchitectureiOS (f7462) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F505F1BDB9338A4770A900F /* Build configuration list for PBXNativeTarget "MultiplatformArchitectureiOS (f7462)" */;
+			buildPhases = (
+				B5512EF64C55E8ACC11D1B46 /* Copy Bazel Outputs / Generate Bazel Dependencies (Index Build) */,
+				DBAB818AB2869EFC5953C57F /* Create linking dependencies */,
+				E0CAA66196466CE1240696EF /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C0E6F4994EB646405536B7C1 /* PBXTargetDependency */,
+			);
+			name = "MultiplatformArchitectureiOS (f7462)";
+			productName = MultiplatformArchitectureiOS;
+			productReference = 1F9262100FE90EE692B30E9F /* MultiplatformArchitectureiOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8C2AB4C5602EB14A95FDECDC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 9999;
+				LastUpgradeCheck = 9999;
+				TargetAttributes = {
+					0CEECC10903B8591EF4F651A = {
+						CreatedOnToolsVersion = 13.3.1;
+						LastSwiftMigration = 9999;
+					};
+					58E5A0BA6AAFCC3EBCB18F92 = {
+						CreatedOnToolsVersion = 13.3.1;
+						LastSwiftMigration = 9999;
+					};
+					666DF06D67DE641BB4C7CF12 = {
+						CreatedOnToolsVersion = 13.3.1;
+						LastSwiftMigration = 9999;
+					};
+					71627312A8C11B7A6477ECFE = {
+						CreatedOnToolsVersion = 13.3.1;
+						LastSwiftMigration = 9999;
+					};
+					91CB1D303438986D84326039 = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
+					9237E05AD7A27F0930D3439D = {
+						CreatedOnToolsVersion = 13.3.1;
+						LastSwiftMigration = 9999;
+					};
+					A122AE31EE6D76F15E3291EC = {
+						CreatedOnToolsVersion = 13.3.1;
+						LastSwiftMigration = 9999;
+					};
+					B29BB99F9E379BE2A3C91AA6 = {
+						CreatedOnToolsVersion = 13.3.1;
+						LastSwiftMigration = 9999;
+					};
+					B6A38F289D67717D3D3ACD7A = {
+						CreatedOnToolsVersion = 13.3.1;
+						LastSwiftMigration = 9999;
+					};
+					CF7998E47D2156B606A31DAB = {
+						CreatedOnToolsVersion = 13.3.1;
+						LastSwiftMigration = 9999;
+					};
+					D84A76C6413991082544B214 = {
+						CreatedOnToolsVersion = 13.3.1;
+						LastSwiftMigration = 9999;
+					};
+					E21E0C76D218ECD609E240D4 = {
+						CreatedOnToolsVersion = 13.3.1;
+						LastSwiftMigration = 9999;
+					};
+					EAA01F1AF1B82DCDD8B6904D = {
+						CreatedOnToolsVersion = 13.3.1;
+						LastSwiftMigration = 9999;
+					};
+					F3AA3313E5D9BA65FEF8B9BD = {
+						CreatedOnToolsVersion = 13.3.1;
+						LastSwiftMigration = 9999;
+					};
+				};
+			};
+			buildConfigurationList = A244A62ECED0E6BA139EF2DE /* Build configuration list for PBXProject "TestApp-Bazel" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 131BF12C1CCE9B796965E31C /* /Users/alex/Developer/imtheapp */;
+			productRefGroup = 66298D95E328565E3B66A980 /* Products */;
+			projectDirPath = /var/tmp/_bazel_alex/1210a42fdbb8707f28d96a459324aa97/rules_xcodeproj/build_output_base/execroot/iamtheapp;
+			projectRoot = "";
+			targets = (
+				91CB1D303438986D84326039 /* BazelDependencies */,
+				A122AE31EE6D76F15E3291EC /* API */,
+				58E5A0BA6AAFCC3EBCB18F92 /* BeerGalleryiOS (bc20b) */,
+				CF7998E47D2156B606A31DAB /* BeerGalleryiOS (f7462) */,
+				666DF06D67DE641BB4C7CF12 /* Impl */,
+				9237E05AD7A27F0930D3439D /* iOSAppUtilities */,
+				0CEECC10903B8591EF4F651A /* iOSStorage */,
+				EAA01F1AF1B82DCDD8B6904D /* iOSUI */,
+				B6A38F289D67717D3D3ACD7A /* iOSUtilities */,
+				71627312A8C11B7A6477ECFE /* MultiplatformArchitectureiOS (bc20b) */,
+				F3AA3313E5D9BA65FEF8B9BD /* MultiplatformArchitectureiOS (f7462) */,
+				B29BB99F9E379BE2A3C91AA6 /* MultiplatformStorageiOS (bc20b) */,
+				E21E0C76D218ECD609E240D4 /* MultiplatformStorageiOS (f7462) */,
+				D84A76C6413991082544B214 /* TestApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		08D93B21059E96FE6A41063E /* Create swift_debug_settings.py */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(BAZEL_INTEGRATION_DIR)/swift_debug_settings.py",
+			);
+			name = "Create swift_debug_settings.py";
+			outputPaths = (
+				"$(OBJROOT)/swift_debug_settings.py",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "perl -pe 's/\\$(\\()?([a-zA-Z_]\\w*)(?(1)\\))/$ENV{$2}/g' \\\n  \"$SCRIPT_INPUT_FILE_0\" > \"$SCRIPT_OUTPUT_FILE_0\"\n";
+			showEnvVarsInLog = 0;
+		};
+		08E60FB01164D804FD257C2A /* Copy Bazel Outputs / Generate Bazel Dependencies (Index Build) */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(TARGET_BUILD_DIR)/$(INFOPLIST_PATH)",
+			);
+			name = "Copy Bazel Outputs / Generate Bazel Dependencies (Index Build)";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -euo pipefail\n\nif [[ \"$ACTION\" == \"indexbuild\" ]]; then\n  cd \"$SRCROOT\"\n\n  \"$BAZEL_INTEGRATION_DIR/generate_index_build_bazel_dependencies.sh\"\nelse\n  \"$BAZEL_INTEGRATION_DIR/copy_outputs.sh\" \\\n    \"_BazelForcedCompile_.swift\" \\\n    \"MultiplatformArchitectureiOS.framework\" \\\n    \"$BAZEL_INTEGRATION_DIR/framework.exclude.rsynclist\"\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		0CE8D4E2FC105D32DDBA0434 /* Create linking dependencies */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(LINK_PARAMS_FILE)",
+			);
+			name = "Create linking dependencies";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/link.params",
+				"$(DERIVED_FILE_DIR)/_CompileStub_.m",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -euo pipefail\n\nif [[ \"${ENABLE_PREVIEWS:-}\" == \"YES\" ]]; then\nperl -pe 's/^(\"?)(.*\\$\\(.*\\).*?)(\"?)$/\"$2\"/ ; s/\\$(\\()?([a-zA-Z_]\\w*)(?(1)\\))/$ENV{$2}/g' \\\n  \"$SCRIPT_INPUT_FILE_0\" > \"$SCRIPT_OUTPUT_FILE_0\"\nelse\n  touch \"$SCRIPT_OUTPUT_FILE_0\"\nfi\n\ntouch \"$SCRIPT_OUTPUT_FILE_1\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1299C4A432A263141DA44D36 /* Copy Bazel Outputs / Generate Bazel Dependencies (Index Build) */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Bazel Outputs / Generate Bazel Dependencies (Index Build)";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -euo pipefail\n\nif [[ \"$ACTION\" == \"indexbuild\" ]]; then\n  cd \"$SRCROOT\"\n\n  \"$BAZEL_INTEGRATION_DIR/generate_index_build_bazel_dependencies.sh\"\n\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		1615F514F85C356B236868E9 /* Copy Bazel Outputs / Generate Bazel Dependencies (Index Build) */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Bazel Outputs / Generate Bazel Dependencies (Index Build)";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -euo pipefail\n\nif [[ \"$ACTION\" == \"indexbuild\" ]]; then\n  cd \"$SRCROOT\"\n\n  \"$BAZEL_INTEGRATION_DIR/generate_index_build_bazel_dependencies.sh\"\n\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		23167515A17E02D97DADF585 /* Create linking dependencies */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(LINK_PARAMS_FILE)",
+			);
+			name = "Create linking dependencies";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/link.params",
+				"$(DERIVED_FILE_DIR)/_CompileStub_.m",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -euo pipefail\n\nif [[ \"${ENABLE_PREVIEWS:-}\" == \"YES\" ]]; then\nperl -pe 's/^(\"?)(.*\\$\\(.*\\).*?)(\"?)$/\"$2\"/ ; s/\\$(\\()?([a-zA-Z_]\\w*)(?(1)\\))/$ENV{$2}/g' \\\n  \"$SCRIPT_INPUT_FILE_0\" > \"$SCRIPT_OUTPUT_FILE_0\"\nelse\n  touch \"$SCRIPT_OUTPUT_FILE_0\"\nfi\n\ntouch \"$SCRIPT_OUTPUT_FILE_1\"\n";
+			showEnvVarsInLog = 0;
+		};
+		28C7472609D1923808BC9983 /* Copy Bazel Outputs / Generate Bazel Dependencies (Index Build) */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(TARGET_BUILD_DIR)/$(INFOPLIST_PATH)",
+			);
+			name = "Copy Bazel Outputs / Generate Bazel Dependencies (Index Build)";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -euo pipefail\n\nif [[ \"$ACTION\" == \"indexbuild\" ]]; then\n  cd \"$SRCROOT\"\n\n  \"$BAZEL_INTEGRATION_DIR/generate_index_build_bazel_dependencies.sh\"\nelse\n  \"$BAZEL_INTEGRATION_DIR/copy_outputs.sh\" \\\n    \"_BazelForcedCompile_.swift\" \\\n    \"TestApp.app\" \\\n    \"$BAZEL_INTEGRATION_DIR/app.exclude.rsynclist\"\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		37B4407C9D10ABF25F1A3ABA /* Copy Bazel Outputs / Generate Bazel Dependencies (Index Build) */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Bazel Outputs / Generate Bazel Dependencies (Index Build)";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -euo pipefail\n\nif [[ \"$ACTION\" == \"indexbuild\" ]]; then\n  cd \"$SRCROOT\"\n\n  \"$BAZEL_INTEGRATION_DIR/generate_index_build_bazel_dependencies.sh\"\n\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		38F35204691B0D057A7DEB8F /* Create linking dependencies */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(LINK_PARAMS_FILE)",
+			);
+			name = "Create linking dependencies";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/link.params",
+				"$(DERIVED_FILE_DIR)/_CompileStub_.m",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -euo pipefail\n\nif [[ \"${ENABLE_PREVIEWS:-}\" == \"YES\" ]]; then\nperl -pe 's/^(\"?)(.*\\$\\(.*\\).*?)(\"?)$/\"$2\"/ ; s/\\$(\\()?([a-zA-Z_]\\w*)(?(1)\\))/$ENV{$2}/g' \\\n  \"$SCRIPT_INPUT_FILE_0\" > \"$SCRIPT_OUTPUT_FILE_0\"\nelse\n  touch \"$SCRIPT_OUTPUT_FILE_0\"\nfi\n\ntouch \"$SCRIPT_OUTPUT_FILE_1\"\n";
+			showEnvVarsInLog = 0;
+		};
+		589127D4FCD09E1C8861A3C1 /* Copy Bazel Outputs / Generate Bazel Dependencies (Index Build) */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(TARGET_BUILD_DIR)/$(INFOPLIST_PATH)",
+			);
+			name = "Copy Bazel Outputs / Generate Bazel Dependencies (Index Build)";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -euo pipefail\n\nif [[ \"$ACTION\" == \"indexbuild\" ]]; then\n  cd \"$SRCROOT\"\n\n  \"$BAZEL_INTEGRATION_DIR/generate_index_build_bazel_dependencies.sh\"\nelse\n  \"$BAZEL_INTEGRATION_DIR/copy_outputs.sh\" \\\n    \"_BazelForcedCompile_.swift\" \\\n    \"BeerGalleryiOS.framework\" \\\n    \"$BAZEL_INTEGRATION_DIR/framework.exclude.rsynclist\"\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		75C2C41075F706C5B5BDFA7E /* Copy Bazel Outputs / Generate Bazel Dependencies (Index Build) */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Bazel Outputs / Generate Bazel Dependencies (Index Build)";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -euo pipefail\n\nif [[ \"$ACTION\" == \"indexbuild\" ]]; then\n  cd \"$SRCROOT\"\n\n  \"$BAZEL_INTEGRATION_DIR/generate_index_build_bazel_dependencies.sh\"\n\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9742A4402EA56FC3248FA3C4 /* Copy Bazel Outputs / Generate Bazel Dependencies (Index Build) */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(TARGET_BUILD_DIR)/$(INFOPLIST_PATH)",
+			);
+			name = "Copy Bazel Outputs / Generate Bazel Dependencies (Index Build)";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -euo pipefail\n\nif [[ \"$ACTION\" == \"indexbuild\" ]]; then\n  cd \"$SRCROOT\"\n\n  \"$BAZEL_INTEGRATION_DIR/generate_index_build_bazel_dependencies.sh\"\nelse\n  \"$BAZEL_INTEGRATION_DIR/copy_outputs.sh\" \\\n    \"_BazelForcedCompile_.swift\" \\\n    \"BeerGalleryiOS.framework\" \\\n    \"$BAZEL_INTEGRATION_DIR/framework.exclude.rsynclist\"\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A7C317381123C8E8A99D6D9A /* Copy Bazel Outputs / Generate Bazel Dependencies (Index Build) */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(TARGET_BUILD_DIR)/$(INFOPLIST_PATH)",
+			);
+			name = "Copy Bazel Outputs / Generate Bazel Dependencies (Index Build)";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -euo pipefail\n\nif [[ \"$ACTION\" == \"indexbuild\" ]]; then\n  cd \"$SRCROOT\"\n\n  \"$BAZEL_INTEGRATION_DIR/generate_index_build_bazel_dependencies.sh\"\nelse\n  \"$BAZEL_INTEGRATION_DIR/copy_outputs.sh\" \\\n    \"_BazelForcedCompile_.swift\" \\\n    \"MultiplatformStorageiOS.framework\" \\\n    \"$BAZEL_INTEGRATION_DIR/framework.exclude.rsynclist\"\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		ACEC5FC35BF7313D16EC3806 /* Copy Bazel Outputs / Generate Bazel Dependencies (Index Build) */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Bazel Outputs / Generate Bazel Dependencies (Index Build)";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -euo pipefail\n\nif [[ \"$ACTION\" == \"indexbuild\" ]]; then\n  cd \"$SRCROOT\"\n\n  \"$BAZEL_INTEGRATION_DIR/generate_index_build_bazel_dependencies.sh\"\n\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B108A4017029622C60F2CE23 /* Bazel Build */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Bazel Build";
+			outputFileListPaths = (
+				"$(INTERNAL_DIR)/generated.xcfilelist",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$BAZEL_INTEGRATION_DIR/generate_bazel_dependencies.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B5512EF64C55E8ACC11D1B46 /* Copy Bazel Outputs / Generate Bazel Dependencies (Index Build) */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(TARGET_BUILD_DIR)/$(INFOPLIST_PATH)",
+			);
+			name = "Copy Bazel Outputs / Generate Bazel Dependencies (Index Build)";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -euo pipefail\n\nif [[ \"$ACTION\" == \"indexbuild\" ]]; then\n  cd \"$SRCROOT\"\n\n  \"$BAZEL_INTEGRATION_DIR/generate_index_build_bazel_dependencies.sh\"\nelse\n  \"$BAZEL_INTEGRATION_DIR/copy_outputs.sh\" \\\n    \"_BazelForcedCompile_.swift\" \\\n    \"MultiplatformArchitectureiOS.framework\" \\\n    \"$BAZEL_INTEGRATION_DIR/framework.exclude.rsynclist\"\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CAF47D9E733C78A5D027B16E /* Create linking dependencies */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(LINK_PARAMS_FILE)",
+			);
+			name = "Create linking dependencies";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/link.params",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -euo pipefail\n\nif [[ \"${ENABLE_PREVIEWS:-}\" == \"YES\" ]]; then\nperl -pe 's/^(\"?)(.*\\$\\(.*\\).*?)(\"?)$/\"$2\"/ ; s/\\$(\\()?([a-zA-Z_]\\w*)(?(1)\\))/$ENV{$2}/g' \\\n  \"$SCRIPT_INPUT_FILE_0\" > \"$SCRIPT_OUTPUT_FILE_0\"\nelse\n  touch \"$SCRIPT_OUTPUT_FILE_0\"\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CD9F4CD59865B0399EDC4C8F /* Create linking dependencies */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(LINK_PARAMS_FILE)",
+			);
+			name = "Create linking dependencies";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/link.params",
+				"$(DERIVED_FILE_DIR)/_CompileStub_.m",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -euo pipefail\n\nif [[ \"${ENABLE_PREVIEWS:-}\" == \"YES\" ]]; then\nperl -pe 's/^(\"?)(.*\\$\\(.*\\).*?)(\"?)$/\"$2\"/ ; s/\\$(\\()?([a-zA-Z_]\\w*)(?(1)\\))/$ENV{$2}/g' \\\n  \"$SCRIPT_INPUT_FILE_0\" > \"$SCRIPT_OUTPUT_FILE_0\"\nelse\n  touch \"$SCRIPT_OUTPUT_FILE_0\"\nfi\n\ntouch \"$SCRIPT_OUTPUT_FILE_1\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D849410DF2D111D933B61494 /* Copy Bazel Outputs / Generate Bazel Dependencies (Index Build) */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Bazel Outputs / Generate Bazel Dependencies (Index Build)";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -euo pipefail\n\nif [[ \"$ACTION\" == \"indexbuild\" ]]; then\n  cd \"$SRCROOT\"\n\n  \"$BAZEL_INTEGRATION_DIR/generate_index_build_bazel_dependencies.sh\"\n\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DBAB818AB2869EFC5953C57F /* Create linking dependencies */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(LINK_PARAMS_FILE)",
+			);
+			name = "Create linking dependencies";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/link.params",
+				"$(DERIVED_FILE_DIR)/_CompileStub_.m",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -euo pipefail\n\nif [[ \"${ENABLE_PREVIEWS:-}\" == \"YES\" ]]; then\nperl -pe 's/^(\"?)(.*\\$\\(.*\\).*?)(\"?)$/\"$2\"/ ; s/\\$(\\()?([a-zA-Z_]\\w*)(?(1)\\))/$ENV{$2}/g' \\\n  \"$SCRIPT_INPUT_FILE_0\" > \"$SCRIPT_OUTPUT_FILE_0\"\nelse\n  touch \"$SCRIPT_OUTPUT_FILE_0\"\nfi\n\ntouch \"$SCRIPT_OUTPUT_FILE_1\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FC8C1EF718FB43798A9C4E48 /* Create linking dependencies */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(LINK_PARAMS_FILE)",
+			);
+			name = "Create linking dependencies";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/link.params",
+				"$(DERIVED_FILE_DIR)/_CompileStub_.m",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -euo pipefail\n\nif [[ \"${ENABLE_PREVIEWS:-}\" == \"YES\" ]]; then\nperl -pe 's/^(\"?)(.*\\$\\(.*\\).*?)(\"?)$/\"$2\"/ ; s/\\$(\\()?([a-zA-Z_]\\w*)(?(1)\\))/$ENV{$2}/g' \\\n  \"$SCRIPT_INPUT_FILE_0\" > \"$SCRIPT_OUTPUT_FILE_0\"\nelse\n  touch \"$SCRIPT_OUTPUT_FILE_0\"\nfi\n\ntouch \"$SCRIPT_OUTPUT_FILE_1\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FF2AAB55E43DEECE68A89759 /* Copy Bazel Outputs / Generate Bazel Dependencies (Index Build) */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(TARGET_BUILD_DIR)/$(INFOPLIST_PATH)",
+			);
+			name = "Copy Bazel Outputs / Generate Bazel Dependencies (Index Build)";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -euo pipefail\n\nif [[ \"$ACTION\" == \"indexbuild\" ]]; then\n  cd \"$SRCROOT\"\n\n  \"$BAZEL_INTEGRATION_DIR/generate_index_build_bazel_dependencies.sh\"\nelse\n  \"$BAZEL_INTEGRATION_DIR/copy_outputs.sh\" \\\n    \"_BazelForcedCompile_.swift\" \\\n    \"MultiplatformStorageiOS.framework\" \\\n    \"$BAZEL_INTEGRATION_DIR/framework.exclude.rsynclist\"\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0FDE354A3708F0C38B7EA7C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C26E3655D42ABB0A1710E06F /* _CompileStub_.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		135CD626E6F89DC94C78D35E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08370632D9789359C637CCBB /* ExternalImage.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2EB82191725FE617207D3EE7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29ED2FA6712460B6B66DC9B7 /* MainThreadRunner.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D2EC4BBD95B561053C463FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70BF2B78999DA33DEA1518A0 /* _CompileStub_.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52FFDFEC52A08E3B61F1B976 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C4CA5EE211E47457E7995FC /* AnyStorePlugin.swift in Sources */,
+				05522621A9273A122E0B14E9 /* ObservableObjectStore.swift in Sources */,
+				FD27BD2D8EBC8BD03E0728C8 /* Store.swift in Sources */,
+				D52CA786B6982ABE934CC7A8 /* StorePlugin.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		658467117E978BACDC11D19C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3814F67EEEF65BA64396F12F /* ComposableStorePlugin.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6BAD6248A7CADBC1C99B0CB0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CA4EEBFFCF064BDA35B6CA6 /* _CompileStub_.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E0CEB9AD19055AFAC9085CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9C660EA33B0E339983FAF0F /* _CompileStub_.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97ADCC1E5934B5CCC49AF0F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				619C1E7820E07984FFF92E28 /* InMemoryImageCache.swift in Sources */,
+				8A19E71FE5295633C8877382 /* URLImage.swift in Sources */,
+				7043D89DDC092C10D2C7BDF1 /* LoggingStorePlugin.swift in Sources */,
+				F13B133A3A154BB71B6ADA01 /* OSSignpostPlugin.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C13E91DEBB781E0FBA4183F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E90B5F88D2BE0DE209CF9F48 /* NSCacheAdapter.swift in Sources */,
+				FE1F4BD39175B73FB47BB404 /* Storage.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6B1B75F4F9D5D046B6C8ACA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35574C64BED692C615E8FAA1 /* _CompileStub_.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC85D81F2162D0F6E52F2A09 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B0C6BEED5CC7FA517CAAB82 /* App.swift in Sources */,
+				BC2EF9AB7A9D1B6B851598B3 /* BeerViewStoreAdapter.swift in Sources */,
+				5975C08E4CBBFE8F0D9B9109 /* DTOBeer+Identifiable.swift in Sources */,
+				77B076B4723B22F719A08EF8 /* BeerGalleryView.swift in Sources */,
+				E4CACDBFAF313EBE34934419 /* BeerListView.swift in Sources */,
+				024FA7C2075704DC6467D10F /* BeerRowView.swift in Sources */,
+				289F0D8A17301C5573BD3759 /* IndicatorView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0CAA66196466CE1240696EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA7C1CD5FD45BE3980E9ED28 /* _CompileStub_.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3157126FF6FB0E44EC6B4192 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BazelDependencies;
+			target = 91CB1D303438986D84326039 /* BazelDependencies */;
+			targetProxy = D68D46742BDAACA72A234FB5 /* PBXContainerItemProxy */;
+		};
+		3B5BE25EE6F53276E9B2464F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BazelDependencies;
+			target = 91CB1D303438986D84326039 /* BazelDependencies */;
+			targetProxy = 520CAE9254000FB6527D8D0F /* PBXContainerItemProxy */;
+		};
+		42626A61D4A042C0C7AC234F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BazelDependencies;
+			target = 91CB1D303438986D84326039 /* BazelDependencies */;
+			targetProxy = C6969E9F4C52F11D913335C6 /* PBXContainerItemProxy */;
+		};
+		5BBA5A6BF828E4EBAF2C518C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BazelDependencies;
+			target = 91CB1D303438986D84326039 /* BazelDependencies */;
+			targetProxy = BD6020184536C8A20ED2A1D1 /* PBXContainerItemProxy */;
+		};
+		5D5D052CC54894038B748DD9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BazelDependencies;
+			target = 91CB1D303438986D84326039 /* BazelDependencies */;
+			targetProxy = 1310DB99F7CE11A3D8652DF9 /* PBXContainerItemProxy */;
+		};
+		8FB44C65DA43E5428FBA3EF0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BazelDependencies;
+			target = 91CB1D303438986D84326039 /* BazelDependencies */;
+			targetProxy = 3AAA7FD4A606A64BB02D280F /* PBXContainerItemProxy */;
+		};
+		970D60BDB90F2F97014ACFA5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BazelDependencies;
+			target = 91CB1D303438986D84326039 /* BazelDependencies */;
+			targetProxy = 88A91721E36069B9F8FDE8DB /* PBXContainerItemProxy */;
+		};
+		B188C0AB18CD0F897C0E9810 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BazelDependencies;
+			target = 91CB1D303438986D84326039 /* BazelDependencies */;
+			targetProxy = 4359B2CD0283E1078FBB8DB4 /* PBXContainerItemProxy */;
+		};
+		C0E6F4994EB646405536B7C1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BazelDependencies;
+			target = 91CB1D303438986D84326039 /* BazelDependencies */;
+			targetProxy = A8D9EFAA29F93515885C528C /* PBXContainerItemProxy */;
+		};
+		DD25103E1AFA108DC4E3AAD0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BazelDependencies;
+			target = 91CB1D303438986D84326039 /* BazelDependencies */;
+			targetProxy = 33F6B2E7F94186D2913CF94C /* PBXContainerItemProxy */;
+		};
+		EF98CE9537B21B9B4416861D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BazelDependencies;
+			target = 91CB1D303438986D84326039 /* BazelDependencies */;
+			targetProxy = 704796F0120944A5F3B716C0 /* PBXContainerItemProxy */;
+		};
+		F2655579ED5C92CFEFDECAE5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BazelDependencies;
+			target = 91CB1D303438986D84326039 /* BazelDependencies */;
+			targetProxy = 9DADDB069F44C1638957E5E4 /* PBXContainerItemProxy */;
+		};
+		FED5635E34149B40AF4234A4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BazelDependencies;
+			target = 91CB1D303438986D84326039 /* BazelDependencies */;
+			targetProxy = A22D0220F4B47555B8828C4C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0095F8FBBA31F48E3136CAE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				BAZEL_LABEL = "@//Mobile/Libraries/iOS/iOSArchitecture:API";
+				BAZEL_PACKAGE_BIN_DIR = "bazel-out/ios-sim_arm64-min15.0-applebin_ios-ios_sim_arm64-dbg-ST-d98dbd8343b5/bin/Mobile/Libraries/iOS/iOSArchitecture";
+				BAZEL_TARGET_ID = "@//Mobile/Libraries/iOS/iOSArchitecture:API ios-sim_arm64-min15.0-applebin_ios-ios_sim_arm64-dbg-ST-d98dbd8343b5";
+				"BAZEL_TARGET_ID[sdk=iphonesimulator*]" = "$(BAZEL_TARGET_ID)";
+				COMPILE_TARGET_NAME = API;
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				OTHER_SWIFT_FLAGS = "-Xcc -working-directory=$(PROJECT_DIR) -working-directory=$(PROJECT_DIR) -vfsoverlay $(OBJROOT)/bazel-out-overlay.yaml -DDEBUG -Ibazel-out/ios-sim_arm64-min15.0-applebin_ios-ios_sim_arm64-dbg-ST-d98dbd8343b5/bin/Mobile/Libraries/iOS/iOSUtilities -Xcc -iquote. -Xcc -iquotebazel-out/ios-sim_arm64-min15.0-applebin_ios-ios_sim_arm64-dbg-ST-d98dbd8343b5/bin -static -Xcc -O0 -Xcc -DDEBUG=1 -Xcc -fstack-protector -Xcc -fstack-protector-all";
+				PRODUCT_MODULE_NAME = iOSArchitectureAPI;
+				PRODUCT_NAME = API;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = iphonesimulator;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_INCLUDE_PATHS = "bazel-out/ios-sim_arm64-min15.0-applebin_ios-ios_sim_arm64-dbg-ST-d98dbd8343b5/bin/Mobile/Libraries/iOS/iOSUtilities";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = API;
+			};
+			name = Debug;
+		};
+		0CCAB3E7EA863EDD50A149FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				BAZEL_LABEL = "@//Mobile/Libraries/iOS/iOSStorage:iOSStorage";
+				BAZEL_PACKAGE_BIN_DIR = "bazel-out/ios-sim_arm64-min15.0-applebin_ios-ios_sim_arm64-dbg-ST-d98dbd8343b5/bin/Mobile/Libraries/iOS/iOSStorage";
+				BAZEL_TARGET_ID = "@//Mobile/Libraries/iOS/iOSStorage:iOSStorage ios-sim_arm64-min15.0-applebin_ios-ios_sim_arm64-dbg-ST-d98dbd8343b5";
+				"BAZEL_TARGET_ID[sdk=iphonesimulator*]" = "$(BAZEL_TARGET_ID)";
+				COMPILE_TARGET_NAME = iOSStorage;
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				OTHER_SWIFT_FLAGS = "-Xcc -working-directory=$(PROJECT_DIR) -working-directory=$(PROJECT_DIR) -Xcc -ivfsoverlay -Xcc $(OBJROOT)/bazel-out-overlay.yaml -vfsoverlay $(OBJROOT)/bazel-out-overlay.yaml -DDEBUG -Xcc -iquote. -Xcc -iquotebazel-out/ios-sim_arm64-min15.0-applebin_ios-ios_sim_arm64-dbg-ST-d98dbd8343b5/bin -Xcc -fmodule-map-file=Multiplatform/Storage/.gradle_build/XCFrameworks/debug/Storage.xcframework/ios-arm64_x86_64-simulator/Storage.framework/Modules/module.modulemap -static -Xcc -O0 -Xcc -DDEBUG=1 -Xcc -fstack-protector -Xcc -fstack-protector-all";
+				PRODUCT_MODULE_NAME = iOSStorage;
+				PRODUCT_NAME = iOSStorage;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = iphonesimulator;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = iOSStorage;
+			};
+			name = Debug;
+		};
+		327515B5F288B17148EB7EF0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BAZEL_CONFIG = rules_xcodeproj;
+				BAZEL_EXTERNAL = "$(BAZEL_OUTPUT_BASE)/external";
+				BAZEL_INTEGRATION_DIR = "$(INTERNAL_DIR)/bazel";
+				BAZEL_LLDB_INIT = "$(HOME)/.lldbinit-rules_xcodeproj";
+				BAZEL_OUT = "$(PROJECT_DIR)/bazel-out";
+				BAZEL_OUTPUT_BASE = "$(_BAZEL_OUTPUT_BASE:standardizepath)";
+				BAZEL_PATH = bazel;
+				BAZEL_WORKSPACE_ROOT = "$(SRCROOT)";
+				BUILD_DIR = "$(SYMROOT)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				BUILD_WORKSPACE_DIRECTORY = "$(SRCROOT)";
+				BUILT_PRODUCTS_DIR = "$(INDEXING_BUILT_PRODUCTS_DIR__$(INDEX_ENABLE_BUILD_ARENA))";
+				CC = "$(BAZEL_INTEGRATION_DIR)/clang.sh";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_MODULES_AUTOLINK = NO;
+				CODE_SIGNING_ALLOWED = NO;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(BAZEL_PACKAGE_BIN_DIR)";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_EXECUTION_ROOT = "$(INDEXING_PROJECT_DIR__$(INDEX_ENABLE_BUILD_ARENA))";
+				CXX = "$(BAZEL_INTEGRATION_DIR)/clang.sh";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEPLOYMENT_LOCATION = "$(INDEXING_DEPLOYMENT_LOCATION__$(INDEX_ENABLE_BUILD_ARENA)),";
+				DSTROOT = "$(PROJECT_TEMP_DIR)";
+				ENABLE_DEFAULT_SEARCH_PATHS = NO;
+				GENERATOR_LABEL = "@//Mobile/Apps/iOS/TestApp:GenerateTestAppXcodeProject.generator";
+				INDEXING_BUILT_PRODUCTS_DIR__ = "$(INDEXING_BUILT_PRODUCTS_DIR__NO)";
+				INDEXING_BUILT_PRODUCTS_DIR__NO = "$(BUILD_DIR)";
+				INDEXING_BUILT_PRODUCTS_DIR__YES = "$(CONFIGURATION_BUILD_DIR)";
+				INDEXING_DEPLOYMENT_LOCATION__ = "$(INDEXING_DEPLOYMENT_LOCATION__NO)";
+				INDEXING_DEPLOYMENT_LOCATION__NO = YES;
+				INDEXING_DEPLOYMENT_LOCATION__YES = NO;
+				INDEXING_PROJECT_DIR__ = "$(INDEXING_PROJECT_DIR__NO)";
+				INDEXING_PROJECT_DIR__NO = "$(PROJECT_DIR)";
+				INDEXING_PROJECT_DIR__YES = /var/tmp/_bazel_alex/1210a42fdbb8707f28d96a459324aa97/rules_xcodeproj/indexbuild_output_base/execroot/iamtheapp;
+				INDEX_FORCE_SCRIPT_EXECUTION = YES;
+				INSTALL_PATH = "$(BAZEL_PACKAGE_BIN_DIR)/$(TARGET_NAME)/bin";
+				INTERNAL_DIR = "$(PROJECT_FILE_PATH)/rules_xcodeproj";
+				LD = "$(BAZEL_INTEGRATION_DIR)/ld.sh";
+				LDPLUSPLUS = "$(BAZEL_INTEGRATION_DIR)/ld.sh";
+				LD_DYLIB_INSTALL_NAME = "";
+				LD_OBJC_ABI_VERSION = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+				);
+				LIBTOOL = "$(BAZEL_INTEGRATION_DIR)/libtool.sh";
+				ONLY_ACTIVE_ARCH = YES;
+				RESOLVED_REPOSITORIES = "\"\" \"/Users/alex/Developer/imtheapp\"";
+				RULES_XCODEPROJ_BUILD_MODE = bazel;
+				SCHEME_TARGET_IDS_FILE = "$(OBJROOT)/scheme_target_ids";
+				SRCROOT = /Users/alex/Developer/imtheapp;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EXEC = "$(BAZEL_INTEGRATION_DIR)/swiftc";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_USE_INTEGRATED_DRIVER = NO;
+				TARGET_TEMP_DIR = "$(PROJECT_TEMP_DIR)/$(BAZEL_PACKAGE_BIN_DIR)/$(COMPILE_TARGET_NAME)";
+				USE_HEADERMAP = NO;
+				VALIDATE_WORKSPACE = NO;
+				_BAZEL_OUTPUT_BASE = "$(PROJECT_DIR)/../..";
+			};
+			name = Debug;
+		};
+		383E1F6457CDD3AD8C747FC1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				BAZEL_LABEL = "@//Mobile/Libraries/iOS/iOSArchitecture:Impl";
+				BAZEL_PACKAGE_BIN_DIR = "bazel-out/ios-sim_arm64-min15.0-applebin_ios-ios_sim_arm64-dbg-ST-d98dbd8343b5/bin/Mobile/Libraries/iOS/iOSArchitecture";
+				BAZEL_TARGET_ID = "@//Mobile/Libraries/iOS/iOSArchitecture:Impl ios-sim_arm64-min15.0-applebin_ios-ios_sim_arm64-dbg-ST-d98dbd8343b5";
+				"BAZEL_TARGET_ID[sdk=iphonesimulator*]" = "$(BAZEL_TARGET_ID)";
+				COMPILE_TARGET_NAME = Impl;
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				OTHER_SWIFT_FLAGS = "-Xcc -working-directory=$(PROJECT_DIR) -working-directory=$(PROJECT_DIR) -vfsoverlay $(OBJROOT)/bazel-out-overlay.yaml -DDEBUG -Ibazel-out/ios-sim_arm64-min15.0-applebin_ios-ios_sim_arm64-dbg-ST-d98dbd8343b5/bin/Mobile/Libraries/iOS/iOSUtilities -Ibazel-out/ios-sim_arm64-min15.0-applebin_ios-ios_sim_arm64-dbg-ST-d98dbd8343b5/bin/Mobile/Libraries/iOS/iOSArchitecture -Xcc -iquote. -Xcc -iquotebazel-out/ios-sim_arm64-min15.0-applebin_ios-ios_sim_arm64-dbg-ST-d98dbd8343b5/bin -static -Xcc -O0 -Xcc -DDEBUG=1 -Xcc -fstack-protector -Xcc -fstack-protector-all";
+				PRODUCT_MODULE_NAME = iOSArchitectureImpl;
+				PRODUCT_NAME = Impl;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = iphonesimulator;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_INCLUDE_PATHS = "bazel-out/ios-sim_arm64-min15.0-applebin_ios-ios_sim_arm64-dbg-ST-d98dbd8343b5/bin/Mobile/Libraries/iOS/iOSUtilities bazel-out/ios-sim_arm64-min15.0-applebin_ios-ios_sim_arm64-dbg-ST-d98dbd8343b5/bin/Mobile/Libraries/iOS/iOSArchitecture";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = Impl;
+			};
+			name = Debug;
+		};
+		3B43CBC7DB36803541BF92A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				BAZEL_LABEL = "@//Mobile/Libraries/iOS/iOSUI:iOSUI";
+				BAZEL_PACKAGE_BIN_DIR = "bazel-out/ios-sim_arm64-min15.0-applebin_ios-ios_sim_arm64-dbg-ST-d98dbd8343b5/bin/Mobile/Libraries/iOS/iOSUI";
+				BAZEL_TARGET_ID = "@//Mobile/Libraries/iOS/iOSUI:iOSUI ios-sim_arm64-min15.0-applebin_ios-ios_sim_arm64-dbg-ST-d98dbd8343b5";
+				"BAZEL_TARGET_ID[sdk=iphonesimulator*]" = "$(BAZEL_TARGET_ID)";
+				COMPILE_TARGET_NAME = iOSUI;
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				OTHER_SWIFT_FLAGS = "-Xcc -working-directory=$(PROJECT_DIR) -working-directory=$(PROJECT_DIR) -Xcc -ivfsoverlay -Xcc $(OBJROOT)/bazel-out-overlay.yaml -vfsoverlay $(OBJROOT)/bazel-out-overlay.yaml -DDEBUG -Ibazel-out/ios-sim_arm64-min15.0-applebin_ios-ios_sim_arm64-dbg-ST-d98dbd8343b5/bin/Mobile/Libraries/iOS/iOSStorage -Xcc -iquote. -Xcc -iquotebazel-out/ios-sim_arm64-min15.0-applebin_ios-ios_sim_arm64-dbg-ST-d98dbd8343b5/bin -Xcc -fmodule-map-file=Multiplatform/Storage/.gradle_build/XCFrameworks/debug/Storage.xcframework/ios-arm64_x86_64-simulator/Storage.framework/Modules/module.modulemap -static -Xcc -O0 -Xcc -DDEBUG=1 -Xcc -fstack-protector -Xcc -fstack-protector-all";
+				PRODUCT_MODULE_NAME = iOSUI;
+				PRODUCT_NAME = iOSUI;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = iphonesimulator;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_INCLUDE_PATHS = "bazel-out/ios-sim_arm64-min15.0-applebin_ios-ios_sim_arm64-dbg-ST-d98dbd8343b5/bin/Mobile/Libraries/iOS/iOSStorage";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = iOSUI;
+			};
+			name = Debug;
+		};
+		47F6196A2A86343B0CADA67D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				BAZEL_LABEL = "@//Multiplatform/Architecture:MultiplatformArchitectureiOS";
+				BAZEL_OUTPUTS_PRODUCT = "bazel-out/applebin_ios-ios_sim_arm64-dbg-ST-164313ba16aa/bin/Multiplatform/Architecture/MultiplatformArchitectureiOS.framework";
+				BAZEL_PACKAGE_BIN_DIR = "bazel-out/applebin_ios-ios_sim_arm64-dbg-ST-164313ba16aa/bin/Multiplatform/Architecture";
+				BAZEL_TARGET_ID = "@//Multiplatform/Architecture:MultiplatformArchitectureiOS applebin_ios-ios_sim_arm64-dbg-ST-164313ba16aa";
+				"BAZEL_TARGET_ID[sdk=iphonesimulator*]" = "$(BAZEL_TARGET_ID)";
+				CODE_SIGN_STYLE = Manual;
+				COMPILE_TARGET_NAME = MultiplatformArchitectureiOS;
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "$(BAZEL_OUT)/applebin_ios-ios_sim_arm64-dbg-ST-164313ba16aa/bin/Multiplatform/Architecture/rules_xcodeproj/MultiplatformArchitectureiOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LINK_PARAMS_FILE = "$(BAZEL_OUT)/darwin_arm64-dbg/bin/Mobile/Apps/iOS/TestApp/GenerateTestAppXcodeProject.generator-params/MultiplatformArchitectureiOS.8.link.params";
+				OTHER_LDFLAGS = "@$(DERIVED_FILE_DIR)/link.params";
+				PREVIEW_FRAMEWORK_PATHS = "\"$(SRCROOT)/Multiplatform/Architecture/.gradle_build/XCFrameworks/debug/Architecture.xcframework/ios-arm64_x86_64-simulator/Architecture.framework\"";
+				PRODUCT_BUNDLE_IDENTIFIER = Mobile.Architecture.MultiplatformArchitecture.iOS;
+				PRODUCT_NAME = MultiplatformArchitectureiOS;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = iphonesimulator;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TARGET_NAME = MultiplatformArchitectureiOS;
+			};
+			name = Debug;
+		};
+		A9897A958B34F0B9042C46D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BAZEL_PACKAGE_BIN_DIR = rules_xcodeproj;
+				CALCULATE_OUTPUT_GROUPS_SCRIPT = "$(BAZEL_INTEGRATION_DIR)/calculate_output_groups.py";
+				INDEXING_SUPPORTED_PLATFORMS__ = "$(INDEXING_SUPPORTED_PLATFORMS__NO)";
+				INDEXING_SUPPORTED_PLATFORMS__NO = iphonesimulator;
+				INDEXING_SUPPORTED_PLATFORMS__YES = iphonesimulator;
+				INDEX_DATA_STORE_DIR = "$(INDEX_DATA_STORE_DIR)";
+				INDEX_DISABLE_SCRIPT_EXECUTION = YES;
+				INDEX_IMPORT = "$(BAZEL_OUT)/darwin_arm64-opt-exec-2B5CBBC6/bin/external/rules_xcodeproj_index_import/index-import";
+				SUPPORTED_PLATFORMS = "$(INDEXING_SUPPORTED_PLATFORMS__$(INDEX_ENABLE_BUILD_ARENA))";
+				SUPPORTS_MACCATALYST = YES;
+				TARGET_NAME = BazelDependencies;
+			};
+			name = Debug;
+		};
+		BF5ED5909255B599279B7B7D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				BAZEL_LABEL = "@//Mobile/Libraries/iOS/iOSUtilities:iOSUtilities";
+				BAZEL_PACKAGE_BIN_DIR = "bazel-out/ios-sim_arm64-min15.0-applebin_ios-ios_sim_arm64-dbg-ST-d98dbd8343b5/bin/Mobile/Libraries/iOS/iOSUtilities";
+				BAZEL_TARGET_ID = "@//Mobile/Libraries/iOS/iOSUtilities:iOSUtilities ios-sim_arm64-min15.0-applebin_ios-ios_sim_arm64-dbg-ST-d98dbd8343b5";
+				"BAZEL_TARGET_ID[sdk=iphonesimulator*]" = "$(BAZEL_TARGET_ID)";
+				COMPILE_TARGET_NAME = iOSUtilities;
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				OTHER_SWIFT_FLAGS = "-Xcc -working-directory=$(PROJECT_DIR) -working-directory=$(PROJECT_DIR) -vfsoverlay $(OBJROOT)/bazel-out-overlay.yaml -DDEBUG -Xcc -iquote. -Xcc -iquotebazel-out/ios-sim_arm64-min15.0-applebin_ios-ios_sim_arm64-dbg-ST-d98dbd8343b5/bin -static -Xcc -O0 -Xcc -DDEBUG=1 -Xcc -fstack-protector -Xcc -fstack-protector-all";
+				PRODUCT_MODULE_NAME = iOSUtilities;
+				PRODUCT_NAME = iOSUtilities;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = iphonesimulator;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = iOSUtilities;
+			};
+			name = Debug;
+		};
+		BFBB1E205AB86B17B333657A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				BAZEL_LABEL = "@//Multiplatform/Storage:MultiplatformStorageiOS";
+				BAZEL_OUTPUTS_PRODUCT = "bazel-out/applebin_ios-ios_sim_arm64-dbg-ST-164313ba16aa/bin/Multiplatform/Storage/MultiplatformStorageiOS.framework";
+				BAZEL_PACKAGE_BIN_DIR = "bazel-out/applebin_ios-ios_sim_arm64-dbg-ST-164313ba16aa/bin/Multiplatform/Storage";
+				BAZEL_TARGET_ID = "@//Multiplatform/Storage:MultiplatformStorageiOS applebin_ios-ios_sim_arm64-dbg-ST-164313ba16aa";
+				"BAZEL_TARGET_ID[sdk=iphonesimulator*]" = "$(BAZEL_TARGET_ID)";
+				CODE_SIGN_STYLE = Manual;
+				COMPILE_TARGET_NAME = MultiplatformStorageiOS;
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "$(BAZEL_OUT)/applebin_ios-ios_sim_arm64-dbg-ST-164313ba16aa/bin/Multiplatform/Storage/rules_xcodeproj/MultiplatformStorageiOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LINK_PARAMS_FILE = "$(BAZEL_OUT)/darwin_arm64-dbg/bin/Mobile/Apps/iOS/TestApp/GenerateTestAppXcodeProject.generator-params/MultiplatformStorageiOS.4.link.params";
+				OTHER_LDFLAGS = "@$(DERIVED_FILE_DIR)/link.params";
+				PREVIEW_FRAMEWORK_PATHS = "\"$(SRCROOT)/Multiplatform/Storage/.gradle_build/XCFrameworks/debug/Storage.xcframework/ios-arm64_x86_64-simulator/Storage.framework\"";
+				PRODUCT_BUNDLE_IDENTIFIER = Multiplatform.Storage.MultiplatformStorage.iOS;
+				PRODUCT_NAME = MultiplatformStorageiOS;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = iphonesimulator;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TARGET_NAME = MultiplatformStorageiOS;
+			};
+			name = Debug;
+		};
+		C9714208C2552102B5452499 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				BAZEL_LABEL = "@//Multiplatform/Architecture:MultiplatformArchitectureiOS";
+				BAZEL_OUTPUTS_PRODUCT = "bazel-out/applebin_ios-ios_sim_arm64-dbg-ST-d98dbd8343b5/bin/Multiplatform/Architecture/MultiplatformArchitectureiOS.framework";
+				BAZEL_PACKAGE_BIN_DIR = "bazel-out/applebin_ios-ios_sim_arm64-dbg-ST-d98dbd8343b5/bin/Multiplatform/Architecture";
+				BAZEL_TARGET_ID = "@//Multiplatform/Architecture:MultiplatformArchitectureiOS applebin_ios-ios_sim_arm64-dbg-ST-d98dbd8343b5";
+				"BAZEL_TARGET_ID[sdk=iphonesimulator*]" = "$(BAZEL_TARGET_ID)";
+				CODE_SIGN_STYLE = Manual;
+				COMPILE_TARGET_NAME = MultiplatformArchitectureiOS;
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "$(BAZEL_OUT)/applebin_ios-ios_sim_arm64-dbg-ST-d98dbd8343b5/bin/Multiplatform/Architecture/rules_xcodeproj/MultiplatformArchitectureiOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LINK_PARAMS_FILE = "$(BAZEL_OUT)/darwin_arm64-dbg/bin/Mobile/Apps/iOS/TestApp/GenerateTestAppXcodeProject.generator-params/MultiplatformArchitectureiOS.11.link.params";
+				OTHER_LDFLAGS = "@$(DERIVED_FILE_DIR)/link.params";
+				PREVIEW_FRAMEWORK_PATHS = "\"$(SRCROOT)/Multiplatform/Architecture/.gradle_build/XCFrameworks/debug/Architecture.xcframework/ios-arm64_x86_64-simulator/Architecture.framework\"";
+				PRODUCT_BUNDLE_IDENTIFIER = Mobile.Architecture.MultiplatformArchitecture.iOS;
+				PRODUCT_NAME = MultiplatformArchitectureiOS;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = iphonesimulator;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TARGET_NAME = MultiplatformArchitectureiOS;
+			};
+			name = Debug;
+		};
+		D468EE52EA3768B69D29BC9B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				BAZEL_LABEL = "@//Multiplatform/Storage:MultiplatformStorageiOS";
+				BAZEL_OUTPUTS_PRODUCT = "bazel-out/applebin_ios-ios_sim_arm64-dbg-ST-d98dbd8343b5/bin/Multiplatform/Storage/MultiplatformStorageiOS.framework";
+				BAZEL_PACKAGE_BIN_DIR = "bazel-out/applebin_ios-ios_sim_arm64-dbg-ST-d98dbd8343b5/bin/Multiplatform/Storage";
+				BAZEL_TARGET_ID = "@//Multiplatform/Storage:MultiplatformStorageiOS applebin_ios-ios_sim_arm64-dbg-ST-d98dbd8343b5";
+				"BAZEL_TARGET_ID[sdk=iphonesimulator*]" = "$(BAZEL_TARGET_ID)";
+				CODE_SIGN_STYLE = Manual;
+				COMPILE_TARGET_NAME = MultiplatformStorageiOS;
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "$(BAZEL_OUT)/applebin_ios-ios_sim_arm64-dbg-ST-d98dbd8343b5/bin/Multiplatform/Storage/rules_xcodeproj/MultiplatformStorageiOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LINK_PARAMS_FILE = "$(BAZEL_OUT)/darwin_arm64-dbg/bin/Mobile/Apps/iOS/TestApp/GenerateTestAppXcodeProject.generator-params/MultiplatformStorageiOS.10.link.params";
+				OTHER_LDFLAGS = "@$(DERIVED_FILE_DIR)/link.params";
+				PREVIEW_FRAMEWORK_PATHS = "\"$(SRCROOT)/Multiplatform/Storage/.gradle_build/XCFrameworks/debug/Storage.xcframework/ios-arm64_x86_64-simulator/Storage.framework\"";
+				PRODUCT_BUNDLE_IDENTIFIER = Multiplatform.Storage.MultiplatformStorage.iOS;
+				PRODUCT_NAME = MultiplatformStorageiOS;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = iphonesimulator;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TARGET_NAME = MultiplatformStorageiOS;
+			};
+			name = Debug;
+		};
+		DAC5A4862A5584B19547646A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				BAZEL_LABEL = "@//Mobile/Libraries/Common/BeerGallery:BeerGalleryiOS";
+				BAZEL_OUTPUTS_PRODUCT = "bazel-out/applebin_ios-ios_sim_arm64-dbg-ST-d98dbd8343b5/bin/Mobile/Libraries/Common/BeerGallery/BeerGalleryiOS.framework";
+				BAZEL_PACKAGE_BIN_DIR = "bazel-out/applebin_ios-ios_sim_arm64-dbg-ST-d98dbd8343b5/bin/Mobile/Libraries/Common/BeerGallery";
+				BAZEL_TARGET_ID = "@//Mobile/Libraries/Common/BeerGallery:BeerGalleryiOS applebin_ios-ios_sim_arm64-dbg-ST-d98dbd8343b5";
+				"BAZEL_TARGET_ID[sdk=iphonesimulator*]" = "$(BAZEL_TARGET_ID)";
+				CODE_SIGN_STYLE = Manual;
+				COMPILE_TARGET_NAME = BeerGalleryiOS;
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "$(BAZEL_OUT)/applebin_ios-ios_sim_arm64-dbg-ST-d98dbd8343b5/bin/Mobile/Libraries/Common/BeerGallery/rules_xcodeproj/BeerGalleryiOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LINK_PARAMS_FILE = "$(BAZEL_OUT)/darwin_arm64-dbg/bin/Mobile/Apps/iOS/TestApp/GenerateTestAppXcodeProject.generator-params/BeerGalleryiOS.9.link.params";
+				OTHER_LDFLAGS = "@$(DERIVED_FILE_DIR)/link.params";
+				PREVIEW_FRAMEWORK_PATHS = "\"$(SRCROOT)/Mobile/Libraries/Common/BeerGallery/.gradle_build/XCFrameworks/debug/BeerGallery.xcframework/ios-arm64_x86_64-simulator/BeerGallery.framework\"";
+				PRODUCT_BUNDLE_IDENTIFIER = Mobile.BeerGallery.BeerGallery.iOS;
+				PRODUCT_NAME = BeerGalleryiOS;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = iphonesimulator;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TARGET_NAME = BeerGalleryiOS;
+			};
+			name = Debug;
+		};
+		E7DC09632FC37ACD8EE3AF3C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				BAZEL_COMPILE_TARGET_ID = "@//Mobile/Apps/iOS/TestApp:Application ios-sim_arm64-min15.0-applebin_ios-ios_sim_arm64-dbg-ST-d98dbd8343b5";
+				"BAZEL_COMPILE_TARGET_ID[sdk=iphonesimulator*]" = "$(BAZEL_COMPILE_TARGET_ID)";
+				BAZEL_LABEL = "@//Mobile/Apps/iOS/TestApp:TestApp";
+				BAZEL_OUTPUTS_PRODUCT = "bazel-out/applebin_ios-ios_sim_arm64-dbg-ST-d98dbd8343b5/bin/Mobile/Apps/iOS/TestApp/TestApp.app";
+				BAZEL_PACKAGE_BIN_DIR = "bazel-out/applebin_ios-ios_sim_arm64-dbg-ST-d98dbd8343b5/bin/Mobile/Apps/iOS/TestApp";
+				BAZEL_TARGET_ID = "@//Mobile/Apps/iOS/TestApp:TestApp applebin_ios-ios_sim_arm64-dbg-ST-d98dbd8343b5";
+				"BAZEL_TARGET_ID[sdk=iphonesimulator*]" = "$(BAZEL_TARGET_ID)";
+				BUILT_PRODUCTS_DIR = "$(CONFIGURATION_BUILD_DIR)";
+				CODE_SIGN_STYLE = Manual;
+				COMPILE_TARGET_NAME = Application;
+				DEPLOYMENT_LOCATION = NO;
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				INFOPLIST_FILE = "$(BAZEL_OUT)/applebin_ios-ios_sim_arm64-dbg-ST-d98dbd8343b5/bin/Mobile/Apps/iOS/TestApp/rules_xcodeproj/TestApp/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LINK_PARAMS_FILE = "$(BAZEL_OUT)/darwin_arm64-dbg/bin/Mobile/Apps/iOS/TestApp/GenerateTestAppXcodeProject.generator-params/TestApp.12.link.params";
+				OTHER_LDFLAGS = "@$(DERIVED_FILE_DIR)/link.params";
+				OTHER_SWIFT_FLAGS = "-Xcc -working-directory=$(PROJECT_DIR) -working-directory=$(PROJECT_DIR) -Xcc -ivfsoverlay -Xcc $(OBJROOT)/bazel-out-overlay.yaml -vfsoverlay $(OBJROOT)/bazel-out-overlay.yaml -DDEBUG -Ibazel-out/ios-sim_arm64-min15.0-applebin_ios-ios_sim_arm64-dbg-ST-d98dbd8343b5/bin/Mobile/Libraries/iOS/iOSUtilities -Ibazel-out/ios-sim_arm64-min15.0-applebin_ios-ios_sim_arm64-dbg-ST-d98dbd8343b5/bin/Mobile/Libraries/iOS/iOSArchitecture -Ibazel-out/ios-sim_arm64-min15.0-applebin_ios-ios_sim_arm64-dbg-ST-d98dbd8343b5/bin/Mobile/Libraries/iOS/iOSStorage -Ibazel-out/ios-sim_arm64-min15.0-applebin_ios-ios_sim_arm64-dbg-ST-d98dbd8343b5/bin/Mobile/Libraries/iOS/iOSUI -Ibazel-out/ios-sim_arm64-min15.0-applebin_ios-ios_sim_arm64-dbg-ST-d98dbd8343b5/bin/Mobile/Libraries/iOS/iOSAppUtilities -Xcc -iquote. -Xcc -iquotebazel-out/ios-sim_arm64-min15.0-applebin_ios-ios_sim_arm64-dbg-ST-d98dbd8343b5/bin -Xcc -fmodule-map-file=Mobile/Libraries/Common/BeerGallery/.gradle_build/XCFrameworks/debug/BeerGallery.xcframework/ios-arm64_x86_64-simulator/BeerGallery.framework/Modules/module.modulemap -Xcc -fmodule-map-file=Multiplatform/Storage/.gradle_build/XCFrameworks/debug/Storage.xcframework/ios-arm64_x86_64-simulator/Storage.framework/Modules/module.modulemap -Xcc -fmodule-map-file=Multiplatform/Architecture/.gradle_build/XCFrameworks/debug/Architecture.xcframework/ios-arm64_x86_64-simulator/Architecture.framework/Modules/module.modulemap -static -Xcc -O0 -Xcc -DDEBUG=1 -Xcc -fstack-protector -Xcc -fstack-protector-all";
+				PREVIEWS_SWIFT_INCLUDE_PATH__ = "";
+				PREVIEWS_SWIFT_INCLUDE_PATH__NO = "";
+				PREVIEWS_SWIFT_INCLUDE_PATH__YES = "bazel-out/ios-sim_arm64-min15.0-applebin_ios-ios_sim_arm64-dbg-ST-d98dbd8343b5/bin/Mobile/Apps/iOS/TestApp";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.TestApp;
+				PRODUCT_MODULE_NAME = Application;
+				PRODUCT_NAME = TestApp;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = iphonesimulator;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_INCLUDE_PATHS = "$(PREVIEWS_SWIFT_INCLUDE_PATH__$(ENABLE_PREVIEWS)) bazel-out/ios-sim_arm64-min15.0-applebin_ios-ios_sim_arm64-dbg-ST-d98dbd8343b5/bin/Mobile/Libraries/iOS/iOSUtilities bazel-out/ios-sim_arm64-min15.0-applebin_ios-ios_sim_arm64-dbg-ST-d98dbd8343b5/bin/Mobile/Libraries/iOS/iOSArchitecture bazel-out/ios-sim_arm64-min15.0-applebin_ios-ios_sim_arm64-dbg-ST-d98dbd8343b5/bin/Mobile/Libraries/iOS/iOSStorage bazel-out/ios-sim_arm64-min15.0-applebin_ios-ios_sim_arm64-dbg-ST-d98dbd8343b5/bin/Mobile/Libraries/iOS/iOSUI bazel-out/ios-sim_arm64-min15.0-applebin_ios-ios_sim_arm64-dbg-ST-d98dbd8343b5/bin/Mobile/Libraries/iOS/iOSAppUtilities";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TARGET_NAME = TestApp;
+			};
+			name = Debug;
+		};
+		EF3C4EBDC45D653A647AF97E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				BAZEL_LABEL = "@//Mobile/Libraries/iOS/iOSAppUtilities:iOSAppUtilities";
+				BAZEL_PACKAGE_BIN_DIR = "bazel-out/ios-sim_arm64-min15.0-applebin_ios-ios_sim_arm64-dbg-ST-d98dbd8343b5/bin/Mobile/Libraries/iOS/iOSAppUtilities";
+				BAZEL_TARGET_ID = "@//Mobile/Libraries/iOS/iOSAppUtilities:iOSAppUtilities ios-sim_arm64-min15.0-applebin_ios-ios_sim_arm64-dbg-ST-d98dbd8343b5";
+				"BAZEL_TARGET_ID[sdk=iphonesimulator*]" = "$(BAZEL_TARGET_ID)";
+				COMPILE_TARGET_NAME = iOSAppUtilities;
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				OTHER_SWIFT_FLAGS = "-Xcc -working-directory=$(PROJECT_DIR) -working-directory=$(PROJECT_DIR) -Xcc -ivfsoverlay -Xcc $(OBJROOT)/bazel-out-overlay.yaml -vfsoverlay $(OBJROOT)/bazel-out-overlay.yaml -DDEBUG -Ibazel-out/ios-sim_arm64-min15.0-applebin_ios-ios_sim_arm64-dbg-ST-d98dbd8343b5/bin/Mobile/Libraries/iOS/iOSStorage -Ibazel-out/ios-sim_arm64-min15.0-applebin_ios-ios_sim_arm64-dbg-ST-d98dbd8343b5/bin/Mobile/Libraries/iOS/iOSUI -Ibazel-out/ios-sim_arm64-min15.0-applebin_ios-ios_sim_arm64-dbg-ST-d98dbd8343b5/bin/Mobile/Libraries/iOS/iOSUtilities -Ibazel-out/ios-sim_arm64-min15.0-applebin_ios-ios_sim_arm64-dbg-ST-d98dbd8343b5/bin/Mobile/Libraries/iOS/iOSArchitecture -Xcc -iquote. -Xcc -iquotebazel-out/ios-sim_arm64-min15.0-applebin_ios-ios_sim_arm64-dbg-ST-d98dbd8343b5/bin -Xcc -fmodule-map-file=Multiplatform/Storage/.gradle_build/XCFrameworks/debug/Storage.xcframework/ios-arm64_x86_64-simulator/Storage.framework/Modules/module.modulemap -static -Xcc -O0 -Xcc -DDEBUG=1 -Xcc -fstack-protector -Xcc -fstack-protector-all";
+				PRODUCT_MODULE_NAME = iOSAppUtilities;
+				PRODUCT_NAME = iOSAppUtilities;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = iphonesimulator;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_INCLUDE_PATHS = "bazel-out/ios-sim_arm64-min15.0-applebin_ios-ios_sim_arm64-dbg-ST-d98dbd8343b5/bin/Mobile/Libraries/iOS/iOSStorage bazel-out/ios-sim_arm64-min15.0-applebin_ios-ios_sim_arm64-dbg-ST-d98dbd8343b5/bin/Mobile/Libraries/iOS/iOSUI bazel-out/ios-sim_arm64-min15.0-applebin_ios-ios_sim_arm64-dbg-ST-d98dbd8343b5/bin/Mobile/Libraries/iOS/iOSUtilities bazel-out/ios-sim_arm64-min15.0-applebin_ios-ios_sim_arm64-dbg-ST-d98dbd8343b5/bin/Mobile/Libraries/iOS/iOSArchitecture";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = iOSAppUtilities;
+			};
+			name = Debug;
+		};
+		F6615506BA823E121156BE63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				BAZEL_LABEL = "@//Mobile/Libraries/Common/BeerGallery:BeerGalleryiOS";
+				BAZEL_OUTPUTS_PRODUCT = "bazel-out/applebin_ios-ios_sim_arm64-dbg-ST-164313ba16aa/bin/Mobile/Libraries/Common/BeerGallery/BeerGalleryiOS.framework";
+				BAZEL_PACKAGE_BIN_DIR = "bazel-out/applebin_ios-ios_sim_arm64-dbg-ST-164313ba16aa/bin/Mobile/Libraries/Common/BeerGallery";
+				BAZEL_TARGET_ID = "@//Mobile/Libraries/Common/BeerGallery:BeerGalleryiOS applebin_ios-ios_sim_arm64-dbg-ST-164313ba16aa";
+				"BAZEL_TARGET_ID[sdk=iphonesimulator*]" = "$(BAZEL_TARGET_ID)";
+				CODE_SIGN_STYLE = Manual;
+				COMPILE_TARGET_NAME = BeerGalleryiOS;
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "$(BAZEL_OUT)/applebin_ios-ios_sim_arm64-dbg-ST-164313ba16aa/bin/Mobile/Libraries/Common/BeerGallery/rules_xcodeproj/BeerGalleryiOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LINK_PARAMS_FILE = "$(BAZEL_OUT)/darwin_arm64-dbg/bin/Mobile/Apps/iOS/TestApp/GenerateTestAppXcodeProject.generator-params/BeerGalleryiOS.0.link.params";
+				OTHER_LDFLAGS = "@$(DERIVED_FILE_DIR)/link.params";
+				PREVIEW_FRAMEWORK_PATHS = "\"$(SRCROOT)/Mobile/Libraries/Common/BeerGallery/.gradle_build/XCFrameworks/debug/BeerGallery.xcframework/ios-arm64_x86_64-simulator/BeerGallery.framework\"";
+				PRODUCT_BUNDLE_IDENTIFIER = Mobile.BeerGallery.BeerGallery.iOS;
+				PRODUCT_NAME = BeerGalleryiOS;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = iphonesimulator;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TARGET_NAME = BeerGalleryiOS;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3BDD51C6B9FAD6EEA9A84205 /* Build configuration list for PBXNativeTarget "API" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0095F8FBBA31F48E3136CAE5 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		3CBA3E4A376CFA16917F3847 /* Build configuration list for PBXNativeTarget "TestApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E7DC09632FC37ACD8EE3AF3C /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		3F505F1BDB9338A4770A900F /* Build configuration list for PBXNativeTarget "MultiplatformArchitectureiOS (f7462)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9714208C2552102B5452499 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		40FBF2B1FBC08FA93631EDE1 /* Build configuration list for PBXNativeTarget "MultiplatformStorageiOS (f7462)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D468EE52EA3768B69D29BC9B /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		43614A89523A9E1639971F61 /* Build configuration list for PBXAggregateTarget "BazelDependencies" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9897A958B34F0B9042C46D1 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		45E31B24F9AC8D85BAE4AC6F /* Build configuration list for PBXNativeTarget "iOSAppUtilities" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF3C4EBDC45D653A647AF97E /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		89FF8064FF8652220446CA46 /* Build configuration list for PBXNativeTarget "BeerGalleryiOS (bc20b)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6615506BA823E121156BE63 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		8F41B54D2F8CC728CF71CA23 /* Build configuration list for PBXNativeTarget "MultiplatformArchitectureiOS (bc20b)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				47F6196A2A86343B0CADA67D /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		90C6A25D0C3D9A880D77181F /* Build configuration list for PBXNativeTarget "MultiplatformStorageiOS (bc20b)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFBB1E205AB86B17B333657A /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		9202B73AD4FFF458FB4DE786 /* Build configuration list for PBXNativeTarget "BeerGalleryiOS (f7462)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAC5A4862A5584B19547646A /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		A244A62ECED0E6BA139EF2DE /* Build configuration list for PBXProject "TestApp-Bazel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				327515B5F288B17148EB7EF0 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		B7FF73366DB04DE3D2F6C8E9 /* Build configuration list for PBXNativeTarget "iOSUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B43CBC7DB36803541BF92A5 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		BFB0C7D1619F451CC9D1E91C /* Build configuration list for PBXNativeTarget "Impl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				383E1F6457CDD3AD8C747FC1 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		E46E8CC4461E8DC2990EBCFC /* Build configuration list for PBXNativeTarget "iOSUtilities" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF5ED5909255B599279B7B7D /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		EB2D6EDF658FD80421EBFF09 /* Build configuration list for PBXNativeTarget "iOSStorage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0CCAB3E7EA863EDD50A149FA /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8C2AB4C5602EB14A95FDECDC /* Project object */;
+}

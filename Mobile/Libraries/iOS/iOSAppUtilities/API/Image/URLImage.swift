@@ -5,8 +5,7 @@ import iOSStorage
 import iOSUI
 
 public struct URLImage<C: View, P: View, S: KeyValueStorage>: ExternalImage 
-where S.Key == URL, S.Value == Image 
-{
+where S.Key == URL, S.Value == Image {    
     private let url: URL
     private let storage: S
     private let placeholder: () -> P

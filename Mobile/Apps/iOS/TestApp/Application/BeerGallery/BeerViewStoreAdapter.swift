@@ -1,10 +1,12 @@
 import BeerGallery
 import iOSArchitectureAPI
 import iOSArchitectureImpl
+import iOSAppUtilities
 
 class BeerViewStoreAdapter: iOSArchitectureAPI.Store {
 	typealias Action = BeerFeatureAction.ViewAction
 	typealias State = BeerFeatureState
+	typealias Effect = BeerFeatureEffect
 	
 	private let subject: BeerViewStore
 	
@@ -13,7 +15,8 @@ class BeerViewStoreAdapter: iOSArchitectureAPI.Store {
 			initialState: initialState,
 			plugin: DefaultStorePluginAdater(
 				ComposableStorePlugin([
-					LoggingStorePlugin<BeerFeatureState, BeerFeatureAction>()
+					LoggingStorePlugin<State, BeerFeatureAction, Effect>().asAny(),
+					OSSignpostPlugin<State, BeerFeatureAction, Effect>().asAny()
 				])            
 			)
 		)
@@ -41,7 +44,7 @@ final class DefaultStorePluginAdater<Plugin: iOSArchitectureAPI.StorePlugin>: NS
     func onWillDispatch(action: Any?, state: Any?) {
         guard let action = action as? Plugin.Action,
 			let state = state as? Plugin.State else {
-			fatalError("Cannot cast and states to the correct types.")
+			fatalError("Cannot cast actions and states to the correct types.")
 		}
 
         subject.onWillDispatch(action: action, state: state)
@@ -55,4 +58,38 @@ final class DefaultStorePluginAdater<Plugin: iOSArchitectureAPI.StorePlugin>: NS
 
         subject.onDidDispatch(action: action, state: state)
     }
+
+	func onWillReduce(action: Any?, state: Any?) {
+		guard let action = action as? Plugin.Action,
+            let state = state as? Plugin.State else {
+            fatalError("Cannot cast actions and states to the correct types.")
+        }
+
+        subject.onWillReduce(action: action, state: state)
+	}
+
+    func onDidReduce(action: Any?, state: Any?) {
+		guard let action = action as? Plugin.Action,
+            let state = state as? Plugin.State else {
+            fatalError("Cannot cast actions and states to the correct types.")
+        }
+
+        subject.onDidReduce(action: action, state: state)
+	}
+
+    func onWillHandleEffect(effect: Any?) {
+		guard let effect = effect as? Plugin.Effect else {
+            fatalError("Cannot cast effect to the correct type.")
+        }
+
+        subject.onWillHandleEffect(effect: effect)
+	}
+
+    func onDidHandleEffect(effect: Any?) {
+		guard let effect = effect as? Plugin.Effect else {
+            fatalError("Cannot cast effect to the correct type.")
+        }
+
+        subject.onDidHandleEffect(effect: effect)
+	}
 }

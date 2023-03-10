@@ -8,7 +8,9 @@ package_group(
 package_group(
     name = "libs",
     packages = [
-        "//Mobile/Libraries/iOS/iOSArchitecture",
+        "//Mobile/Libraries/iOS/iOSArchitecture:API",
+        "//Mobile/Libraries/iOS/iOSArchitecture:Impl",
+        "//Mobile/Libraries/iOS/iOSAppUtilities",
         "//Mobile/Libraries/iOS/iOSUtilities",
         "//Mobile/Libraries/iOS/iOSStorage",
     ],

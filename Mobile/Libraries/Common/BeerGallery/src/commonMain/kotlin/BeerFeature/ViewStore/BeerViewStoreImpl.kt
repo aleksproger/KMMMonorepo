@@ -6,8 +6,8 @@ import Multiplatform.Architecture.StorePlugin
 import Multiplatform.Architecture.EmptyStorePlugin
 
 class BeerViewStoreImpl(
-    private val subject: Store<BeerFeatureState, BeerFeatureAction>
-) : Store<BeerFeatureState, BeerFeatureAction.ViewAction>, BeerViewStore {
+    private val subject: Store<BeerFeatureState, BeerFeatureAction, BeerFeatureEffect>
+) : Store<BeerFeatureState, BeerFeatureAction.ViewAction, BeerFeatureEffect>, BeerViewStore {
     constructor(initialState: BeerFeatureState): this(
         DefaultStore(
             state = initialState,
@@ -19,7 +19,7 @@ class BeerViewStoreImpl(
 
     constructor(
         initialState: BeerFeatureState,
-        plugin: StorePlugin<BeerFeatureState, BeerFeatureAction>
+        plugin: StorePlugin<BeerFeatureState, BeerFeatureAction, BeerFeatureEffect>
     ): this(
         DefaultStore(
             state = initialState,

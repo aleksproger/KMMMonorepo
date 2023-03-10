@@ -1,0 +1,14 @@
+$(BAZEL_OUT)/applebin_ios-ios_sim_arm64-dbg-ST-164313ba16aa/bin/Mobile/Libraries/Common/BeerGallery/rules_xcodeproj/BeerGalleryiOS/Info.plist
+$(BAZEL_OUT)/applebin_ios-ios_sim_arm64-dbg-ST-164313ba16aa/bin/Multiplatform/Architecture/rules_xcodeproj/MultiplatformArchitectureiOS/Info.plist
+$(BAZEL_OUT)/applebin_ios-ios_sim_arm64-dbg-ST-164313ba16aa/bin/Multiplatform/Storage/rules_xcodeproj/MultiplatformStorageiOS/Info.plist
+$(BAZEL_OUT)/applebin_ios-ios_sim_arm64-dbg-ST-d98dbd8343b5/bin/Mobile/Apps/iOS/TestApp/rules_xcodeproj/TestApp/Info.plist
+$(BAZEL_OUT)/applebin_ios-ios_sim_arm64-dbg-ST-d98dbd8343b5/bin/Mobile/Libraries/Common/BeerGallery/rules_xcodeproj/BeerGalleryiOS/Info.plist
+$(BAZEL_OUT)/applebin_ios-ios_sim_arm64-dbg-ST-d98dbd8343b5/bin/Multiplatform/Architecture/rules_xcodeproj/MultiplatformArchitectureiOS/Info.plist
+$(BAZEL_OUT)/applebin_ios-ios_sim_arm64-dbg-ST-d98dbd8343b5/bin/Multiplatform/Storage/rules_xcodeproj/MultiplatformStorageiOS/Info.plist
+$(BAZEL_OUT)/darwin_arm64-dbg/bin/Mobile/Apps/iOS/TestApp/GenerateTestAppXcodeProject.generator-params/BeerGalleryiOS.0.link.params
+$(BAZEL_OUT)/darwin_arm64-dbg/bin/Mobile/Apps/iOS/TestApp/GenerateTestAppXcodeProject.generator-params/BeerGalleryiOS.9.link.params
+$(BAZEL_OUT)/darwin_arm64-dbg/bin/Mobile/Apps/iOS/TestApp/GenerateTestAppXcodeProject.generator-params/MultiplatformArchitectureiOS.11.link.params
+$(BAZEL_OUT)/darwin_arm64-dbg/bin/Mobile/Apps/iOS/TestApp/GenerateTestAppXcodeProject.generator-params/MultiplatformArchitectureiOS.8.link.params
+$(BAZEL_OUT)/darwin_arm64-dbg/bin/Mobile/Apps/iOS/TestApp/GenerateTestAppXcodeProject.generator-params/MultiplatformStorageiOS.10.link.params
+$(BAZEL_OUT)/darwin_arm64-dbg/bin/Mobile/Apps/iOS/TestApp/GenerateTestAppXcodeProject.generator-params/MultiplatformStorageiOS.4.link.params
+$(BAZEL_OUT)/darwin_arm64-dbg/bin/Mobile/Apps/iOS/TestApp/GenerateTestAppXcodeProject.generator-params/TestApp.12.link.params

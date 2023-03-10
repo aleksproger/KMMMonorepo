@@ -8,5 +8,6 @@ swift_library(
     deps = [
         "//Mobile/Libraries/iOS/iOSStorage",
         "//Mobile/Libraries/iOS/iOSUI",
+        "//Mobile/Libraries/iOS/iOSArchitecture:API",
     ]
 )
