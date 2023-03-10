@@ -1,11 +1,14 @@
+import org.jetbrains.kotlin.gradle.plugin.mpp.apple.XCFramework
+
 plugins {
     kotlin("multiplatform")
     id("com.android.library")
-    kotlin("plugin.serialization") version "1.8.0"
 }
 
 kotlin {
     android()
+
+    val xcf = XCFramework()
 
     listOf(
         iosX64(),
@@ -13,17 +16,13 @@ kotlin {
         iosSimulatorArm64()
     ).forEach {
         it.binaries.framework {
-            baseName = "Serialization"
+            baseName = "Storage"
+            xcf.add(this)
         }
     }
 
     sourceSets {
-        val commonMain by getting { 
-            dependencies { 
-                implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.3.1") 
-            }
-        }
-        
+        val commonMain by getting
         val androidMain by getting
         val iosX64Main by getting
         val iosArm64Main by getting

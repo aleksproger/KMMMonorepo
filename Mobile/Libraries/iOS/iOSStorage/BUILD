@@ -1,11 +1,11 @@
 load("@build_bazel_rules_swift//swift:swift.bzl", "swift_library")
 
 swift_library(
-    name = "iOSUI",
+    name = "iOSStorage",
     srcs = glob(["API/**/*.swift"]),
-    module_name = "iOSUI",
+    module_name = "iOSStorage",
     visibility = ["//visibility:public"],
     deps = [
-        "//Mobile/Libraries/iOS/iOSStorage",
+        "//Multiplatform/Storage:MultiplatformStorageiOS",
     ]
 )

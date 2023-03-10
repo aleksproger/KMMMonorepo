@@ -1,6 +1,6 @@
 import SwiftUI
 import BeerGallery
-import iOSArchitecture
+import iOSArchitectureAPI
 
 @main
 @MainActor

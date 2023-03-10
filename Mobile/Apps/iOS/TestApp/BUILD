@@ -10,8 +10,10 @@ swift_library(
     visibility = ["//visibility:public"],
     deps = [
         "//Mobile/Libraries/Common/BeerGallery:BeerGalleryiOS",
-        "//Mobile/Libraries/iOS/iOSArchitecture",
-        "//Mobile/Libraries/iOS/iOSUI",
+        "//Mobile/Libraries/iOS/iOSArchitecture:API",
+        "//Mobile/Libraries/iOS/iOSArchitecture:Impl",
+        "//Mobile/Libraries/iOS/iOSAppUtilities",
+        "//Multiplatform/Architecture:MultiplatformArchitectureiOS",
     ],
 )
 
@@ -26,6 +28,8 @@ ios_application(
     ],
     frameworks = [
         "//Mobile/Libraries/Common/BeerGallery:BeerGalleryiOS",
+        "//Multiplatform/Storage:MultiplatformStorageiOS",
+        "//Multiplatform/Architecture:MultiplatformArchitectureiOS",
     ],
 )
 

@@ -2,6 +2,8 @@ package Mobile.BeerGallery
 
 import Multiplatform.Architecture.Store
 import Multiplatform.Architecture.DefaultStore
+import Multiplatform.Architecture.StorePlugin
+import Multiplatform.Architecture.EmptyStorePlugin
 
 class BeerViewStoreImpl(
     private val subject: Store<BeerFeatureState, BeerFeatureAction>
@@ -10,7 +12,20 @@ class BeerViewStoreImpl(
         DefaultStore(
             state = initialState,
             reducer = BeerFeatureReducer(),
-            effectHandler = BeerFeatureEffectHandler()
+            effectHandler = BeerFeatureEffectHandler(),
+            plugin = EmptyStorePlugin()
+        )
+    )
+
+    constructor(
+        initialState: BeerFeatureState,
+        plugin: StorePlugin<BeerFeatureState, BeerFeatureAction>
+    ): this(
+        DefaultStore(
+            state = initialState,
+            reducer = BeerFeatureReducer(),
+            effectHandler = BeerFeatureEffectHandler(),
+            plugin = plugin
         )
     )
 

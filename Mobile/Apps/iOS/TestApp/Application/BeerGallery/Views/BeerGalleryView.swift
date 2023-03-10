@@ -7,7 +7,7 @@
 //
 
 import BeerGallery
-import iOSArchitecture
+import iOSArchitectureAPI
 import SwiftUI
 
 struct BeerGalleryView: View {

@@ -22,7 +22,7 @@ include(":Multiplatform")
 include(":Multiplatform:DTO")
 include(":Multiplatform:Serialization")
 include(":Multiplatform:Architecture")
-
+include(":Multiplatform:Storage")
 
 include(":Mobile")
 include(":Mobile:Libraries:Common:SharedNetwork")

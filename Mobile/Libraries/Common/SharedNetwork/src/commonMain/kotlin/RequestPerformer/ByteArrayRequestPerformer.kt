@@ -49,3 +49,7 @@ class ByteArrayRequestPerformer<Payload, Response> (
         }
     }
 }
+
+// fun ByteArray.toNSData(): NSData = this.usePinned {
+//     NSData.create(bytes = it.addressOf(0), length = this.size.convert())
+// }

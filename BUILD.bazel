@@ -10,5 +10,6 @@ package_group(
     packages = [
         "//Mobile/Libraries/iOS/iOSArchitecture",
         "//Mobile/Libraries/iOS/iOSUtilities",
+        "//Mobile/Libraries/iOS/iOSStorage",
     ],
 )

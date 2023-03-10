@@ -1,16 +1,16 @@
 import BeerGallery
 import SwiftUI
-import iOSUI
+import iOSAppUtilities
 
 struct BeerRowView: View {
 	var beer: DTOBeer
 
 	var body: some View {
 		VStack {
-			AsyncImage(url: beer.url) { image in
-				image.resizable()
-			} placeholder: {
-				ProgressView()
+			URLImage(beer.url, InMemoryImageCache.shared, ProgressView()) {  image in
+				image
+					.resizable()
+					.aspectRatio(contentMode: .fit)
 			}
 			.frame(width: 100, height: 100)
 			
