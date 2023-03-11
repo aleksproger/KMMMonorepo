@@ -1,6 +1,8 @@
 import Foundation
 import iOSUtilities
 
+import os.signpost
+
 public actor ObservableObjectStore<S: Store>: ObservableObject {
 	@MainActor
 	@Published
@@ -14,7 +16,7 @@ public actor ObservableObjectStore<S: Store>: ObservableObject {
 		_ subject: @escaping (S.State) -> S
 	) {
 		self.state = initialState
-		self.subject = subject(initialState)
+		self.subject = measuring { subject(initialState) }
 	}
 	
 	public func dispatch(action: S.Action) async {

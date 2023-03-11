@@ -26,7 +26,6 @@ class BeerViewStoreAdapter: iOSArchitectureAPI.Store {
 		try! await subject.dispatch(action: action)
 	}
 }
-
 extension BeerFeatureState {
 	public static let initial = BeerFeatureState(loading: true, beers: [], error: KotlinThrowable())
 }
@@ -34,7 +33,7 @@ extension BeerFeatureState {
 /// TODO: Workaround for 
 /// error: argument type 'DefaultStorePluginAdater<ComposableStorePlugin<[LoggingStorePlugin<BeerFeatureState, BeerFeatureAction>], LoggingStorePlugin<BeerFeatureState, BeerFeatureAction>>>'
 /// does not conform to expected type 'ArchitectureStorePlugin'
-final class DefaultStorePluginAdater<Plugin: iOSArchitectureAPI.StorePlugin>: NSObject, ArchitectureStorePlugin {
+private final class DefaultStorePluginAdater<Plugin: iOSArchitectureAPI.StorePlugin>: ArchitectureStorePlugin {
     private let subject: Plugin
 
     init(_ subject: Plugin) {

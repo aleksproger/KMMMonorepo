@@ -7,7 +7,10 @@ public final class OSSignpostPlugin<S, A, E>: StorePlugin {
   public typealias Action = A
   public typealias Effect = E
   
-  private let signposter = OSSignposter(subsystem: "com.sapial.kmm", category: "architecture.store")
+  private let signposter = OSSignposter(
+    subsystem: Bundle.main.bundleIdentifier ?? "kmm.foundation",
+    category: "architecture.store"
+)
   
   private var signposts: [Signpost] = []
   

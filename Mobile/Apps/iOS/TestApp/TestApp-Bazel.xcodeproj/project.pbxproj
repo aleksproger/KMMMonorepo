@@ -27,6 +27,7 @@
 		08370632D9789359C637CCBB /* ExternalImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FA6DCD6B5CDCC263CB0FABE /* ExternalImage.swift */; };
 		0B0C6BEED5CC7FA517CAAB82 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97081F5C69D2B3D70632D433 /* App.swift */; };
 		0C4CA5EE211E47457E7995FC /* AnyStorePlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852ADE22E45127BF33D0A7EB /* AnyStorePlugin.swift */; };
+		0E50E830FC08B6ABDEB1E93F /* SignpostMeasuring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E1E0A31F7F78FC39167F63 /* SignpostMeasuring.swift */; };
 		289F0D8A17301C5573BD3759 /* IndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25DF1F7FC1A8DBDF6D8AC1D1 /* IndicatorView.swift */; };
 		29ED2FA6712460B6B66DC9B7 /* MainThreadRunner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FD6970AE164D7B851CC00E /* MainThreadRunner.swift */; };
 		35574C64BED692C615E8FAA1 /* _CompileStub_.m in Sources */ = {isa = PBXBuildFile; fileRef = B5FFD94A9908FB1374D72673 /* _CompileStub_.m */; };
@@ -145,6 +146,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		01E1E0A31F7F78FC39167F63 /* SignpostMeasuring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignpostMeasuring.swift; sourceTree = "<group>"; };
 		07FD6970AE164D7B851CC00E /* MainThreadRunner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainThreadRunner.swift; sourceTree = "<group>"; };
 		1810F6E9EB127C803D776160 /* Storage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Storage.framework; sourceTree = "<group>"; };
 		1C612315E90907D557D2FAA3 /* BUILD */ = {isa = PBXFileReference; explicitFileType = text.script.python; path = BUILD; sourceTree = "<group>"; };
@@ -289,6 +291,7 @@
 			isa = PBXGroup;
 			children = (
 				07FD6970AE164D7B851CC00E /* MainThreadRunner.swift */,
+				01E1E0A31F7F78FC39167F63 /* SignpostMeasuring.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -1831,6 +1834,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				29ED2FA6712460B6B66DC9B7 /* MainThreadRunner.swift in Sources */,
+				0E50E830FC08B6ABDEB1E93F /* SignpostMeasuring.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
