@@ -4,11 +4,11 @@ import Multiplatform.Architecture.EffectHandler
 import Multiplatform.Architecture.Store
 import Multiplatform.DTO.Beer
 import Multiplatform.Serialization.jsonSerializer
-import SharedNetwork.DefaultRequestBuilder
-import SharedNetwork.DefaultRequestPerformer
-import SharedNetwork.DefaultRequestHeadersFactory
-import SharedNetwork.NetworkFetcher
-import SharedNetwork.DefaultNetworkFetcher
+import Multiplatform.ClientNetwork.DefaultRequestBuilder
+import Multiplatform.ClientNetwork.DefaultRequestPerformer
+import Multiplatform.ClientNetwork.DefaultRequestHeadersFactory
+import Multiplatform.ClientNetwork.NetworkFetcher
+import Multiplatform.ClientNetwork.DefaultNetworkFetcher
 
 
 internal class BeerFeatureEffectHandler(
@@ -19,7 +19,7 @@ internal class BeerFeatureEffectHandler(
             },
             requestBuilder = DefaultRequestBuilder<Unit>(
                 httpMethod = "GET",
-                requestURL = "https://api.punkapi.com/v2/beers",
+                requestURL = "http://0.0.0.0:8080/beers",
                 headersFactory = DefaultRequestHeadersFactory(),
                 serialize = { "" }
             )

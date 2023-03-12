@@ -21,16 +21,6 @@ struct BeerListView: View {
 				}
 			}
 		}
-//		List {
-//			ForEach(beers) { beer in
-//				BeerRowView(beer: beer)
-//			}
-//		}
-//		// .listStyle(GroupedListStyle())
-//		.background(Color.white)
-//		.cornerRadius(10)
-//		.font(.headline)
-
 	}
 }
 

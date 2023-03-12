@@ -24,19 +24,13 @@ kotlin {
     sourceSets {
         val commonMain by getting {
             dependencies {
-                implementation(project(":Mobile:Libraries:Common:SharedNetwork"))
+                implementation(project(":Multiplatform:ClientNetwork"))
                 implementation(project(":Multiplatform:DTO"))
                 implementation(project(":Multiplatform:Serialization"))
                 implementation(project(":Multiplatform:Architecture"))
-
             }
         }
-        val androidMain by getting {
-            dependencies {
-                implementation(project(":Mobile:Libraries:Common:SharedNetwork"))
-                implementation(project(":Multiplatform:DTO"))
-            }
-        }
+        val androidMain by getting
 
         val iosX64Main by getting
         val iosArm64Main by getting

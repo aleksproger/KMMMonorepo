@@ -1,11 +1,12 @@
 plugins {
     kotlin("multiplatform")
-    id("com.android.library")
     kotlin("plugin.serialization") version "1.8.0"
+    id("com.android.library")
 }
 
 kotlin {
     android()
+    jvm()
 
     listOf(
         iosX64(),
@@ -24,6 +25,7 @@ kotlin {
             }
         }
         
+        val jvmMain by getting
         val androidMain by getting
         val iosX64Main by getting
         val iosArm64Main by getting

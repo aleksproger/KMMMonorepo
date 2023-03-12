@@ -5,7 +5,4 @@ swift_library(
     srcs = glob(["API/**/*.swift"]),
     module_name = "iOSUtilities",
     visibility = ["//visibility:public"],
-    deps = [
-        # "//Mobile/Libraries/Common/SharedNetwork:SharedNetworkiOS"
-    ]
 )

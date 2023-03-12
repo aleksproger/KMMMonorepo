@@ -23,8 +23,11 @@ include(":Multiplatform:DTO")
 include(":Multiplatform:Serialization")
 include(":Multiplatform:Architecture")
 include(":Multiplatform:Storage")
+include(":Multiplatform:ClientNetwork")
+
 
 include(":Mobile")
-include(":Mobile:Libraries:Common:SharedNetwork")
 include(":Mobile:Libraries:Common:BeerGallery")
 include(":Mobile:Libraries:Common:AsyncCachedImage")
+
+include("Server:BeerServer")
