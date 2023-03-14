@@ -1,29 +1,26 @@
 package Server.BeerServer
 
-import Multiplatform.ClientNetwork.*
-import Multiplatform.Serialization.*
-import Multiplatform.DTO.Beer
+import Multiplatform.DTO.BeerViewModel
 import io.ktor.server.application.*
 import io.ktor.http.*
 import io.ktor.server.response.*
 import io.ktor.server.routing.*
 
+
+val colorProvider = ImageColorProviderImpl()
+
 fun Route.listBeersRoute() {
     get("/beers") {
         call.respond(
-            beerFetcher.perform(Unit)
+            beerFetcher.perform(Unit).map {
+                BeerViewModel(
+                    id = it.id,
+                    name = it.name,
+                    description = it.description,
+                    image_url = it.image_url,
+                    average_color = colorProvider.provideHex(it.image_url)
+                )
+            }
         )
     }
 }
-
-val beerFetcher = DefaultRequestPerformer<Unit, List<Beer>>(
-    responseMapper = { body ->
-        jsonSerializer<List<Beer>>().deserialize(body)
-    },
-    requestBuilder = DefaultRequestBuilder<Unit>(
-        httpMethod = "GET",
-        requestURL = "https://api.punkapi.com/v2/beers",
-        headersFactory = DefaultRequestHeadersFactory(),
-        serialize = { "" }
-    )
-) 

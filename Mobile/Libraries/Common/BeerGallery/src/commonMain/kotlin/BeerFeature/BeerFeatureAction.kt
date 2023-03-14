@@ -1,6 +1,6 @@
 package Mobile.BeerGallery
 
-import Multiplatform.DTO.Beer
+import Multiplatform.DTO.BeerViewModel
 
 sealed class BeerFeatureAction {
     sealed class ViewAction: BeerFeatureAction() {
@@ -9,7 +9,7 @@ sealed class BeerFeatureAction {
 
     internal sealed class LocalAction: BeerFeatureAction() {
         class LoadBeers() : LocalAction()
-        data class HandleBeersSuccess(val beers: List<Beer>) : LocalAction()
+        data class HandleBeersSuccess(val beers: List<BeerViewModel>) : LocalAction()
         data class HandleBeersFailure(val error: Throwable) : LocalAction()
     }
 }

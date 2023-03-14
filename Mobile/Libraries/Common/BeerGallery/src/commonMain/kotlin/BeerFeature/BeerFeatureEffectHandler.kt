@@ -3,6 +3,7 @@ package Mobile.BeerGallery
 import Multiplatform.Architecture.EffectHandler
 import Multiplatform.Architecture.Store
 import Multiplatform.DTO.Beer
+import Multiplatform.DTO.BeerViewModel
 import Multiplatform.Serialization.jsonSerializer
 import Multiplatform.ClientNetwork.DefaultRequestBuilder
 import Multiplatform.ClientNetwork.DefaultRequestPerformer
@@ -12,10 +13,10 @@ import Multiplatform.ClientNetwork.DefaultNetworkFetcher
 
 
 internal class BeerFeatureEffectHandler(
-    private val beerFetcher: NetworkFetcher<Unit, List<Beer>> = DefaultNetworkFetcher<Unit, List<Beer>>(
-        DefaultRequestPerformer<Unit, List<Beer>>(
+    private val beerFetcher: NetworkFetcher<Unit, List<BeerViewModel>> = DefaultNetworkFetcher<Unit, List<BeerViewModel>>(
+        DefaultRequestPerformer<Unit, List<BeerViewModel>>(
             responseMapper = { body ->
-                jsonSerializer<List<Beer>>().deserialize(body)
+                jsonSerializer<List<BeerViewModel>>().deserialize(body)
             },
             requestBuilder = DefaultRequestBuilder<Unit>(
                 httpMethod = "GET",

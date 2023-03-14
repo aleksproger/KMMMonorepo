@@ -3,7 +3,7 @@ import SwiftUI
 import iOSAppUtilities
 
 struct BeerRowView: View {
-	var beer: DTOBeer
+	var beer: DTOBeerViewModel
 
 	var body: some View {
 		VStack {
@@ -12,12 +12,14 @@ struct BeerRowView: View {
 					.resizable()
 					.aspectRatio(contentMode: .fit)
 			}
-			.frame(width: 100, height: 100)
 			
 			Text(beer.name)
 				.font(.title2)
 				.bold()
+				.foregroundColor(.white.opacity(0.65))
+				.frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
 		}
-		.padding(.vertical, 8)
+		.padding(.vertical, 16)
+		.padding(.horizontal, 16)
 	}
 }

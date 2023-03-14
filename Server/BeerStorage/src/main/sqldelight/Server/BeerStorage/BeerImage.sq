@@ -1,0 +1,14 @@
+CREATE TABLE beerImage (
+  image_url TEXT NOT NULL,
+  average_color_hex TEXT NOT NULL
+);
+
+CREATE INDEX beerImage_image_url ON beerImage(image_url);
+
+set:
+INSERT INTO beerImage (image_url, average_color_hex)
+VALUES (?, ?);
+
+get:
+SELECT average_color_hex FROM beerImage WHERE image_url = ?;
+VALUES(?);

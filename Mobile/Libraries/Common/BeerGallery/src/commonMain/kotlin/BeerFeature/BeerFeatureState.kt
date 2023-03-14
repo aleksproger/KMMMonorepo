@@ -1,9 +1,9 @@
 package Mobile.BeerGallery
 
-import Multiplatform.DTO.Beer
+import Multiplatform.DTO.BeerViewModel
 
 data class BeerFeatureState(
     val loading: Boolean,
-    val beers: List<Beer>,
+    val beers: List<BeerViewModel>,
     val error: Throwable
 )

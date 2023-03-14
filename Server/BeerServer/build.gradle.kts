@@ -18,8 +18,10 @@ dependencies {
     implementation("io.ktor:ktor-serialization-kotlinx-json:2.2.3")
     implementation("io.ktor:ktor-server-content-negotiation:2.2.3")
     implementation("ch.qos.logback:logback-classic:1.2.11")
-    
+
     implementation(project(":Multiplatform:DTO"))
     implementation(project(":Multiplatform:Serialization"))
     implementation(project(":Multiplatform:ClientNetwork"))
+    implementation(project(":Multiplatform:Storage"))
+    implementation(project(":Server:BeerStorage"))
 }

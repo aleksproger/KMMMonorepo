@@ -1,6 +1,6 @@
 package Multiplatform.Storage
 
-class DictionaryStorage<Key, Value>(
+class InMemoryStorage<Key, Value>(
     private val map: MutableMap<Key, Value> = mutableMapOf<Key, Value>()
 ): Storage<Key, Value> {
     override fun set(key: Key, value: Value) {

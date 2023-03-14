@@ -8,8 +8,6 @@
 
 import SwiftUI
 
-import SwiftUI
-
 struct IndicatorView: View {
 
 	let color: Color

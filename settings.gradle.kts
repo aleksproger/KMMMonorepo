@@ -31,3 +31,4 @@ include(":Mobile:Libraries:Common:BeerGallery")
 include(":Mobile:Libraries:Common:AsyncCachedImage")
 
 include("Server:BeerServer")
+include("Server:BeerStorage")

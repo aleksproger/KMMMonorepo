@@ -21,3 +21,7 @@ Infrastructure/.build
 Infrastructure/core/.build
 
 .xcodeproj
+
+# Ignore created database files
+
+Server/BeerServer/src/main/resources/beer.db
