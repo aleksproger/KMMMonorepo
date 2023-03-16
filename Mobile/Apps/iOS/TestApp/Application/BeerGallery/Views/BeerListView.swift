@@ -61,8 +61,6 @@ struct Widget<V: View>: View {
 				.background(.gray.opacity(0.15))
 				.cornerRadius(24)
 				.padding(64)
-
-		// .background(Color.mint)
 	}
 }
 
