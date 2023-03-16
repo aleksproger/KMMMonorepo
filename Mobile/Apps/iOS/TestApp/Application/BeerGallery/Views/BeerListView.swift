@@ -16,35 +16,36 @@ struct BeerListView: View {
 	@StateObject var backgroundCalculator = BackgroundCalculator()
 
 	var body: some View {
-		GeometryReader { g in
-			ScrollView(.horizontal, showsIndicators: false) {
-				ZStack {
-					Rectangle().foregroundColor(backgroundCalculator.color)
-					GeometryReader { proxy in
-						let offset = proxy.frame(in: .named("scroll")).minX
-						Color.clear.preference(key: ScrollViewOffsetPreferenceKey.self, value: offset)
+		ZStack {
+			backgroundCalculator.color
+				.ignoresSafeArea()
 
-					}
-					LazyHStack(spacing: 0) {
-						ForEach(beers) { beer in
-							Widget(BeerRowView(beer: beer))
-								.frame(width: g.size.width, height: g.size.height)
+			GeometryReader { g in
+				ScrollView(.horizontal, showsIndicators: false) {
+					ZStack {
+						GeometryReader { proxy in
+							let offset = proxy.frame(in: .named("scroll")).minX
+							Color.clear.preference(key: ScrollViewOffsetPreferenceKey.self, value: offset)
+						}
+						LazyHStack(spacing: 0) {
+							ForEach(beers) { beer in
+								Widget(BeerRowView(beer: beer))
+									.frame(width: g.size.width, height: g.size.height)
+							}
 						}
 					}
 				}
-				
+				.coordinateSpace(name: "scroll")
+				.onPreferenceChange(ScrollViewOffsetPreferenceKey.self) { value in
+					backgroundCalculator.calucateBackground(position: -value)
+				}
+				.onAppear {
+					backgroundCalculator.width = g.size.width
+					backgroundCalculator.colors = beers.map { Color(hex: $0.average_color) }
+				}
 			}
-			.coordinateSpace(name: "scroll")
-			.onPreferenceChange(ScrollViewOffsetPreferenceKey.self) { value in
-			    backgroundCalculator.calucateBackground(position: -value)
-			}
-			.onAppear {
-				print("Width: \(g.size.width))")
-				backgroundCalculator.width = g.size.width
-				backgroundCalculator.colors = beers.map { Color(hex: $0.average_color) }
-			}
+			.ignoresSafeArea()
 		}
-		.ignoresSafeArea()
 	}
 }
 

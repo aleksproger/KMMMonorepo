@@ -3,18 +3,17 @@ package Multiplatform.ClientNetwork
 import io.ktor.client.request.*
 import io.ktor.http.*
 
-class DefaultRequestBuilder<Payload>(
+class URLRequestBuilder<Payload>(
     val httpMethod: String,
-    val requestURL: String,
     val headersFactory: RequestHeadersFactory,
     val serialize: (Payload) -> String
-) : RequestBuilder<Payload, DefaultRequest> {
-    override fun build(request: Payload): DefaultRequest {
+) : RequestBuilder<URLRequest<Payload>, DefaultRequest> {
+    override fun build(request: URLRequest<Payload>): DefaultRequest {
         return DefaultRequest(
             httpMethod = httpMethod,
-            url = requestURL,
+            url = request.url,
             headers = headersFactory.make(),
-            body = serialize(request)
+            body = serialize(request.payload)
         )
     }
 }

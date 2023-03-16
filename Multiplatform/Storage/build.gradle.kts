@@ -2,16 +2,9 @@ import org.jetbrains.kotlin.gradle.plugin.mpp.apple.XCFramework
 
 plugins {
     kotlin("multiplatform")
-    id("com.squareup.sqldelight") version "1.5.4"
     id("com.android.library")
 }
 
-
-// sqldelight {
-//   Database { // This will be the name of the generated database class.
-//     packageName = "Multiplatform.Storage"
-//   }
-// }
 
 kotlin {
     android()
@@ -32,16 +25,6 @@ kotlin {
 
     sourceSets {
         val commonMain by getting
-        val jvmMain by getting {
-            dependencies { 
-                implementation("com.squareup.sqldelight:sqlite-driver:1.5.4")
-            }
-        }
-        val androidMain by getting {
-            dependencies {
-                implementation("com.squareup.sqldelight:android-driver:1.5.4")
-            }
-        }
         val iosX64Main by getting
         val iosArm64Main by getting
         val iosSimulatorArm64Main by getting
