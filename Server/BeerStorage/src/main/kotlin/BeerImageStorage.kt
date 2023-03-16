@@ -5,13 +5,8 @@ import Server.BeerStorage.BeerStorageSQL
 import com.squareup.sqldelight.sqlite.driver.JdbcSqliteDriver
 import java.io.File
 
-
-fun imageStorage(databasePath: String = "src/main/resources/beer.db"): Storage<String, String> {
-    return BeerImageStorage(databasePath)
-}
-
-private class BeerImageStorage(
-    databasePath: String
+class BeerImageStorage(
+    databasePath: String = "src/main/resources/beer.db"
 ): Storage<String, String> {
     private val driver = JdbcSqliteDriver("jdbc:sqlite:$databasePath")
     private val database = BeerStorageSQL(driver)

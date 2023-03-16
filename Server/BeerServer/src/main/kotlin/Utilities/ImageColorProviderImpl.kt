@@ -7,10 +7,10 @@ import Multiplatform.ClientNetwork.ByteArrayRequestPerformer
 import Multiplatform.ClientNetwork.DefaultRequestHeadersFactory
 import Multiplatform.ClientNetwork.URLRequestBuilder
 import Multiplatform.ClientNetwork.URLRequest
-import Server.BeerStorage.imageStorage
+import Server.BeerStorage.BeerImageStorage
 
 class ImageColorProviderImpl(
-    private val storage: Storage<String, String> = imageStorage(),
+    private val storage: Storage<String, String> = BeerImageStorage(),
     private val imageCalculator: ImageColorCalculator = DefaultImageColorCalculator(),
     private val requestPerformer: RequestPerformer<URLRequest<Unit>, ByteArray> = ByteArrayRequestPerformer(
         responseMapper = { it },
